@@ -165,8 +165,15 @@
         "icon": "🔵"
       }
     ],
-    "thumbnail": "",
-    "slides": []
+    "thumbnail": "static/carousels/tws-anker-soundcore-r50i/slide_01.png",
+    "slides": [
+      "static/carousels/tws-anker-soundcore-r50i/slide_01.png",
+      "static/carousels/tws-anker-soundcore-r50i/slide_02.png",
+      "static/carousels/tws-anker-soundcore-r50i/slide_03.png",
+      "static/carousels/tws-anker-soundcore-r50i/slide_04.png",
+      "static/carousels/tws-anker-soundcore-r50i/slide_05.png",
+      "static/carousels/tws-anker-soundcore-r50i/slide_06.png"
+    ]
   },
   {
     "id": "smartwatch-olike-horizon-w12",
@@ -239,8 +246,15 @@
         "icon": "🔵"
       }
     ],
-    "thumbnail": "",
-    "slides": []
+    "thumbnail": "static/carousels/smartwatch-olike-horizon-w12/slide_01.png",
+    "slides": [
+      "static/carousels/smartwatch-olike-horizon-w12/slide_01.png",
+      "static/carousels/smartwatch-olike-horizon-w12/slide_02.png",
+      "static/carousels/smartwatch-olike-horizon-w12/slide_03.png",
+      "static/carousels/smartwatch-olike-horizon-w12/slide_04.png",
+      "static/carousels/smartwatch-olike-horizon-w12/slide_05.png",
+      "static/carousels/smartwatch-olike-horizon-w12/slide_06.png"
+    ]
   },
   {
     "id": "iphone-15",
@@ -313,8 +327,15 @@
         "icon": "🔵"
       }
     ],
-    "thumbnail": "",
-    "slides": []
+    "thumbnail": "static/carousels/iphone-15/slide_01.png",
+    "slides": [
+      "static/carousels/iphone-15/slide_01.png",
+      "static/carousels/iphone-15/slide_02.png",
+      "static/carousels/iphone-15/slide_03.png",
+      "static/carousels/iphone-15/slide_04.png",
+      "static/carousels/iphone-15/slide_05.png",
+      "static/carousels/iphone-15/slide_06.png"
+    ]
   },
   {
     "id": "xiaomi-redmi-note-13",
@@ -387,7 +408,14 @@
         "icon": "🔵"
       }
     ],
-    "thumbnail": "",
-    "slides": []
+    "thumbnail": "static/carousels/xiaomi-redmi-note-13/slide_01.png",
+    "slides": [
+      "static/carousels/xiaomi-redmi-note-13/slide_01.png",
+      "static/carousels/xiaomi-redmi-note-13/slide_02.png",
+      "static/carousels/xiaomi-redmi-note-13/slide_03.png",
+      "static/carousels/xiaomi-redmi-note-13/slide_04.png",
+      "static/carousels/xiaomi-redmi-note-13/slide_05.png",
+      "static/carousels/xiaomi-redmi-note-13/slide_06.png"
+    ]
   }
 ]

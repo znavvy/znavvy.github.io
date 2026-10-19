@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ZNavvy - Showroom Rekomendasi & Pembanding Harga Bebas Zonk</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Znavvy - Showroom Rekomendasi & Pembanding Harga Bebas Zonk</title>
   <meta name="description" content="Komparasi harga asli Tokopedia vs Shopee vs Blibli vs Lazada. Cek harga termurah dari official store terverifikasi garansi resmi.">
-  <link rel="stylesheet" href="static/site.css">
+  <link rel="stylesheet" href="static/site.css?v=1792427057">
   <style>
     :root {
       --bg: #07111f;
@@ -548,7 +551,7 @@
       <div style="display: flex; align-items: center; gap: 14px;">
         <a class="brand" href="index.html">
           <span class="brand-mark">Z</span>
-          <span class="brand-text">ZNavvy</span>
+          <span class="brand-text">Znavvy</span>
         </a>
         <div class="topbar-copy">
           <span class="live-dot" aria-hidden="true"></span>
@@ -680,8 +683,8 @@
     let currentSlideIndex = 0;
     let activeCategory = 'ALL';
 
-    // 1. Fetch products.json
-    fetch('products.json')
+    // 1. Fetch products.json (with cache-busting query parameter)
+    fetch('products.json?v=' + Date.now())
       .then(res => res.json())
       .then(data => {
         allProducts = data;
@@ -760,7 +763,7 @@
         return `
           <div class="product-card" id="card-${p.id}">
             <div class="card-thumb-wrap" onclick="openProductModal('${p.id}', 'slides')">
-              <img src="${p.thumbnail || 'static/carousels/proyektor-mini-android/slide_01.png'}" class="card-thumb-img" alt="${p.title}">
+              <img src="${p.thumbnail || (p.slides && p.slides.length ? p.slides[0] : '')}" class="card-thumb-img" alt="${p.title}" loading="lazy">
               <span class="carousel-badge-corner">📸 ${p.slides ? p.slides.length : 6} Slides</span>
               <span class="cheapest-badge-pill">⚡ ${cheapest.marketplace || 'Tokopedia'}: ${cheapest.price_fmt || p.promo_price}</span>
             </div>
