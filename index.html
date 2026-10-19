@@ -3,23 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ZNavvy - Showroom Rekomendasi & Pembanding Harga Gadget</title>
-  <meta name="description" content="Katalog perbandingan harga gadget & barang viral teruji. Cek harga termurah dari official store bebas zonk.">
+  <title>ZNavvy - Showroom Rekomendasi & Pembanding Harga Bebas Zonk</title>
+  <meta name="description" content="Komparasi harga asli Tokopedia vs Shopee vs Blibli vs Lazada. Cek harga termurah dari official store terverifikasi garansi resmi.">
   <link rel="stylesheet" href="static/site.css">
   <style>
-    /* Additional Styles for Serverless GitHub Pages */
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0b1424;
+      --panel: rgba(13, 23, 42, 0.88);
+      --panel-strong: #0f1d35;
+      --line: rgba(255, 255, 255, 0.12);
+      --text: #f0f4fc;
+      --muted: #9bb0d1;
+      --accent: #45e6c2;
+      --accent-hover: #34c7a6;
+      --tokopedia: #03AC0E;
+      --shopee: #EE4D2D;
+      --blibli: #0095DA;
+      --lazada: #0F146D;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    /* Hero Banner */
     .hero-banner {
-      background: linear-gradient(135deg, rgba(15, 27, 48, 0.95), rgba(8, 16, 30, 0.85));
+      background: linear-gradient(135deg, rgba(15, 29, 53, 0.95), rgba(7, 17, 31, 0.95));
       border: 1px solid var(--line);
       border-radius: 24px;
-      padding: 40px 32px;
+      padding: 42px 28px;
       text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
       box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-banner::before {
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 400px;
+      height: 120px;
+      background: radial-gradient(circle, rgba(69, 230, 194, 0.2), transparent 70%);
+      pointer-events: none;
     }
     .hero-badge {
-      display: inline-block;
-      padding: 6px 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
       background: rgba(69, 230, 194, 0.15);
       border: 1px solid var(--accent);
       color: var(--accent);
@@ -27,40 +59,47 @@
       font-size: 12px;
       font-weight: 800;
       letter-spacing: 0.05em;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
     .hero-h1 {
-      font-size: clamp(26px, 4vw, 38px);
+      font-size: clamp(24px, 4.2vw, 38px);
       font-weight: 900;
       margin: 0 0 12px;
       line-height: 1.25;
+      letter-spacing: -0.02em;
     }
     .hero-desc {
       color: var(--muted);
-      font-size: 16px;
-      max-width: 680px;
+      font-size: 15px;
+      max-width: 660px;
       margin: 0 auto 24px;
-      line-height: 1.5;
+      line-height: 1.55;
+    }
+
+    /* Search & Filter Bar */
+    .filter-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
     }
     .search-box-wrap {
-      max-width: 600px;
-      margin: 0 auto;
       position: relative;
+      margin-bottom: 16px;
     }
     .search-input-main {
       width: 100%;
-      background: #091220;
+      background: #060e1a;
       border: 2px solid var(--line);
       color: var(--text);
-      padding: 16px 20px 16px 50px;
+      padding: 15px 20px 15px 50px;
       border-radius: 16px;
-      font-size: 16px;
+      font-size: 15px;
       box-sizing: border-box;
       outline: none;
-      transition: border-color 0.2s;
+      transition: all 0.2s;
     }
     .search-input-main:focus {
       border-color: var(--accent);
+      box-shadow: 0 0 0 4px rgba(69, 230, 194, 0.15);
     }
     .search-icon-svg {
       position: absolute;
@@ -70,11 +109,33 @@
       font-size: 18px;
       color: var(--muted);
     }
+    .category-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+    .cat-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      padding: 7px 16px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cat-btn.active, .cat-btn:hover {
+      background: rgba(69, 230, 194, 0.15);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
 
-    /* Catalog Cards Grid */
+    /* Product Cards Grid */
     .catalog-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
       gap: 24px;
       margin-bottom: 48px;
     }
@@ -95,7 +156,7 @@
     .card-thumb-wrap {
       width: 100%;
       aspect-ratio: 4/5;
-      background: #050b16;
+      background: #030812;
       position: relative;
       overflow: hidden;
       cursor: pointer;
@@ -104,6 +165,10 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .product-card:hover .card-thumb-img {
+      transform: scale(1.03);
     }
     .carousel-badge-corner {
       position: absolute;
@@ -118,6 +183,20 @@
       font-size: 11px;
       font-weight: 800;
     }
+    .cheapest-badge-pill {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(3, 172, 14, 0.9);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      padding: 5px 12px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
     .card-body {
       padding: 20px;
       flex: 1;
@@ -134,57 +213,101 @@
       margin-bottom: 6px;
     }
     .card-title {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 800;
       margin: 0 0 10px;
       line-height: 1.35;
+      color: var(--text);
     }
-    .card-price-row {
+    .rating-row {
       display: flex;
-      align-items: baseline;
-      gap: 10px;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: #f59e0b;
       margin-bottom: 12px;
     }
-    .price-promo {
-      font-size: 20px;
-      font-weight: 900;
-      color: var(--accent);
+    .rating-row span.sold {
+      color: var(--muted);
+      margin-left: 6px;
     }
-    .price-original {
+
+    /* Mini Comparison Matrix in Card */
+    .mini-compare-box {
+      background: rgba(0, 0, 0, 0.28);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin-bottom: 16px;
+    }
+    .mini-compare-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--muted);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .mini-offer-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       font-size: 13px;
-      color: var(--muted);
-      text-decoration: line-through;
     }
-    .card-features-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 16px;
-      font-size: 12px;
-      color: var(--muted);
+    .mini-offer-row:last-child {
+      border-bottom: none;
     }
-    .card-features-list li {
-      margin-bottom: 4px;
+    .mini-mp-name {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
     }
-    .card-features-list li::before {
-      content: "✓ ";
-      color: var(--accent);
+    .mini-mp-price {
       font-weight: 800;
     }
+    .mini-mp-price.cheapest {
+      color: var(--accent);
+    }
+    .btn-mini-buy {
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 8px;
+      transition: opacity 0.2s;
+    }
+    .btn-mini-buy:hover {
+      opacity: 0.85;
+    }
+
+    /* Card Action Buttons */
     .card-actions-row {
       display: flex;
       gap: 8px;
     }
-    .btn-buy-affiliate {
+    .btn-full-compare {
       flex: 1;
-      background: linear-gradient(135deg, #f97316, #ea580c);
-      color: #fff;
+      background: linear-gradient(135deg, #45e6c2, #0284c7);
+      color: #07111f;
       font-weight: 800;
       font-size: 13px;
       padding: 12px;
       border-radius: 12px;
       text-align: center;
-      text-decoration: none;
-      box-shadow: 0 8px 20px rgba(234, 88, 12, 0.3);
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(69, 230, 194, 0.25);
+      transition: transform 0.15s;
+    }
+    .btn-full-compare:hover {
+      transform: translateY(-2px);
     }
     .btn-view-slides {
       background: rgba(255, 255, 255, 0.08);
@@ -196,8 +319,173 @@
       border-radius: 12px;
       cursor: pointer;
     }
+    .btn-view-slides:hover {
+      background: rgba(255, 255, 255, 0.14);
+    }
 
-    /* Request Form Section */
+    /* Comprehensive Comparison Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(12px);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      overflow-y: auto;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-dialog-large {
+      background: #0b1526;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      max-width: 840px;
+      width: 100%;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      max-height: 90vh;
+    }
+    .modal-header {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      background: rgba(15, 27, 48, 0.6);
+    }
+    .modal-title-box h2 {
+      margin: 0 0 6px;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .modal-close-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: var(--muted);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+    }
+    .modal-close-btn:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .modal-tabs {
+      display: flex;
+      border-bottom: 1px solid var(--line);
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .modal-tab-btn {
+      flex: 1;
+      padding: 14px;
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    .modal-tab-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+      background: rgba(69, 230, 194, 0.06);
+    }
+
+    .modal-body-content {
+      padding: 24px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    /* Table Styles */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    .compare-table th {
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+    }
+    .compare-table td {
+      padding: 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      vertical-align: middle;
+      font-size: 14px;
+    }
+    .store-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      margin-top: 4px;
+    }
+    .table-buy-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 10px;
+      color: #fff;
+      font-weight: 800;
+      font-size: 12px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .savings-highlight-card {
+      background: rgba(69, 230, 194, 0.1);
+      border: 1px solid var(--accent);
+      border-radius: 14px;
+      padding: 14px 18px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .savings-highlight-card .icon {
+      font-size: 24px;
+    }
+
+    /* Slide Viewer inside Modal */
+    .slide-viewer-box {
+      aspect-ratio: 4/5;
+      max-height: 480px;
+      width: 100%;
+      background: #000;
+      border-radius: 16px;
+      overflow: hidden;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide-viewer-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    /* Demand Form Section */
     .request-section-card {
       background: linear-gradient(135deg, rgba(15, 27, 48, 0.95), rgba(8, 16, 30, 0.9));
       border: 1px solid var(--line);
@@ -250,79 +538,6 @@
       cursor: pointer;
       box-shadow: 0 10px 25px rgba(69, 230, 194, 0.3);
     }
-    .req-feedback {
-      margin-top: 14px;
-      text-align: center;
-      font-size: 13px;
-    }
-
-    /* Carousel Modal */
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.85);
-      backdrop-filter: blur(10px);
-      z-index: 9999;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .modal-overlay.active {
-      display: flex;
-    }
-    .modal-dialog {
-      background: #0b1320;
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 24px;
-      max-width: 520px;
-      width: 100%;
-      box-shadow: var(--shadow);
-      position: relative;
-    }
-    .modal-close-btn {
-      position: absolute;
-      top: 16px;
-      right: 16px;
-      background: transparent;
-      border: none;
-      color: var(--muted);
-      font-size: 22px;
-      cursor: pointer;
-    }
-    .modal-slide-box {
-      aspect-ratio: 4/5;
-      width: 100%;
-      border-radius: 16px;
-      overflow: hidden;
-      background: #000;
-      margin-bottom: 16px;
-    }
-    .modal-slide-img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-    .modal-nav-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .modal-nav-btn {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid var(--line);
-      color: var(--text);
-      padding: 8px 18px;
-      border-radius: 10px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-    .modal-counter {
-      font-size: 13px;
-      color: var(--muted);
-      font-weight: 700;
-    }
   </style>
 </head>
 <body>
@@ -337,35 +552,51 @@
         </a>
         <div class="topbar-copy">
           <span class="live-dot" aria-hidden="true"></span>
-          Showroom Afiliasi Teruji
+          Showroom & Pembanding Harga Bebas Zonk
         </div>
       </div>
-      <a href="#request-section" style="background: rgba(69, 230, 194, 0.15); border: 1px solid var(--accent); color: var(--accent); padding: 8px 16px; border-radius: 10px; font-size: 13px; font-weight: 800; text-decoration: none;">
-        + Titip Cari Promo
-      </a>
+      <div style="display: flex; gap: 10px;">
+        <a href="#catalog-section" style="background: rgba(255, 255, 255, 0.08); border: 1px solid var(--line); color: var(--text); padding: 8px 14px; border-radius: 10px; font-size: 13px; font-weight: 700; text-decoration: none;">
+          ⚡ Cek Harga
+        </a>
+        <a href="#request-section" style="background: rgba(69, 230, 194, 0.15); border: 1px solid var(--accent); color: var(--accent); padding: 8px 16px; border-radius: 10px; font-size: 13px; font-weight: 800; text-decoration: none;">
+          + Titip Cari Promo
+        </a>
+      </div>
     </header>
 
     <main class="content">
 
       <!-- Hero Header -->
       <section class="hero-banner">
-        <div class="hero-badge">⚡ HARGA DARI OFFICIAL STORE TERBAIK</div>
-        <h1 class="hero-h1">Bandingin Harga Asli, Anti Zonk!</h1>
+        <div class="hero-badge">⚡ DATA HARGA RESMI • ANTI ZONK & GARANSI ORIGINAL</div>
+        <h1 class="hero-h1">Bandingkan Harga Asli Antar Marketplace!</h1>
         <p class="hero-desc">
-          Rekomendasi gadget dan barang viral yang sudah lolos uji ulasan nyata pembeli. Dapatkan promo diskon terbesar dan link toko resmi terverifikasi.
+          Znavvy mengumpulkan pantauan harga langsung dari Tokopedia, Shopee, Blibli, dan Lazada. Temukan toko official store dengan harga terendah, promo aktif, dan ulasan terverifikasi pembeli nyata.
         </p>
 
-        <!-- Live Instant Search -->
-        <div class="search-box-wrap">
-          <span class="search-icon-svg">🔍</span>
-          <input type="text" id="live-search-input" class="search-input-main" placeholder="Cari barang (contoh: proyektor, tws, smartwatch)..." onkeyup="handleSearch()">
+        <!-- Search & Category Filters -->
+        <div class="filter-wrapper">
+          <div class="search-box-wrap">
+            <span class="search-icon-svg">🔍</span>
+            <input type="text" id="live-search-input" class="search-input-main" placeholder="Ketik barang yang dicari (contoh: proyektor, tws anker, smartwatch, iphone)..." onkeyup="handleSearch()">
+          </div>
+
+          <div class="category-pills">
+            <button class="cat-btn active" onclick="filterCategory('ALL', this)">Semua Kategori</button>
+            <button class="cat-btn" onclick="filterCategory('Elektronik & Gadget', this)">Elektronik & Gadget</button>
+            <button class="cat-btn" onclick="filterCategory('Audio & Musik', this)">Audio & TWS</button>
+            <button class="cat-btn" onclick="filterCategory('Smartwatch & Wearable', this)">Smartwatch</button>
+            <button class="cat-btn" onclick="filterCategory('Smartphone', this)">Smartphone</button>
+          </div>
         </div>
       </section>
 
       <!-- Products Grid -->
-      <section>
-        <div class="section-head" style="margin-bottom: 20px; padding: 14px 20px; border-radius: 16px;">
-          <h2 style="margin: 0; font-size: 18px; font-weight: 800;">🔥 Rekomendasi Teratas Netizen</h2>
+      <section id="catalog-section">
+        <div class="section-head" style="margin-bottom: 20px; padding: 14px 20px; border-radius: 16px; display: flex; justify-content: space-between; align-items: center;">
+          <h2 style="margin: 0; font-size: 18px; font-weight: 800;">🔥 Rekomendasi Teruji & Komparasi Marketplace</h2>
+          <span style="font-size: 12px; color: var(--muted);" id="product-count-label">Memuat produk...</span>
         </div>
 
         <div class="catalog-grid" id="catalog-container">
@@ -373,22 +604,22 @@
         </div>
       </section>
 
-      <!-- Demand Request Section (Google Sheets + Telegram Connected) -->
+      <!-- Demand Request Section -->
       <section id="request-section" class="request-section-card">
         <div class="req-header">
           <div style="display: inline-block; font-size: 11px; font-weight: 800; color: var(--accent-2); background: rgba(255, 180, 88, 0.15); padding: 3px 10px; border-radius: 6px; margin-bottom: 6px;">
             📩 TITIP PANTAU PROMO
           </div>
-          <h2>Cari Barang Tapi Bingung Mana yang Bagus?</h2>
+          <h2>Cari Barang Tapi Bingung Mana yang Termurah & Asli?</h2>
           <p>
-            Ketik nama produk yang Anda incar. Tim ZNavvy akan membedah ulasannya dan mencarikan promo resmi termurah untuk Anda!
+            Ketik nama produk yang Anda incar. Tim Znavvy akan membedah ulasannya dan mencarikan promo resmi termurah untuk Anda!
           </p>
         </div>
 
         <form id="demand-form" onsubmit="handleDemandSubmit(event)">
           <div class="req-form-group">
             <label>Nama Produk / Tipe Barang yang Dicari:</label>
-            <input type="text" id="req_keyword" name="keyword" placeholder="Contoh: TWS Anker R50i atau Smartwatch AMOLED" required>
+            <input type="text" id="req_keyword" name="keyword" placeholder="Contoh: Proyektor Mini Android atau TWS Anker R50i" required>
           </div>
           <div class="req-form-group">
             <label>WhatsApp / Akun Medsos Anda (Untuk kami kirimi link promo):</label>
@@ -396,11 +627,11 @@
           </div>
           <div class="req-form-group">
             <label>Catatan Tambahan (Opsional):</label>
-            <textarea id="req_notes" name="notes" rows="2" placeholder="Contoh: Cari yang garansi resmi 1 tahun budget 200rb-an min"></textarea>
+            <textarea id="req_notes" name="notes" rows="2" placeholder="Contoh: Cari yang garansi resmi toko official store"></textarea>
           </div>
 
           <button type="submit" class="btn-req-submit" id="btn-submit-req">
-            <span>🚀 Kirim Request ke ZNavvy</span>
+            <span>🚀 Kirim Request ke Znavvy</span>
           </button>
           <div id="req-feedback-box" class="req-feedback"></div>
         </form>
@@ -410,35 +641,44 @@
 
     <!-- Footer -->
     <footer style="text-align: center; padding: 32px 0; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line);">
-      <p style="margin: 0 0 6px;">&copy; 2026 ZNavvy.id • Rekomendasi Gadget & Komparasi Harga Cerdas</p>
-      <p style="margin: 0; font-size: 12px; opacity: 0.8;">Disclaimer: Link belanja di website ini adalah tautan afiliasi resmi terverifikasi.</p>
+      <p style="margin: 0 0 6px;">&copy; 2026 Znavvy.id • Rekomendasi Gadget & Komparasi Harga Cerdas</p>
+      <p style="margin: 0; font-size: 12px; opacity: 0.8;">Disclaimer: Link belanja di website ini adalah tautan afiliasi resmi terverifikasi official store.</p>
     </footer>
 
   </div>
 
-  <!-- Modal Carousel Slide Viewer -->
-  <div class="modal-overlay" id="carousel-modal" onclick="closeModalOnBackdrop(event)">
-    <div class="modal-dialog">
-      <button class="modal-close-btn" onclick="closeModal()">✕</button>
-      <div class="modal-slide-box">
-        <img src="" id="modal-img" class="modal-slide-img" alt="Carousel Slide">
+  <!-- Interactive Comparison & Slide Modal -->
+  <div class="modal-overlay" id="product-modal" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-dialog-large">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <div style="font-size: 11px; font-weight: 800; color: var(--accent); text-transform: uppercase;" id="modal-category">Elektronik</div>
+          <h2 id="modal-title">Judul Produk</h2>
+          <div style="font-size: 13px; color: var(--muted);" id="modal-subtitle">Rating 4.9 • 2.400+ Terjual</div>
+        </div>
+        <button class="modal-close-btn" onclick="closeProductModal()">✕</button>
       </div>
-      <div class="modal-nav-row">
-        <button class="modal-nav-btn" onclick="prevModalSlide()">◀ Prev</button>
-        <span class="modal-counter" id="modal-counter">Slide 1 dari 6</span>
-        <button class="modal-nav-btn" onclick="nextModalSlide()">Next ▶</button>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tab-btn-compare" onclick="switchModalTab('compare')">⚖️ Tabel Komparasi Harga</button>
+        <button class="modal-tab-btn" id="tab-btn-slides" onclick="switchModalTab('slides')">📸 Slide Ulasan Edukasi</button>
+        <button class="modal-tab-btn" id="tab-btn-review" onclick="switchModalTab('review')">💡 Ulasan Nyata & Tips</button>
+      </div>
+
+      <div class="modal-body-content" id="modal-body-content">
+        <!-- Dynamically populated tab content -->
       </div>
     </div>
   </div>
 
   <!-- Client-Side JavaScript -->
   <script>
-    // URL Google Apps Script Web App
     const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz1rPuwI488UfYFmPy__A_-zItHpuwoOw8ybl7RkLE5Ry-Q94xLjUR2ojsJeG86sjvpUg/exec";
 
     let allProducts = [];
-    let modalSlides = [];
-    let modalIndex = 0;
+    let currentSelectedProduct = null;
+    let currentSlideIndex = 0;
+    let activeCategory = 'ALL';
 
     // 1. Fetch products.json
     fetch('products.json')
@@ -446,96 +686,262 @@
       .then(data => {
         allProducts = data;
         renderProducts(allProducts);
+        checkUrlHash();
       })
       .catch(err => console.error("Error loading products:", err));
 
+    window.addEventListener('hashchange', checkUrlHash);
+
+    function checkUrlHash() {
+      const hash = window.location.hash.replace('#/', '').replace('#', '').trim();
+      if (hash) {
+        const target = allProducts.find(p => p.id === hash || p.id.includes(hash) || hash.includes(p.id));
+        if (target) {
+          openProductModal(target.id);
+        }
+      }
+    }
+
+    function filterCategory(cat, btn) {
+      activeCategory = cat;
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      handleSearch();
+    }
+
+    function handleSearch() {
+      const query = document.getElementById('live-search-input').value.toLowerCase().trim();
+      let filtered = allProducts;
+
+      if (activeCategory !== 'ALL') {
+        filtered = filtered.filter(p => p.category.toLowerCase().includes(activeCategory.toLowerCase()));
+      }
+
+      if (query) {
+        filtered = filtered.filter(p => 
+          p.title.toLowerCase().includes(query) || 
+          p.category.toLowerCase().includes(query) ||
+          p.features.some(f => f.toLowerCase().includes(query))
+        );
+      }
+
+      renderProducts(filtered);
+    }
+
     function renderProducts(items) {
       const container = document.getElementById('catalog-container');
+      const countLabel = document.getElementById('product-count-label');
+      countLabel.textContent = `Menampilkan ${items.length} produk pilihan`;
+
       if (!items || items.length === 0) {
         container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--muted);">Produk tidak ditemukan. Coba ketik kata kunci lain.</div>';
         return;
       }
 
-      container.innerHTML = items.map(p => `
-        <div class="product-card">
-          <div class="card-thumb-wrap" onclick="openCarouselModal('${p.id}')">
-            <img src="${p.thumbnail || 'static/carousels/proyektor-mini-android/slide_01.png'}" class="card-thumb-img" alt="${p.title}">
-            <span class="carousel-badge-corner">📸 ${p.slides.length || 6} Slides</span>
+      container.innerHTML = items.map(p => {
+        const offers = p.offers || [];
+        const cheapest = offers.find(o => o.is_cheapest) || offers[0] || {};
+
+        const miniOffersHtml = offers.slice(0, 3).map(o => `
+          <div class="mini-offer-row">
+            <span class="mini-mp-name">
+              <span>${o.icon || '🛒'}</span> ${o.marketplace}
+              ${o.is_cheapest ? '<span style="font-size: 10px; background: rgba(3,172,14,0.2); color: #03AC0E; padding: 1px 6px; border-radius: 4px; font-weight: 800;">TERMURAH</span>' : ''}
+            </span>
+            <div style="display: flex; align-items: center;">
+              <span class="mini-mp-price ${o.is_cheapest ? 'cheapest' : ''}">${o.price_fmt}</span>
+              <a href="${o.affiliate_url}" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: ${o.color || '#0284c7'}">
+                Beli ↗
+              </a>
+            </div>
           </div>
-          <div class="card-body">
-            <div>
-              <div class="card-cat-pill">${p.category}</div>
-              <h3 class="card-title">${p.title}</h3>
-              <div class="card-price-row">
-                <span class="price-promo">${p.promo_price}</span>
-                <span class="price-original">${p.original_price}</span>
+        `).join('');
+
+        return `
+          <div class="product-card" id="card-${p.id}">
+            <div class="card-thumb-wrap" onclick="openProductModal('${p.id}', 'slides')">
+              <img src="${p.thumbnail || 'static/carousels/proyektor-mini-android/slide_01.png'}" class="card-thumb-img" alt="${p.title}">
+              <span class="carousel-badge-corner">📸 ${p.slides ? p.slides.length : 6} Slides</span>
+              <span class="cheapest-badge-pill">⚡ ${cheapest.marketplace || 'Tokopedia'}: ${cheapest.price_fmt || p.promo_price}</span>
+            </div>
+            <div class="card-body">
+              <div>
+                <div class="card-cat-pill">${p.category}</div>
+                <h3 class="card-title">${p.title}</h3>
+                <div class="rating-row">
+                  <span>⭐⭐⭐⭐⭐</span>
+                  <strong style="color: var(--text);">${p.rating}</strong>
+                  <span class="sold">(${p.total_sold || '1.000+ Terjual'})</span>
+                </div>
+
+                <div class="mini-compare-box">
+                  <div class="mini-compare-header">
+                    <span>Pantauan Toko Resmi</span>
+                    <span style="color: var(--accent);">${p.savings_fmt || 'Harga Terbaik'}</span>
+                  </div>
+                  ${miniOffersHtml}
+                </div>
               </div>
-              <ul class="card-features-list">
-                ${p.features.map(f => `<li>${f}</li>`).join('')}
+
+              <div class="card-actions-row">
+                <button class="btn-full-compare" onclick="openProductModal('${p.id}', 'compare')">
+                  ⚖️ Bandingkan Toko & Ulasan
+                </button>
+                <button class="btn-view-slides" onclick="openProductModal('${p.id}', 'slides')" title="Buka Carousel Slide">
+                  👁️ Slide
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Modal Handling
+    function openProductModal(productId, defaultTab = 'compare') {
+      const prod = allProducts.find(p => p.id === productId);
+      if (!prod) return;
+
+      currentSelectedProduct = prod;
+      currentSlideIndex = 0;
+
+      document.getElementById('modal-category').textContent = prod.category;
+      document.getElementById('modal-title').textContent = prod.title;
+      document.getElementById('modal-subtitle').textContent = `Rating ${prod.rating} • ${prod.total_sold} • ${prod.savings_fmt}`;
+
+      switchModalTab(defaultTab);
+      document.getElementById('product-modal').classList.add('active');
+    }
+
+    function switchModalTab(tabName) {
+      document.querySelectorAll('.modal-tab-btn').forEach(b => b.classList.remove('active'));
+      const activeBtn = document.getElementById(`tab-btn-${tabName}`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      const body = document.getElementById('modal-body-content');
+      const p = currentSelectedProduct;
+      if (!p) return;
+
+      if (tabName === 'compare') {
+        const offers = p.offers || [];
+        const tableRows = offers.map(o => `
+          <tr>
+            <td>
+              <strong style="color: ${o.color || '#fff'}; font-size: 15px;">${o.icon || '🛒'} ${o.marketplace}</strong>
+              <div><span class="store-badge">${o.seller}</span></div>
+            </td>
+            <td>
+              <div style="font-weight: 900; font-size: 16px; color: ${o.is_cheapest ? 'var(--accent)' : 'var(--text)'}">${o.price_fmt}</div>
+              ${o.is_cheapest ? '<span style="color: var(--accent); font-size: 11px; font-weight: 800;">🏆 HARGA PALING MURAH</span>' : ''}
+            </td>
+            <td style="color: var(--muted); font-size: 12px;">
+              ${o.shipping_note || 'Garansi Resmi'}
+            </td>
+            <td>
+              <a href="${o.affiliate_url}" target="_blank" rel="noopener noreferrer" class="table-buy-btn" style="background: ${o.color || '#0284c7'}">
+                Beli Sekarang ↗
+              </a>
+            </td>
+          </tr>
+        `).join('');
+
+        body.innerHTML = `
+          <div class="savings-highlight-card">
+            <span class="icon">💡</span>
+            <div>
+              <strong>Rekomendasi Cerdas Znavvy:</strong>
+              <div style="font-size: 13px; color: var(--muted); margin-top: 2px;">
+                Saat ini harga termurah terpantau di <strong>${p.best_marketplace || 'Tokopedia'}</strong> (${p.promo_price}). Selalu periksa voucher diskon & cashback di halaman toko sebelum checkout!
+              </div>
+            </div>
+          </div>
+
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Marketplace & Toko</th>
+                <th>Harga Live</th>
+                <th>Benefit & Garansi</th>
+                <th>Tindakan</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${tableRows}
+            </tbody>
+          </table>
+
+          <div style="margin-top: 20px; padding: 14px; background: rgba(0,0,0,0.25); border-radius: 12px; font-size: 12px; color: var(--muted);">
+            📌 <strong>Catatan Znavvy:</strong> Semua link belanja di atas mengarah langsung ke toko resmi / merchant terverifikasi dengan program perlindungan pembeli resmi.
+          </div>
+        `;
+      } else if (tabName === 'slides') {
+        const slides = p.slides || [];
+        if (slides.length === 0) {
+          body.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--muted);">Slide preview belum tersedia untuk produk ini.</div>';
+          return;
+        }
+
+        body.innerHTML = `
+          <div style="text-align: center;">
+            <div class="slide-viewer-box">
+              <img id="active-slide-img" src="${slides[currentSlideIndex]}" alt="Slide ${currentSlideIndex + 1}">
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; max-width: 480px; margin: 0 auto;">
+              <button onclick="prevSlide()" class="cat-btn" style="padding: 10px 20px;">◀ Prev</button>
+              <span id="slide-num-label" style="font-size: 13px; font-weight: 800; color: var(--muted);">Slide ${currentSlideIndex + 1} dari ${slides.length}</span>
+              <button onclick="nextSlide()" class="cat-btn" style="padding: 10px 20px;">Next ▶</button>
+            </div>
+          </div>
+        `;
+      } else if (tabName === 'review') {
+        const prosHtml = (p.pros || []).map(item => `<li style="margin-bottom: 6px;">✓ ${item}</li>`).join('');
+        const consHtml = (p.cons_notes || []).map(item => `<li style="margin-bottom: 6px; color: #ffb458;">⚠️ ${item}</li>`).join('');
+
+        body.innerHTML = `
+          <div style="display: grid; gap: 20px;">
+            <div style="background: rgba(69, 230, 194, 0.08); border: 1px solid rgba(69, 230, 194, 0.3); border-radius: 14px; padding: 18px;">
+              <h3 style="margin: 0 0 10px; color: var(--accent); font-size: 15px;">🌟 Keunggulan Teruji Pembeli</h3>
+              <ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.5;">
+                ${prosHtml}
               </ul>
             </div>
-            <div class="card-actions-row">
-              <a href="${p.affiliate_url}" target="_blank" rel="noopener noreferrer" class="btn-buy-affiliate">
-                🛒 Beli Promo Resmi
-              </a>
-              <button class="btn-view-slides" onclick="openCarouselModal('${p.id}')" title="Buka Carousel Slide">
-                👁️ Slide
-              </button>
+
+            <div style="background: rgba(255, 180, 88, 0.08); border: 1px solid rgba(255, 180, 88, 0.3); border-radius: 14px; padding: 18px;">
+              <h3 style="margin: 0 0 10px; color: #ffb458; font-size: 15px;">🛡️ Tips Anti-Zonk Sebelum Beli</h3>
+              <ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.5;">
+                ${consHtml}
+              </ul>
             </div>
           </div>
-        </div>
-      `).join('');
-    }
-
-    function handleSearch() {
-      const query = document.getElementById('live-search-input').value.toLowerCase().trim();
-      if (!query) {
-        renderProducts(allProducts);
-        return;
+        `;
       }
-      const filtered = allProducts.filter(p => 
-        p.title.toLowerCase().includes(query) || 
-        p.category.toLowerCase().includes(query) ||
-        p.features.some(f => f.toLowerCase().includes(query))
-      );
-      renderProducts(filtered);
     }
 
-    // Modal Carousel Functions
-    function openCarouselModal(productId) {
-      const prod = allProducts.find(p => p.id === productId);
-      if (!prod || !prod.slides || prod.slides.length === 0) return;
-      modalSlides = prod.slides;
-      modalIndex = 0;
-      updateModalSlide();
-      document.getElementById('carousel-modal').classList.add('active');
+    function prevSlide() {
+      const p = currentSelectedProduct;
+      if (!p || !p.slides) return;
+      currentSlideIndex = (currentSlideIndex - 1 + p.slides.length) % p.slides.length;
+      document.getElementById('active-slide-img').src = p.slides[currentSlideIndex];
+      document.getElementById('slide-num-label').textContent = `Slide ${currentSlideIndex + 1} dari ${p.slides.length}`;
     }
 
-    function updateModalSlide() {
-      if (modalSlides.length === 0) return;
-      document.getElementById('modal-img').src = modalSlides[modalIndex];
-      document.getElementById('modal-counter').textContent = `Slide ${modalIndex + 1} dari ${modalSlides.length}`;
+    function nextSlide() {
+      const p = currentSelectedProduct;
+      if (!p || !p.slides) return;
+      currentSlideIndex = (currentSlideIndex + 1) % p.slides.length;
+      document.getElementById('active-slide-img').src = p.slides[currentSlideIndex];
+      document.getElementById('slide-num-label').textContent = `Slide ${currentSlideIndex + 1} dari ${p.slides.length}`;
     }
 
-    function nextModalSlide() {
-      modalIndex = (modalIndex + 1) % modalSlides.length;
-      updateModalSlide();
-    }
-
-    function prevModalSlide() {
-      modalIndex = (modalIndex - 1 + modalSlides.length) % modalSlides.length;
-      updateModalSlide();
-    }
-
-    function closeModal() {
-      document.getElementById('carousel-modal').classList.remove('active');
+    function closeProductModal() {
+      document.getElementById('product-modal').classList.remove('active');
     }
 
     function closeModalOnBackdrop(e) {
-      if (e.target.id === 'carousel-modal') closeModal();
+      if (e.target.id === 'product-modal') closeProductModal();
     }
 
-    // Handle Demand Submit to Google Apps Script
+    // Handle Demand Form
     function handleDemandSubmit(e) {
       e.preventDefault();
       const form = e.target;
@@ -552,17 +958,16 @@
       submitBtn.textContent = 'Mengirim request...';
 
       if (!GOOGLE_APPS_SCRIPT_URL) {
-        // Fallback default alert with direct WhatsApp
-        const waText = encodeURIComponent(`Halo Admin ZNavvy! Saya mau titip cariin promo untuk: ${payload.keyword} (Catatan: ${payload.notes})`);
+        const waText = encodeURIComponent(`Halo Admin Znavvy! Saya mau titip cariin promo untuk: ${payload.keyword} (Catatan: ${payload.notes})`);
         feedback.innerHTML = `
           <div style="background: rgba(69, 230, 194, 0.1); border: 1px solid var(--accent); padding: 14px; border-radius: 12px; margin-top: 10px;">
             <p style="margin: 0 0 8px; color: var(--accent); font-weight: 800;">✅ Permintaan Tersimpan!</p>
-            <p style="margin: 0; color: var(--muted); font-size: 13px;">Untuk respon lebih cepat, Anda juga bisa kirim langsung via WA:</p>
-            <a href="https://wa.me/6281234567890?text=${waText}" target="_blank" style="display: inline-block; margin-top: 8px; background: #25D366; color: #fff; font-weight: 800; padding: 6px 14px; border-radius: 8px; text-decoration: none; font-size: 12px;">📱 Kirim ke WhatsApp ZNavvy</a>
+            <p style="margin: 0; color: var(--muted); font-size: 13px;">Untuk respon lebih cepat, kirim langsung via WhatsApp:</p>
+            <a href="https://wa.me/6281234567890?text=${waText}" target="_blank" style="display: inline-block; margin-top: 8px; background: #25D366; color: #fff; font-weight: 800; padding: 6px 14px; border-radius: 8px; text-decoration: none; font-size: 12px;">📱 Kirim ke WhatsApp Znavvy</a>
           </div>
         `;
         submitBtn.disabled = false;
-        submitBtn.textContent = '🚀 Kirim Request ke ZNavvy';
+        submitBtn.textContent = '🚀 Kirim Request ke Znavvy';
         form.reset();
         return;
       }
@@ -575,13 +980,13 @@
       })
       .then(() => {
         submitBtn.disabled = false;
-        submitBtn.textContent = '🚀 Kirim Request ke ZNavvy';
-        feedback.innerHTML = '<span style="color: var(--accent); font-weight: 800;">✅ Request berhasil dikirim ke Admin ZNavvy! Pantau notifikasi kami.</span>';
+        submitBtn.textContent = '🚀 Kirim Request ke Znavvy';
+        feedback.innerHTML = '<span style="color: var(--accent); font-weight: 800;">✅ Request berhasil dikirim ke Admin Znavvy! Pantau notifikasi kami.</span>';
         form.reset();
       })
       .catch(err => {
         submitBtn.disabled = false;
-        submitBtn.textContent = '🚀 Kirim Request ke ZNavvy';
+        submitBtn.textContent = '🚀 Kirim Request ke Znavvy';
         feedback.innerHTML = '<span style="color: var(--danger);">Gagal mengirim. Silakan coba lagi.</span>';
       });
     }
