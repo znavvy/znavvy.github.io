@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZNavvy - Showroom Rekomendasi & Pembanding Harga Gadget</title>
+  <meta name="description" content="Katalog perbandingan harga gadget & barang viral teruji. Cek harga termurah dari official store bebas zonk.">
+  <link rel="stylesheet" href="static/site.css">
+  <style>
+    /* Additional Styles for Serverless GitHub Pages */
+    .hero-banner {
+      background: linear-gradient(135deg, rgba(15, 27, 48, 0.95), rgba(8, 16, 30, 0.85));
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 40px 32px;
+      text-align: center;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow);
+    }
+    .hero-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(69, 230, 194, 0.15);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .hero-h1 {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 900;
+      margin: 0 0 12px;
+      line-height: 1.25;
+    }
+    .hero-desc {
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 680px;
+      margin: 0 auto 24px;
+      line-height: 1.5;
+    }
+    .search-box-wrap {
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .search-input-main {
+      width: 100%;
+      background: #091220;
+      border: 2px solid var(--line);
+      color: var(--text);
+      padding: 16px 20px 16px 50px;
+      border-radius: 16px;
+      font-size: 16px;
+      box-sizing: border-box;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-input-main:focus {
+      border-color: var(--accent);
+    }
+    .search-icon-svg {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      color: var(--muted);
+    }
+
+    /* Catalog Cards Grid */
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .product-card {
+      background: var(--panel-strong);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(69, 230, 194, 0.4);
+    }
+    .card-thumb-wrap {
+      width: 100%;
+      aspect-ratio: 4/5;
+      background: #050b16;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .card-thumb-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .carousel-badge-corner {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .card-body {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card-cat-pill {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      line-height: 1.35;
+    }
+    .card-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .price-promo {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--accent);
+    }
+    .price-original {
+      font-size: 13px;
+      color: var(--muted);
+      text-decoration: line-through;
+    }
+    .card-features-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .card-features-list li {
+      margin-bottom: 4px;
+    }
+    .card-features-list li::before {
+      content: "✓ ";
+      color: var(--accent);
+      font-weight: 800;
+    }
+    .card-actions-row {
+      display: flex;
+      gap: 8px;
+    }
+    .btn-buy-affiliate {
+      flex: 1;
+      background: linear-gradient(135deg, #f97316, #ea580c);
+      color: #fff;
+      font-weight: 800;
+      font-size: 13px;
+      padding: 12px;
+      border-radius: 12px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(234, 88, 12, 0.3);
+    }
+    .btn-view-slides {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--line);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 13px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    /* Request Form Section */
+    .request-section-card {
+      background: linear-gradient(135deg, rgba(15, 27, 48, 0.95), rgba(8, 16, 30, 0.9));
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 36px 32px;
+      max-width: 720px;
+      margin: 0 auto 60px;
+      box-shadow: var(--shadow);
+    }
+    .req-header h2 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .req-header p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 20px;
+    }
+    .req-form-group {
+      margin-bottom: 16px;
+    }
+    .req-form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .req-form-group input, .req-form-group textarea {
+      width: 100%;
+      background: #091220;
+      border: 1px solid var(--line);
+      color: var(--text);
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    .btn-req-submit {
+      width: 100%;
+      background: linear-gradient(135deg, #45e6c2, #0284c7);
+      border: none;
+      color: #07111f;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 15px;
+      border-radius: 14px;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(69, 230, 194, 0.3);
+    }
+    .req-feedback {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    /* Carousel Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(10px);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-dialog {
+      background: #0b1320;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      max-width: 520px;
+      width: 100%;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+    .modal-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .modal-slide-box {
+      aspect-ratio: 4/5;
+      width: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #000;
+      margin-bottom: 16px;
+    }
+    .modal-slide-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .modal-nav-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-nav-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--line);
+      color: var(--text);
+      padding: 8px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .modal-counter {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">Z</span>
+          <span class="brand-text">ZNavvy</span>
+        </a>
+        <div class="topbar-copy">
+          <span class="live-dot" aria-hidden="true"></span>
+          Showroom Afiliasi Teruji
+        </div>
+      </div>
+      <a href="#request-section" style="background: rgba(69, 230, 194, 0.15); border: 1px solid var(--accent); color: var(--accent); padding: 8px 16px; border-radius: 10px; font-size: 13px; font-weight: 800; text-decoration: none;">
+        + Titip Cari Promo
+      </a>
+    </header>
+
+    <main class="content">
+
+      <!-- Hero Header -->
+      <section class="hero-banner">
+        <div class="hero-badge">⚡ HARGA DARI OFFICIAL STORE TERBAIK</div>
+        <h1 class="hero-h1">Bandingin Harga Asli, Anti Zonk!</h1>
+        <p class="hero-desc">
+          Rekomendasi gadget dan barang viral yang sudah lolos uji ulasan nyata pembeli. Dapatkan promo diskon terbesar dan link toko resmi terverifikasi.
+        </p>
+
+        <!-- Live Instant Search -->
+        <div class="search-box-wrap">
+          <span class="search-icon-svg">🔍</span>
+          <input type="text" id="live-search-input" class="search-input-main" placeholder="Cari barang (contoh: proyektor, tws, smartwatch)..." onkeyup="handleSearch()">
+        </div>
+      </section>
+
+      <!-- Products Grid -->
+      <section>
+        <div class="section-head" style="margin-bottom: 20px; padding: 14px 20px; border-radius: 16px;">
+          <h2 style="margin: 0; font-size: 18px; font-weight: 800;">🔥 Rekomendasi Teratas Netizen</h2>
+        </div>
+
+        <div class="catalog-grid" id="catalog-container">
+          <!-- Dynamically populated via JavaScript -->
+        </div>
+      </section>
+
+      <!-- Demand Request Section (Google Sheets + Telegram Connected) -->
+      <section id="request-section" class="request-section-card">
+        <div class="req-header">
+          <div style="display: inline-block; font-size: 11px; font-weight: 800; color: var(--accent-2); background: rgba(255, 180, 88, 0.15); padding: 3px 10px; border-radius: 6px; margin-bottom: 6px;">
+            📩 TITIP PANTAU PROMO
+          </div>
+          <h2>Cari Barang Tapi Bingung Mana yang Bagus?</h2>
+          <p>
+            Ketik nama produk yang Anda incar. Tim ZNavvy akan membedah ulasannya dan mencarikan promo resmi termurah untuk Anda!
+          </p>
+        </div>
+
+        <form id="demand-form" onsubmit="handleDemandSubmit(event)">
+          <div class="req-form-group">
+            <label>Nama Produk / Tipe Barang yang Dicari:</label>
+            <input type="text" id="req_keyword" name="keyword" placeholder="Contoh: TWS Anker R50i atau Smartwatch AMOLED" required>
+          </div>
+          <div class="req-form-group">
+            <label>WhatsApp / Akun Medsos Anda (Untuk kami kirimi link promo):</label>
+            <input type="text" id="req_contact" name="contact" placeholder="Contoh: 08123456789 atau @username_ig" required>
+          </div>
+          <div class="req-form-group">
+            <label>Catatan Tambahan (Opsional):</label>
+            <textarea id="req_notes" name="notes" rows="2" placeholder="Contoh: Cari yang garansi resmi 1 tahun budget 200rb-an min"></textarea>
+          </div>
+
+          <button type="submit" class="btn-req-submit" id="btn-submit-req">
+            <span>🚀 Kirim Request ke ZNavvy</span>
+          </button>
+          <div id="req-feedback-box" class="req-feedback"></div>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 32px 0; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line);">
+      <p style="margin: 0 0 6px;">&copy; 2026 ZNavvy.id • Rekomendasi Gadget & Komparasi Harga Cerdas</p>
+      <p style="margin: 0; font-size: 12px; opacity: 0.8;">Disclaimer: Link belanja di website ini adalah tautan afiliasi resmi terverifikasi.</p>
+    </footer>
+
+  </div>
+
+  <!-- Modal Carousel Slide Viewer -->
+  <div class="modal-overlay" id="carousel-modal" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" onclick="closeModal()">✕</button>
+      <div class="modal-slide-box">
+        <img src="" id="modal-img" class="modal-slide-img" alt="Carousel Slide">
+      </div>
+      <div class="modal-nav-row">
+        <button class="modal-nav-btn" onclick="prevModalSlide()">◀ Prev</button>
+        <span class="modal-counter" id="modal-counter">Slide 1 dari 6</span>
+        <button class="modal-nav-btn" onclick="nextModalSlide()">Next ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Client-Side JavaScript -->
+  <script>
+    // URL Google Apps Script Web App
+    const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz1rPuwI488UfYFmPy__A_-zItHpuwoOw8ybl7RkLE5Ry-Q94xLjUR2ojsJeG86sjvpUg/exec";
+
+    let allProducts = [];
+    let modalSlides = [];
+    let modalIndex = 0;
+
+    // 1. Fetch products.json
+    fetch('products.json')
+      .then(res => res.json())
+      .then(data => {
+        allProducts = data;
+        renderProducts(allProducts);
+      })
+      .catch(err => console.error("Error loading products:", err));
+
+    function renderProducts(items) {
+      const container = document.getElementById('catalog-container');
+      if (!items || items.length === 0) {
+        container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--muted);">Produk tidak ditemukan. Coba ketik kata kunci lain.</div>';
+        return;
+      }
+
+      container.innerHTML = items.map(p => `
+        <div class="product-card">
+          <div class="card-thumb-wrap" onclick="openCarouselModal('${p.id}')">
+            <img src="${p.thumbnail || 'static/carousels/proyektor-mini-android/slide_01.png'}" class="card-thumb-img" alt="${p.title}">
+            <span class="carousel-badge-corner">📸 ${p.slides.length || 6} Slides</span>
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-cat-pill">${p.category}</div>
+              <h3 class="card-title">${p.title}</h3>
+              <div class="card-price-row">
+                <span class="price-promo">${p.promo_price}</span>
+                <span class="price-original">${p.original_price}</span>
+              </div>
+              <ul class="card-features-list">
+                ${p.features.map(f => `<li>${f}</li>`).join('')}
+              </ul>
+            </div>
+            <div class="card-actions-row">
+              <a href="${p.affiliate_url}" target="_blank" rel="noopener noreferrer" class="btn-buy-affiliate">
+                🛒 Beli Promo Resmi
+              </a>
+              <button class="btn-view-slides" onclick="openCarouselModal('${p.id}')" title="Buka Carousel Slide">
+                👁️ Slide
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function handleSearch() {
+      const query = document.getElementById('live-search-input').value.toLowerCase().trim();
+      if (!query) {
+        renderProducts(allProducts);
+        return;
+      }
+      const filtered = allProducts.filter(p => 
+        p.title.toLowerCase().includes(query) || 
+        p.category.toLowerCase().includes(query) ||
+        p.features.some(f => f.toLowerCase().includes(query))
+      );
+      renderProducts(filtered);
+    }
+
+    // Modal Carousel Functions
+    function openCarouselModal(productId) {
+      const prod = allProducts.find(p => p.id === productId);
+      if (!prod || !prod.slides || prod.slides.length === 0) return;
+      modalSlides = prod.slides;
+      modalIndex = 0;
+      updateModalSlide();
+      document.getElementById('carousel-modal').classList.add('active');
+    }
+
+    function updateModalSlide() {
+      if (modalSlides.length === 0) return;
+      document.getElementById('modal-img').src = modalSlides[modalIndex];
+      document.getElementById('modal-counter').textContent = `Slide ${modalIndex + 1} dari ${modalSlides.length}`;
+    }
+
+    function nextModalSlide() {
+      modalIndex = (modalIndex + 1) % modalSlides.length;
+      updateModalSlide();
+    }
+
+    function prevModalSlide() {
+      modalIndex = (modalIndex - 1 + modalSlides.length) % modalSlides.length;
+      updateModalSlide();
+    }
+
+    function closeModal() {
+      document.getElementById('carousel-modal').classList.remove('active');
+    }
+
+    function closeModalOnBackdrop(e) {
+      if (e.target.id === 'carousel-modal') closeModal();
+    }
+
+    // Handle Demand Submit to Google Apps Script
+    function handleDemandSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const feedback = document.getElementById('req-feedback-box');
+      const submitBtn = document.getElementById('btn-submit-req');
+
+      const payload = {
+        keyword: document.getElementById('req_keyword').value,
+        contact: document.getElementById('req_contact').value,
+        notes: document.getElementById('req_notes').value,
+      };
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Mengirim request...';
+
+      if (!GOOGLE_APPS_SCRIPT_URL) {
+        // Fallback default alert with direct WhatsApp
+        const waText = encodeURIComponent(`Halo Admin ZNavvy! Saya mau titip cariin promo untuk: ${payload.keyword} (Catatan: ${payload.notes})`);
+        feedback.innerHTML = `
+          <div style="background: rgba(69, 230, 194, 0.1); border: 1px solid var(--accent); padding: 14px; border-radius: 12px; margin-top: 10px;">
+            <p style="margin: 0 0 8px; color: var(--accent); font-weight: 800;">✅ Permintaan Tersimpan!</p>
+            <p style="margin: 0; color: var(--muted); font-size: 13px;">Untuk respon lebih cepat, Anda juga bisa kirim langsung via WA:</p>
+            <a href="https://wa.me/6281234567890?text=${waText}" target="_blank" style="display: inline-block; margin-top: 8px; background: #25D366; color: #fff; font-weight: 800; padding: 6px 14px; border-radius: 8px; text-decoration: none; font-size: 12px;">📱 Kirim ke WhatsApp ZNavvy</a>
+          </div>
+        `;
+        submitBtn.disabled = false;
+        submitBtn.textContent = '🚀 Kirim Request ke ZNavvy';
+        form.reset();
+        return;
+      }
+
+      fetch(GOOGLE_APPS_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      .then(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = '🚀 Kirim Request ke ZNavvy';
+        feedback.innerHTML = '<span style="color: var(--accent); font-weight: 800;">✅ Request berhasil dikirim ke Admin ZNavvy! Pantau notifikasi kami.</span>';
+        form.reset();
+      })
+      .catch(err => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = '🚀 Kirim Request ke ZNavvy';
+        feedback.innerHTML = '<span style="color: var(--danger);">Gagal mengirim. Silakan coba lagi.</span>';
+      });
+    }
+  </script>
+</body>
+</html>

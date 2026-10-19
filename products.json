@@ -1,0 +1,60 @@
+[
+  {
+    "id": "proyektor-mini-android-portable",
+    "title": "Proyektor Mini Android Portable",
+    "category": "Elektronik & Gadget",
+    "promo_price": "Rp 839.000",
+    "original_price": "Rp 1.750.000",
+    "rating": "4.9",
+    "features": [
+      "Layar Raksasa 130 Inch",
+      "Android OS Built-in",
+      "Rotasi Bebas 180 Derajat",
+      "Auto Keystone Focus"
+    ],
+    "affiliate_url": "https://znavvy.web.id/search?q=Proyektor Mini Android Portable",
+    "thumbnail": "static/carousels/proyektor-mini-android/slide_01.png",
+    "slides": [
+      "static/carousels/proyektor-mini-android/slide_01.png",
+      "static/carousels/proyektor-mini-android/slide_02.png",
+      "static/carousels/proyektor-mini-android/slide_03.png",
+      "static/carousels/proyektor-mini-android/slide_04.png",
+      "static/carousels/proyektor-mini-android/slide_05.png",
+      "static/carousels/proyektor-mini-android/slide_06.png"
+    ]
+  },
+  {
+    "id": "tws-anker-soundcore-r50i",
+    "title": "TWS Anker Soundcore R50i",
+    "category": "Audio & Musik",
+    "promo_price": "Rp 195.000",
+    "original_price": "Rp 450.000",
+    "rating": "4.9",
+    "features": [
+      "10mm Extra Bass Driver",
+      "Baterai Tahan 30 Jam",
+      "Waterproof IPX5 Anti Hujan & Keringat",
+      "Fast Charging 10 Menit untuk 2 Jam"
+    ],
+    "affiliate_url": "https://znavvy.web.id/search?q=TWS Anker Soundcore R50i",
+    "thumbnail": "",
+    "slides": []
+  },
+  {
+    "id": "smartwatch-olike-horizon-w12",
+    "title": "Smartwatch Olike Horizon W12",
+    "category": "Smartwatch & Wearable",
+    "promo_price": "Rp 239.000",
+    "original_price": "Rp 599.000",
+    "rating": "4.8",
+    "features": [
+      "Layar HD 1.85 Inch Ultra Jernih",
+      "Bluetooth Call Telpon Langsung dari Jam",
+      "Monitor Detak Jantung & 100+ Mode Olahraga",
+      "Baterai Awet 7-10 Hari Sekali Cas"
+    ],
+    "affiliate_url": "https://znavvy.web.id/search?q=Smartwatch Olike Horizon W12",
+    "thumbnail": "",
+    "slides": []
+  }
+]
