@@ -1,7 +1,1326 @@
 [
   {
+    "id": "xiaomi_redmi_note_13_5g",
+    "title": "Xiaomi Redmi Note 13 5G",
+    "canonical_name": "Xiaomi Redmi Note 13 5G",
+    "category": "Smartphone & Gadget",
+    "promo_price": "Rp 2.395.000",
+    "original_price": "Rp 3.199.000",
+    "savings_fmt": "Hemat Rp 804.000",
+    "best_marketplace": "Lazada",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://www.lazada.co.id/products/pdp-i18861582947.html",
+    "offers": [
+      {
+        "marketplace": "Lazada",
+        "seller": "LazMall Flagship (LazMall Flagship)",
+        "seller_type": "LazMall Flagship",
+        "price_int": 2395000,
+        "price_fmt": "Rp 2.395.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Jaminan Produk Asli",
+        "affiliate_url": "https://www.lazada.co.id/products/pdp-i18861582947.html",
+        "color": "#0F146D",
+        "icon": "🔴"
+      },
+      {
+        "marketplace": "Tokopedia",
+        "seller": "Tokopedia Official (Official Store) · 4G (8GB/128GB)",
+        "seller_type": "Official Store",
+        "price_int": 2449000,
+        "price_fmt": "Rp 2.449.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Bebas Ongkir + Garansi Resmi",
+        "affiliate_url": "https://www.tokopedia.com/mutiaraflasher/xiaomi-redmi-note-13-4g-5g-ram-8-128gb-ram-8-256gb-4g-8-256gb-ce198",
+        "color": "#03AC0E",
+        "icon": "🟢"
+      },
+      {
+        "marketplace": "Blibli",
+        "seller": "Blibli Official (Blibli Authorized)",
+        "seller_type": "Blibli Authorized",
+        "price_int": 2799000,
+        "price_fmt": "Rp 2.799.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Garansi Resmi + Retur 15 Hari",
+        "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/xiaomi-redmi-note-13-5g-8-256-gb-garansi-resmi/ps--TOC-60098-00648",
+        "color": "#0095DA",
+        "icon": "🔵"
+      },
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · White",
+        "seller_type": "Shopee Mall",
+        "price_int": 3199000,
+        "price_fmt": "Rp 3.199.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/866097274/24170454813&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      }
+    ],
+    "thumbnail": "static/images/765197216612b6753631.jpg",
+    "slides": [
+      "static/images/765197216612b6753631.jpg"
+    ]
+  },
+  {
+    "id": "vivo_v29e_5g",
+    "title": "Vivo V29E 5G",
+    "canonical_name": "Vivo V29E 5G",
+    "category": "Smartphone & Gadget",
+    "promo_price": "Rp 2.750.250",
+    "original_price": "Rp 4.974.000",
+    "savings_fmt": "Hemat Rp 2.223.750",
+    "best_marketplace": "Shopee",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/433115955/25316397589&affiliate_id=11340211239&sub_id=znavvy-web",
+    "offers": [
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · (8GB/256GB)",
+        "seller_type": "Shopee Mall",
+        "price_int": 2750250,
+        "price_fmt": "Rp 2.750.250",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/433115955/25316397589&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      },
+      {
+        "marketplace": "Blibli",
+        "seller": "Blibli Official (Blibli Authorized)",
+        "seller_type": "Blibli Authorized",
+        "price_int": 3350000,
+        "price_fmt": "Rp 3.350.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Garansi Resmi + Retur 15 Hari",
+        "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/vivo-v29e-5g-8-256gb/ps--MEC-70078-00144",
+        "color": "#0095DA",
+        "icon": "🔵"
+      },
+      {
+        "marketplace": "Lazada",
+        "seller": "LazMall Flagship (LazMall Flagship) · Biru",
+        "seller_type": "LazMall Flagship",
+        "price_int": 3799000,
+        "price_fmt": "Rp 3.799.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Jaminan Produk Asli",
+        "affiliate_url": "https://www.lazada.co.id/products/pdp-i7775670860.html",
+        "color": "#0F146D",
+        "icon": "🔴"
+      },
+      {
+        "marketplace": "Tokopedia",
+        "seller": "Tokopedia Official (Official Store) · Rose Gold",
+        "seller_type": "Official Store",
+        "price_int": 4974000,
+        "price_fmt": "Rp 4.974.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Bebas Ongkir + Garansi Resmi",
+        "affiliate_url": "https://www.tokopedia.com/cuan-gadgetid/vivo-v29e-5g-8-256-vivo-v29-e-5g-8-256-garansi-resmi-indonesia-rose-gold-tanpa-bonus-79a42",
+        "color": "#03AC0E",
+        "icon": "🟢"
+      }
+    ],
+    "thumbnail": "static/images/da5d304bd9607ca6ff1f.jpg",
+    "slides": [
+      "static/images/da5d304bd9607ca6ff1f.jpg"
+    ]
+  },
+  {
+    "id": "xiaomi_redmi_note_13",
+    "title": "Xiaomi Redmi Note 13",
+    "canonical_name": "Xiaomi Redmi Note 13",
+    "category": "Smartphone & Gadget",
+    "promo_price": "Rp 2.199.000",
+    "original_price": "Rp 2.899.000",
+    "savings_fmt": "Hemat Rp 700.000",
+    "best_marketplace": "Blibli",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/redmi-note-13-8-128-8-256-new-garansi-resmi/ps--GIC-70079-00005",
+    "offers": [
+      {
+        "marketplace": "Blibli",
+        "seller": "Blibli Official (Blibli Authorized) · (8GB/128GB)",
+        "seller_type": "Blibli Authorized",
+        "price_int": 2199000,
+        "price_fmt": "Rp 2.199.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Garansi Resmi + Retur 15 Hari",
+        "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/redmi-note-13-8-128-8-256-new-garansi-resmi/ps--GIC-70079-00005",
+        "color": "#0095DA",
+        "icon": "🔵"
+      },
+      {
+        "marketplace": "Lazada",
+        "seller": "LazMall Flagship (LazMall Flagship) · Midnight Black (8GB/128GB)",
+        "seller_type": "LazMall Flagship",
+        "price_int": 2250000,
+        "price_fmt": "Rp 2.250.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Jaminan Produk Asli",
+        "affiliate_url": "https://www.lazada.co.id/products/pdp-i8704814154.html",
+        "color": "#0F146D",
+        "icon": "🔴"
+      },
+      {
+        "marketplace": "Tokopedia",
+        "seller": "Tokopedia Official (Official Store) · 4G (8GB/128GB)",
+        "seller_type": "Official Store",
+        "price_int": 2449000,
+        "price_fmt": "Rp 2.449.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Bebas Ongkir + Garansi Resmi",
+        "affiliate_url": "https://www.tokopedia.com/mutiaraflasher/xiaomi-redmi-note-13-4g-5g-ram-8-128gb-ram-8-256gb-4g-8-256gb-ce198",
+        "color": "#03AC0E",
+        "icon": "🟢"
+      },
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · Note 13 4G (8GB/128GB)",
+        "seller_type": "Shopee Mall",
+        "price_int": 2899000,
+        "price_fmt": "Rp 2.899.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/233982802/27900812930&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      }
+    ],
+    "thumbnail": "static/images/a7672d862b32c15e97d3.jpg",
+    "slides": [
+      "static/carousels/xiaomi-redmi-note-13/slide_01.png",
+      "static/carousels/xiaomi-redmi-note-13/slide_02.png",
+      "static/carousels/xiaomi-redmi-note-13/slide_03.png",
+      "static/carousels/xiaomi-redmi-note-13/slide_04.png",
+      "static/carousels/xiaomi-redmi-note-13/slide_05.png",
+      "static/carousels/xiaomi-redmi-note-13/slide_06.png"
+    ]
+  },
+  {
+    "id": "oppo_a5i",
+    "title": "OPPO A5i",
+    "canonical_name": "OPPO A5i",
+    "category": "Smartphone & Gadget",
+    "promo_price": "Rp 1.399.000",
+    "original_price": "Rp 1.999.000",
+    "savings_fmt": "Hemat Rp 600.000",
+    "best_marketplace": "Blibli",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/oppo-a5i-4-64gb-garansi-resmi/ps--GES-70274-00050",
+    "offers": [
+      {
+        "marketplace": "Blibli",
+        "seller": "Blibli Official (Blibli Authorized) · Ungu",
+        "seller_type": "Blibli Authorized",
+        "price_int": 1399000,
+        "price_fmt": "Rp 1.399.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Garansi Resmi + Retur 15 Hari",
+        "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/oppo-a5i-4-64gb-garansi-resmi/ps--GES-70274-00050",
+        "color": "#0095DA",
+        "icon": "🔵"
+      },
+      {
+        "marketplace": "Lazada",
+        "seller": "LazMall Flagship (LazMall Flagship) · Purple (4GB/64GB)",
+        "seller_type": "LazMall Flagship",
+        "price_int": 1399000,
+        "price_fmt": "Rp 1.399.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Jaminan Produk Asli",
+        "affiliate_url": "https://www.lazada.co.id/products/pdp-i8728340362.html",
+        "color": "#0F146D",
+        "icon": "🔴"
+      },
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · Red (4GB/128GB)",
+        "seller_type": "Shopee Mall",
+        "price_int": 1990000,
+        "price_fmt": "Rp 1.990.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/42718474/25233984240&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      },
+      {
+        "marketplace": "Tokopedia",
+        "seller": "Tokopedia Official (Official Store) · Merah (4GB/64GB)",
+        "seller_type": "Official Store",
+        "price_int": 1999000,
+        "price_fmt": "Rp 1.999.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Bebas Ongkir + Garansi Resmi",
+        "affiliate_url": "https://www.tokopedia.com/warzeg-store29/hp-oppp-a5i-4-128-gb-oppo-a5-i-ram-4gb-rom-128gb-garansi-resmi-1732743826042226008-1736291767443686744",
+        "color": "#03AC0E",
+        "icon": "🟢"
+      }
+    ],
+    "thumbnail": "static/images/629d1b5c527b8d493e36.jpg",
+    "slides": [
+      "static/images/629d1b5c527b8d493e36.jpg"
+    ]
+  },
+  {
+    "id": "apple_iphone_15",
+    "title": "Apple iPhone 15",
+    "canonical_name": "Apple iPhone 15",
+    "category": "Smartphone & Gadget",
+    "promo_price": "Rp 12.099.000",
+    "original_price": "Rp 12.494.000",
+    "savings_fmt": "Hemat Rp 395.000",
+    "best_marketplace": "Shopee",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/13267316/26717771812&affiliate_id=11340211239&sub_id=znavvy-web",
+    "offers": [
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · iBox Pink",
+        "seller_type": "Shopee Mall",
+        "price_int": 12099000,
+        "price_fmt": "Rp 12.099.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/13267316/26717771812&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      },
+      {
+        "marketplace": "Lazada",
+        "seller": "LazMall Flagship (LazMall Flagship) · Pink (128GB)",
+        "seller_type": "LazMall Flagship",
+        "price_int": 12154065,
+        "price_fmt": "Rp 12.154.065",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Jaminan Produk Asli",
+        "affiliate_url": "https://www.lazada.co.id/products/pdp-i8665126667.html",
+        "color": "#0F146D",
+        "icon": "🔴"
+      },
+      {
+        "marketplace": "Blibli",
+        "seller": "Blibli Official (Blibli Authorized) · Black (128GB)",
+        "seller_type": "Blibli Authorized",
+        "price_int": 12279000,
+        "price_fmt": "Rp 12.279.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Garansi Resmi + Retur 15 Hari",
+        "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/batam-apple-iphone-15/ps--HEO-70120-05620",
+        "color": "#0095DA",
+        "icon": "🔵"
+      },
+      {
+        "marketplace": "Tokopedia",
+        "seller": "Tokopedia Official (Official Store) · Black (128GB)",
+        "seller_type": "Official Store",
+        "price_int": 12494000,
+        "price_fmt": "Rp 12.494.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Bebas Ongkir + Garansi Resmi",
+        "affiliate_url": "https://www.tokopedia.com/ismile-indonesia/pickup-kurir-toko-apple-iphone-15-128gb-256gb-512gb-garansi-resmi-1735657543805208459-1735657545035843467",
+        "color": "#03AC0E",
+        "icon": "🟢"
+      }
+    ],
+    "thumbnail": "static/images/06c82843d1fd95a6ae6c.jpg",
+    "slides": [
+      "static/images/06c82843d1fd95a6ae6c.jpg"
+    ]
+  },
+  {
+    "id": "tecno_camon_50",
+    "title": "Tecno Camon 50",
+    "canonical_name": "Tecno Camon 50",
+    "category": "Smartphone & Gadget",
+    "promo_price": "Rp 3.600.000",
+    "original_price": "Rp 3.869.000",
+    "savings_fmt": "Hemat Rp 269.000",
+    "best_marketplace": "Lazada",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://www.lazada.co.id/products/pdp-i18862122458.html",
+    "offers": [
+      {
+        "marketplace": "Lazada",
+        "seller": "LazMall Flagship (LazMall Flagship) · Nebula Titanium (8GB/128GB)",
+        "seller_type": "LazMall Flagship",
+        "price_int": 3600000,
+        "price_fmt": "Rp 3.600.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Jaminan Produk Asli",
+        "affiliate_url": "https://www.lazada.co.id/products/pdp-i18862122458.html",
+        "color": "#0F146D",
+        "icon": "🔴"
+      },
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · (8GB/256GB)",
+        "seller_type": "Shopee Mall",
+        "price_int": 3675000,
+        "price_fmt": "Rp 3.675.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/515774005/42516087020&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      },
+      {
+        "marketplace": "Blibli",
+        "seller": "Blibli Official (Blibli Authorized) · Nebula Titanium (8GB/128GB)",
+        "seller_type": "Blibli Authorized",
+        "price_int": 3811000,
+        "price_fmt": "Rp 3.811.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Garansi Resmi + Retur 15 Hari",
+        "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/tecno-camon-50-nfc-12-256-gb-tecno-camon-50-nfc-8-256-gb-tecno-camon-50-nfc-8-128-gb-garansi-resmi-main-camera-50-mp/ps--AN1-70070-00194",
+        "color": "#0095DA",
+        "icon": "🔵"
+      },
+      {
+        "marketplace": "Tokopedia",
+        "seller": "Tokopedia Official (Official Store) · Black (8GB/128GB)",
+        "seller_type": "Official Store",
+        "price_int": 3869000,
+        "price_fmt": "Rp 3.869.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Bebas Ongkir + Garansi Resmi",
+        "affiliate_url": "https://www.tokopedia.com/duniagadgetku/tecno-camon-50-nfc-amoled-8-128-gb-8-256-gb-12-256-gb-garansi-resmi-1734434681506334523-1736521597615769403",
+        "color": "#03AC0E",
+        "icon": "🟢"
+      }
+    ],
+    "thumbnail": "static/images/3ccbca9b503c5ca0171f.jpg",
+    "slides": [
+      "static/images/3ccbca9b503c5ca0171f.jpg"
+    ]
+  },
+  {
+    "id": "vivo_y19s_pro",
+    "title": "VIVO Y19S PRO",
+    "canonical_name": "VIVO Y19S PRO",
+    "category": "Smartphone & Gadget",
+    "promo_price": "Rp 1.599.000",
+    "original_price": "Rp 2.199.000",
+    "savings_fmt": "Hemat Rp 600.000",
+    "best_marketplace": "Blibli",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/vivo-y19s-pro-4-64gb-garansi-resmi/ps--BEP-60047-00828",
+    "offers": [
+      {
+        "marketplace": "Blibli",
+        "seller": "Blibli Official (Blibli Authorized)",
+        "seller_type": "Blibli Authorized",
+        "price_int": 1599000,
+        "price_fmt": "Rp 1.599.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Garansi Resmi + Retur 15 Hari",
+        "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/vivo-y19s-pro-4-64gb-garansi-resmi/ps--BEP-60047-00828",
+        "color": "#0095DA",
+        "icon": "🔵"
+      },
+      {
+        "marketplace": "Lazada",
+        "seller": "LazMall Flagship (LazMall Flagship)",
+        "seller_type": "LazMall Flagship",
+        "price_int": 1599000,
+        "price_fmt": "Rp 1.599.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Jaminan Produk Asli",
+        "affiliate_url": "https://www.lazada.co.id/products/pdp-i8686794207.html",
+        "color": "#0F146D",
+        "icon": "🔴"
+      },
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · Unit only",
+        "seller_type": "Shopee Mall",
+        "price_int": 1599999,
+        "price_fmt": "Rp 1.599.999",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/61482812/57707443382&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      },
+      {
+        "marketplace": "Tokopedia",
+        "seller": "Tokopedia Official (Official Store) · Silver / 4/",
+        "seller_type": "Official Store",
+        "price_int": 2199000,
+        "price_fmt": "Rp 2.199.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Bebas Ongkir + Garansi Resmi",
+        "affiliate_url": "https://www.tokopedia.com/vivo-authorized-store-jatim/vivo-y19s-pro-6000mah-44w-flashcharge-tahan-banting-ekstrem-tahan-hujan-ip64-dual-stereo-speaker-50mp-kamera-utama-ai-eraser-1731822066260870782",
+        "color": "#03AC0E",
+        "icon": "🟢"
+      }
+    ],
+    "thumbnail": "static/images/881fca4a2b52c3bf02a7.jpg",
+    "slides": [
+      "static/images/881fca4a2b52c3bf02a7.jpg"
+    ]
+  },
+  {
+    "id": "samsung_galaxy_s25",
+    "title": "Samsung Galaxy S25",
+    "canonical_name": "Samsung Galaxy S25",
+    "category": "Smartphone & Gadget",
+    "promo_price": "Rp 9.800.000",
+    "original_price": "Rp 13.999.000",
+    "savings_fmt": "Hemat Rp 4.199.000",
+    "best_marketplace": "Shopee",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/1815305317/51360606574&affiliate_id=11340211239&sub_id=znavvy-web",
+    "offers": [
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall)",
+        "seller_type": "Shopee Mall",
+        "price_int": 9800000,
+        "price_fmt": "Rp 9.800.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/1815305317/51360606574&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      },
+      {
+        "marketplace": "Tokopedia",
+        "seller": "Tokopedia Official (Official Store) · S25 5G Silver / No. .",
+        "seller_type": "Official Store",
+        "price_int": 11448000,
+        "price_fmt": "Rp 11.448.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Bebas Ongkir + Garansi Resmi",
+        "affiliate_url": "https://www.tokopedia.com/ini-toko-budi-shop/samsung-galaxy-s25-5g-12-256-12-512-garansi-resmi-sein-1730063747472721383-1736773478223218151",
+        "color": "#03AC0E",
+        "icon": "🟢"
+      },
+      {
+        "marketplace": "Blibli",
+        "seller": "Blibli Official (Blibli Authorized) · Navy / 12/",
+        "seller_type": "Blibli Authorized",
+        "price_int": 11542030,
+        "price_fmt": "Rp 11.542.030",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Garansi Resmi + Retur 15 Hari",
+        "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/samsung-galaxy-s25-5g-garansi-resmi-samsung-indonesia/ps--SES-70404-00437",
+        "color": "#0095DA",
+        "icon": "🔵"
+      },
+      {
+        "marketplace": "Lazada",
+        "seller": "LazMall Flagship (LazMall Flagship) · Navy / /256",
+        "seller_type": "LazMall Flagship",
+        "price_int": 13999000,
+        "price_fmt": "Rp 13.999.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Jaminan Produk Asli",
+        "affiliate_url": "https://www.lazada.co.id/products/pdp-i18850536108.html",
+        "color": "#0F146D",
+        "icon": "🔴"
+      }
+    ],
+    "thumbnail": "static/images/a419b60d1d104b696b16.jpg",
+    "slides": [
+      "static/images/a419b60d1d104b696b16.jpg"
+    ]
+  },
+  {
+    "id": "samsung_galaxy_a37_5g",
+    "title": "Samsung Galaxy A37 5G",
+    "canonical_name": "Samsung Galaxy A37 5G",
+    "category": "Smartphone & Gadget",
+    "promo_price": "Rp 5.350.000",
+    "original_price": "Rp 5.749.000",
+    "savings_fmt": "Hemat Rp 399.000",
+    "best_marketplace": "Lazada",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://www.lazada.co.id/products/pdp-i18850131743.html",
+    "offers": [
+      {
+        "marketplace": "Lazada",
+        "seller": "LazMall Flagship (LazMall Flagship) · A.Greygreen / 8/",
+        "seller_type": "LazMall Flagship",
+        "price_int": 5350000,
+        "price_fmt": "Rp 5.350.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Jaminan Produk Asli",
+        "affiliate_url": "https://www.lazada.co.id/products/pdp-i18850131743.html",
+        "color": "#0F146D",
+        "icon": "🔴"
+      },
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · Lavender,A37 5G",
+        "seller_type": "Shopee Mall",
+        "price_int": 5479900,
+        "price_fmt": "Rp 5.479.900",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/228720061/7518023195&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      },
+      {
+        "marketplace": "Tokopedia",
+        "seller": "Tokopedia Official (Official Store) · Charcoal",
+        "seller_type": "Official Store",
+        "price_int": 5737000,
+        "price_fmt": "Rp 5.737.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Bebas Ongkir + Garansi Resmi",
+        "affiliate_url": "https://www.tokopedia.com/36shop/samsung-galaxy-a37-5g-8gb-128gb-8gb-256gb-display-6-7-inch-super-amoled-exynos-1480-camera-50mp-5000mah-garansi-resmi-sein-1-tahun-1734915795380897170-1736192064139396498",
+        "color": "#03AC0E",
+        "icon": "🟢"
+      },
+      {
+        "marketplace": "Blibli",
+        "seller": "Blibli Official (Blibli Authorized) · Charcoal /",
+        "seller_type": "Blibli Authorized",
+        "price_int": 5749000,
+        "price_fmt": "Rp 5.749.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Garansi Resmi + Retur 15 Hari",
+        "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/samsung-galaxy-a37-5g-8-128-8-256-gb-garansi-resmi/is--CHM-70050-00901-00005",
+        "color": "#0095DA",
+        "icon": "🔵"
+      }
+    ],
+    "thumbnail": "static/images/941f0571e34f097b212b.jpg",
+    "slides": [
+      "static/images/941f0571e34f097b212b.jpg"
+    ]
+  },
+  {
+    "id": "iphone_13_mini",
+    "title": "iPhone 13 Mini",
+    "canonical_name": "iPhone 13 Mini",
+    "category": "Smartphone & Gadget",
+    "promo_price": "Rp 4.998.000",
+    "original_price": "Rp 6.247.500",
+    "savings_fmt": "Hemat Rp 1.249.500",
+    "best_marketplace": "Shopee",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/73370096/43258135090&affiliate_id=11340211239&sub_id=znavvy-web",
+    "offers": [
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · iP 13 Mini ,Pink",
+        "seller_type": "Shopee Mall",
+        "price_int": 4998000,
+        "price_fmt": "Rp 4.998.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/73370096/43258135090&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      }
+    ],
+    "thumbnail": "static/images/91b44b11930a57987af1.jpg",
+    "slides": [
+      "static/images/91b44b11930a57987af1.jpg"
+    ]
+  },
+  {
+    "id": "xiaomi_pad_7",
+    "title": "Xiaomi Pad 7",
+    "canonical_name": "Xiaomi Pad 7",
+    "category": "Elektronik & Gadget",
+    "promo_price": "Rp 4.999.000",
+    "original_price": "Rp 6.248.750",
+    "savings_fmt": "Hemat Rp 1.249.750",
+    "best_marketplace": "Shopee",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/1269717404/42108126612&affiliate_id=11340211239&sub_id=znavvy-web",
+    "offers": [
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · Grey",
+        "seller_type": "Shopee Mall",
+        "price_int": 4999000,
+        "price_fmt": "Rp 4.999.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/1269717404/42108126612&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      }
+    ],
+    "thumbnail": "static/images/5835dafe8bd51bdd1e85.jpg",
+    "slides": [
+      "static/images/5835dafe8bd51bdd1e85.jpg"
+    ]
+  },
+  {
+    "id": "olike_p301_magsafe_wireless_powerbank_fast_charging",
+    "title": "Olike P301 Magsafe Wireless Powerbank Fast Charging",
+    "canonical_name": "Olike P301 Magsafe Wireless Powerbank Fast Charging",
+    "category": "Elektronik & Gadget",
+    "promo_price": "Rp 350.000",
+    "original_price": "Rp 437.500",
+    "savings_fmt": "Hemat Rp 87.500",
+    "best_marketplace": "Shopee",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/60286900/21086509551&affiliate_id=11340211239&sub_id=znavvy-web",
+    "offers": [
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · P301",
+        "seller_type": "Shopee Mall",
+        "price_int": 350000,
+        "price_fmt": "Rp 350.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/60286900/21086509551&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      }
+    ],
+    "thumbnail": "static/images/72737c70e6408449dba2.jpg",
+    "slides": [
+      "static/images/72737c70e6408449dba2.jpg"
+    ]
+  },
+  {
+    "id": "apple_watch_se_3rd_gen",
+    "title": "Apple Watch SE 3rd Gen",
+    "canonical_name": "Apple Watch SE 3rd Gen",
+    "category": "Elektronik & Gadget",
+    "promo_price": "Rp 4.549.000",
+    "original_price": "Rp 5.686.250",
+    "savings_fmt": "Hemat Rp 1.137.250",
+    "best_marketplace": "Shopee",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/383392952/29671818520&affiliate_id=11340211239&sub_id=znavvy-web",
+    "offers": [
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · Midnight,40Mm S/M",
+        "seller_type": "Shopee Mall",
+        "price_int": 4549000,
+        "price_fmt": "Rp 4.549.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/383392952/29671818520&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      }
+    ],
+    "thumbnail": "static/images/16dd7013258b846be06a.jpg",
+    "slides": [
+      "static/images/16dd7013258b846be06a.jpg"
+    ]
+  },
+  {
+    "id": "laptop_hp_envy_x360_14",
+    "title": "Laptop HP Envy X360 14",
+    "canonical_name": "Laptop HP Envy X360 14",
+    "category": "Smartphone & Gadget",
+    "promo_price": "Rp 13.400.000",
+    "original_price": "Rp 16.750.000",
+    "savings_fmt": "Hemat Rp 3.350.000",
+    "best_marketplace": "Shopee",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/5123945/24064087797&affiliate_id=11340211239&sub_id=znavvy-web",
+    "offers": [
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall)",
+        "seller_type": "Shopee Mall",
+        "price_int": 13400000,
+        "price_fmt": "Rp 13.400.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/5123945/24064087797&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      }
+    ],
+    "thumbnail": "static/images/fe0089c0b82bb7cc5d73.jpg",
+    "slides": [
+      "static/images/fe0089c0b82bb7cc5d73.jpg"
+    ]
+  },
+  {
+    "id": "pc_rakitan_intel_core_i3_8100",
+    "title": "PC Rakitan Intel Core i3 8100",
+    "canonical_name": "PC Rakitan Intel Core i3 8100",
+    "category": "Komputer & Laptop",
+    "promo_price": "Rp 2.920.000",
+    "original_price": "Rp 3.650.000",
+    "savings_fmt": "Hemat Rp 730.000",
+    "best_marketplace": "Shopee",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/23372351/48662948799&affiliate_id=11340211239&sub_id=znavvy-web",
+    "offers": [
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · 8GB,128GB",
+        "seller_type": "Shopee Mall",
+        "price_int": 2920000,
+        "price_fmt": "Rp 2.920.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/23372351/48662948799&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      }
+    ],
+    "thumbnail": "static/images/bab24dc10bc9273f29a1.jpg",
+    "slides": [
+      "static/images/bab24dc10bc9273f29a1.jpg"
+    ]
+  },
+  {
+    "id": "lenovo_legion_monitor_27-10",
+    "title": "Lenovo Legion Monitor 27-10",
+    "canonical_name": "Lenovo Legion Monitor 27-10",
+    "category": "Komputer & Laptop",
+    "promo_price": "Rp 2.050.000",
+    "original_price": "Rp 2.562.500",
+    "savings_fmt": "Hemat Rp 512.500",
+    "best_marketplace": "Shopee",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/316591294/26535244807&affiliate_id=11340211239&sub_id=znavvy-web",
+    "offers": [
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall) · Legion 24-10,Khusus Instan",
+        "seller_type": "Shopee Mall",
+        "price_int": 2050000,
+        "price_fmt": "Rp 2.050.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/316591294/26535244807&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      }
+    ],
+    "thumbnail": "static/images/9b13cee0fb743b4de234.jpg",
+    "slides": [
+      "static/images/9b13cee0fb743b4de234.jpg"
+    ]
+  },
+  {
+    "id": "epson_workforce_ds_410",
+    "title": "Epson Workforce DS 410",
+    "canonical_name": "Epson Workforce DS 410",
+    "category": "Elektronik & Gadget",
+    "promo_price": "Rp 6.290.000",
+    "original_price": "Rp 7.862.500",
+    "savings_fmt": "Hemat Rp 1.572.500",
+    "best_marketplace": "Shopee",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/338349784/11255299111&affiliate_id=11340211239&sub_id=znavvy-web",
+    "offers": [
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall)",
+        "seller_type": "Shopee Mall",
+        "price_int": 6290000,
+        "price_fmt": "Rp 6.290.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/338349784/11255299111&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      }
+    ],
+    "thumbnail": "static/images/0b991cb1e79c4bcf9a2a.jpg",
+    "slides": [
+      "static/images/0b991cb1e79c4bcf9a2a.jpg"
+    ]
+  },
+  {
+    "id": "sandisk_portable_ssd_e30",
+    "title": "SanDisk Portable SSD E30",
+    "canonical_name": "SanDisk Portable SSD E30",
+    "category": "Komputer & Laptop",
+    "promo_price": "Rp 3.149.000",
+    "original_price": "Rp 3.936.250",
+    "savings_fmt": "Hemat Rp 787.250",
+    "best_marketplace": "Shopee",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/1495315190/43153931488&affiliate_id=11340211239&sub_id=znavvy-web",
+    "offers": [
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall)",
+        "seller_type": "Shopee Mall",
+        "price_int": 3149000,
+        "price_fmt": "Rp 3.149.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/product/1495315190/43153931488&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      }
+    ],
+    "thumbnail": "static/images/7ce07ea8d506186afe1b.jpg",
+    "slides": [
+      "static/images/7ce07ea8d506186afe1b.jpg"
+    ]
+  },
+  {
+    "id": "Victoria_s_Secret_Bombshell_Body_Mist",
+    "title": "Victoria's Secret Bombshell Fine Fragrance Mist 250ml",
+    "canonical_name": "Victoria's Secret Bombshell Fine Fragrance Mist 250ml",
+    "category": "Kecantikan & Wewangian",
+    "promo_price": "Rp 650.000",
+    "original_price": "Rp 715.000",
+    "savings_fmt": "Hemat Rp 65.000",
+    "best_marketplace": "Tokopedia",
+    "rating": "4.9",
+    "total_sold": "2.5rb+ Terjual",
+    "features": [
+      "Garansi Resmi Indonesia",
+      "100% Produk Original Bebas Zonk",
+      "Pengiriman Cepat Prioritas"
+    ],
+    "pros": [
+      "Harga termurah terpantau di toko terverifikasi",
+      "Jaminan keaslian dan garansi resmi distributor",
+      "Bebas dari resiko toko fiktif / zonk"
+    ],
+    "cons_notes": [
+      "Pastikan cek voucher diskon & cashback toko sebelum checkout",
+      "Simpan nomor pesanan dan kardus untuk klaim garansi"
+    ],
+    "affiliate_url": "https://www.tokopedia.com/victoria-official/victorias-secret-bombshell-fine-fragrance-mist-250ml",
+    "offers": [
+      {
+        "marketplace": "Tokopedia",
+        "seller": "Tokopedia Official (Official Store)",
+        "seller_type": "Official Store",
+        "price_int": 650000,
+        "price_fmt": "Rp 650.000",
+        "is_cheapest": true,
+        "badge": "🏆 Termurah",
+        "rating": "4.9",
+        "shipping_note": "Bebas Ongkir + Garansi Resmi",
+        "affiliate_url": "https://www.tokopedia.com/victoria-official/victorias-secret-bombshell-fine-fragrance-mist-250ml",
+        "color": "#03AC0E",
+        "icon": "🟢"
+      },
+      {
+        "marketplace": "Lazada",
+        "seller": "LazMall Flagship (LazMall Flagship)",
+        "seller_type": "LazMall Flagship",
+        "price_int": 689000,
+        "price_fmt": "Rp 689.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Jaminan Produk Asli",
+        "affiliate_url": "https://www.lazada.co.id/products/victorias-secret-bombshell-fine-fragrance-mist-250ml-i7129849201.html",
+        "color": "#0F146D",
+        "icon": "🔴"
+      },
+      {
+        "marketplace": "Shopee",
+        "seller": "Shopee Mall (Shopee Mall)",
+        "seller_type": "Shopee Mall",
+        "price_int": 695500,
+        "price_fmt": "Rp 695.500",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Gratis Ongkir XTRA",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/victorias-secret-bombshell-fine-fragrance-mist-250ml-i.512948210.21984210992&affiliate_id=11340211239&sub_id=znavvy-web",
+        "color": "#EE4D2D",
+        "icon": "🟠"
+      },
+      {
+        "marketplace": "Blibli",
+        "seller": "Blibli Official (Blibli Authorized)",
+        "seller_type": "Blibli Authorized",
+        "price_int": 715000,
+        "price_fmt": "Rp 715.000",
+        "is_cheapest": false,
+        "badge": "",
+        "rating": "4.9",
+        "shipping_note": "Garansi Resmi + Retur 15 Hari",
+        "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/victorias-secret-bombshell-fine-fragrance-mist-250ml/ps--VS-82910-00101",
+        "color": "#0095DA",
+        "icon": "🔵"
+      }
+    ],
+    "thumbnail": "https://images.tokopedia.net/img/cache/700/VqbcmM/vs-bombshell-body-mist-original.jpg",
+    "slides": [
+      "https://images.tokopedia.net/img/cache/700/VqbcmM/vs-bombshell-body-mist-original.jpg"
+    ]
+  },
+  {
     "id": "Olike_Horizon_W12_Smartwatch",
     "title": "Olike Horizon W12 Smartwatch",
+    "canonical_name": "Olike Horizon W12 Smartwatch",
     "category": "Elektronik & Gadget",
     "promo_price": "Rp 299.000",
     "original_price": "Rp 399.000",
@@ -49,7 +1368,7 @@
         "badge": "💎 SHOPEE MALL",
         "rating": "4.9",
         "shipping_note": "Shopee Mall • 100% Ori Garansi 7 Hari • Bebas Zonk",
-        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/Olike-Horizon-W12-Smartwatch-i.662920599.20001022757&affiliate_id=11340211239&sub_id=znavvy-gh",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/Olike-Horizon-W12-Smartwatch-i.662920599.20001022757&affiliate_id=11340211239&sub_id=znavvy-web",
         "color": "#EE4D2D",
         "icon": "🟠"
       },
@@ -96,12 +1415,15 @@
         "icon": "🔵"
       }
     ],
-    "thumbnail": "",
-    "slides": []
+    "thumbnail": "static/images/Olike_Horizon_W12_Smartwatch.png",
+    "slides": [
+      "static/images/Olike_Horizon_W12_Smartwatch.png"
+    ]
   },
   {
     "id": "Victoria_Secret_Bombshell_Fine_Fragrance_Mist_250ml",
     "title": "Victoria Secret Bombshell Fine Fragrance Mist 250ml",
+    "canonical_name": "Victoria Secret Bombshell Fine Fragrance Mist 250ml",
     "category": "Kecantikan & Perawatan Diri",
     "promo_price": "Rp 650.000",
     "original_price": "Rp 715.000",
@@ -177,7 +1499,7 @@
         "badge": "💎 SHOPEE MALL",
         "rating": "4.9",
         "shipping_note": "Shopee Mall • 100% Ori Garansi 7 Hari • Bebas Zonk",
-        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/victorias-secret-bombshell-fine-fragrance-mist-250ml-i.512948210.21984210992&affiliate_id=11340211239&sub_id=znavvy-gh",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/victorias-secret-bombshell-fine-fragrance-mist-250ml-i.512948210.21984210992&affiliate_id=11340211239&sub_id=znavvy-web",
         "color": "#EE4D2D",
         "icon": "🟠"
       },
@@ -196,12 +1518,15 @@
         "icon": "🔵"
       }
     ],
-    "thumbnail": "",
-    "slides": []
+    "thumbnail": "static/images/Victoria_Secret_Bombshell_Fine_Fragrance_Mist_250ml.png",
+    "slides": [
+      "static/images/Victoria_Secret_Bombshell_Fine_Fragrance_Mist_250ml.png"
+    ]
   },
   {
     "id": "proyektor-mini-android",
     "title": "Proyektor Mini Android Portable 130 Inch",
+    "canonical_name": "Proyektor Mini Android Portable 130 Inch",
     "category": "Elektronik & Gadget",
     "promo_price": "Rp 839.000",
     "original_price": "Rp 949.000",
@@ -263,7 +1588,7 @@
         "badge": "💎 SHOPEE MALL",
         "rating": "4.9",
         "shipping_note": "Shopee Mall • 100% Ori Garansi 7 Hari • Bebas Zonk",
-        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/proyektor-mini-android-portable-130-inch-i.389201948.21098492011&affiliate_id=11340211239&sub_id=znavvy-gh",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/proyektor-mini-android-portable-130-inch-i.389201948.21098492011&affiliate_id=11340211239&sub_id=znavvy-web",
         "color": "#EE4D2D",
         "icon": "🟠"
       },
@@ -277,7 +1602,7 @@
         "badge": "⭐ STAR+ SELLER",
         "rating": "4.9",
         "shipping_note": "Star+ Seller • Gratis Ongkir XTRA",
-        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/proyektor-mini-android-portable-130-inch-i.389201948.21098492022&affiliate_id=11340211239&sub_id=znavvy-gh",
+        "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/proyektor-mini-android-portable-130-inch-i.389201948.21098492022&affiliate_id=11340211239&sub_id=znavvy-web",
         "color": "#EE4D2D",
         "icon": "🟠"
       },
