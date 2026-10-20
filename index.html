@@ -8,7 +8,7 @@
   <meta http-equiv="Expires" content="0">
   <title>Znavvy - Showroom Rekomendasi & Pembanding Harga Bebas Zonk</title>
   <meta name="description" content="Komparasi harga asli Tokopedia vs Shopee vs Blibli vs Lazada. Cek harga termurah dari official store terverifikasi garansi resmi.">
-  <link rel="stylesheet" href="static/site.css?v=1792468254">
+  <link rel="stylesheet" href="static/site.css?v=1792469435">
   <style>
     :root {
       --bg: #07111f;
@@ -439,10 +439,36 @@
       display: inline-block;
       font-size: 11px;
       font-weight: 800;
-      padding: 2px 8px;
+      padding: 3px 8px;
       border-radius: 6px;
       background: rgba(255, 255, 255, 0.1);
       margin-top: 4px;
+      letter-spacing: 0.02em;
+    }
+    .store-badge.shopee-mall {
+      background: linear-gradient(135deg, rgba(238, 77, 45, 0.3), rgba(225, 29, 72, 0.25));
+      color: #ff8566;
+      border: 1px solid rgba(238, 77, 45, 0.5);
+    }
+    .store-badge.tokopedia-official {
+      background: linear-gradient(135deg, rgba(3, 172, 14, 0.3), rgba(69, 230, 194, 0.25));
+      color: #45e6c2;
+      border: 1px solid rgba(69, 230, 194, 0.5);
+    }
+    .store-badge.power-pro, .store-badge.star-plus {
+      background: rgba(245, 158, 11, 0.25);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.5);
+    }
+    .store-badge.lazmall-flagship {
+      background: linear-gradient(135deg, rgba(15, 20, 109, 0.45), rgba(235, 20, 76, 0.3));
+      color: #fb7185;
+      border: 1px solid rgba(244, 63, 94, 0.5);
+    }
+    .store-badge.blibli-auth, .store-badge.blibli-official {
+      background: linear-gradient(135deg, rgba(0, 149, 218, 0.3), rgba(14, 165, 233, 0.25));
+      color: #38bdf8;
+      border: 1px solid rgba(0, 149, 218, 0.5);
     }
     .table-buy-btn {
       display: inline-block;
@@ -572,10 +598,10 @@
 
       <!-- Hero Header -->
       <section class="hero-banner">
-        <div class="hero-badge">⚡ DATA HARGA RESMI • ANTI ZONK & GARANSI ORIGINAL</div>
+        <div class="hero-badge">⚡ 100% TOKO TERPERCAYA • SHOPEE MALL, OFFICIAL STORE, LAZMALL, STAR+ & POWER MERCHANT PRO</div>
         <h1 class="hero-h1">Bandingkan Harga Asli Antar Marketplace!</h1>
         <p class="hero-desc">
-          Znavvy mengumpulkan pantauan harga langsung dari Tokopedia, Shopee, Blibli, dan Lazada. Temukan toko official store dengan harga terendah, promo aktif, dan ulasan terverifikasi pembeli nyata.
+          Znavvy memantau harga langsung dari toko terverifikasi Tokopedia (Official Store & Power Merchant Pro), Shopee (Shopee Mall & Star+), Blibli Authorized, dan LazMall Flagship. Bebas zonk, 100% produk asli bergaransi.
         </p>
 
         <!-- Search & Category Filters -->
@@ -608,7 +634,7 @@
             <div class="card-thumb-wrap" onclick="openProductModal('Olike_Horizon_W12_Smartwatch', 'slides')">
               <img src="" class="card-thumb-img" alt="Olike Horizon W12 Smartwatch" loading="lazy">
               <span class="carousel-badge-corner">📸 0 Slides</span>
-              <span class="cheapest-badge-pill">⚡ Shopee: Rp 299.000</span>
+              <span class="cheapest-badge-pill">⚡ Tokopedia: Rp 299.000</span>
             </div>
             <div class="card-body">
               <div>
@@ -628,12 +654,25 @@
                   
               <div class="mini-offer-row">
                 <span class="mini-mp-name">
-                  <span>🟠</span> Shopee
+                  <span>🟢</span> Tokopedia
                   <span style="font-size: 10px; background: rgba(3,172,14,0.2); color: #03AC0E; padding: 1px 6px; border-radius: 4px; font-weight: 800;">TERMURAH</span>
                 </span>
                 <div style="display: flex; align-items: center;">
                   <span class="mini-mp-price cheapest">Rp 299.000</span>
-                  <a href="https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/Olike-Horizon-W12-Smartwatch-i.460012132.20093322022&affiliate_id=11340211239&sub_id=znavvy-gh" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #EE4D2D">
+                  <a href="https://www.tokopedia.com/Olike-Official/Olike-Horizon-W12-Smartwatch" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #03AC0E">
+                    Beli ↗
+                  </a>
+                </div>
+              </div>
+            
+              <div class="mini-offer-row">
+                <span class="mini-mp-name">
+                  <span>🟠</span> Shopee
+                  
+                </span>
+                <div style="display: flex; align-items: center;">
+                  <span class="mini-mp-price ">Rp 314.000</span>
+                  <a href="https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/Olike-Horizon-W12-Smartwatch-i.662920599.20001022757&affiliate_id=11340211239&sub_id=znavvy-gh" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #EE4D2D">
                     Beli ↗
                   </a>
                 </div>
@@ -645,21 +684,8 @@
                   
                 </span>
                 <div style="display: flex; align-items: center;">
-                  <span class="mini-mp-price ">Rp 314.000</span>
+                  <span class="mini-mp-price ">Rp 329.000</span>
                   <a href="https://www.tokopedia.com/Olike-Store-Jakart/Olike-Horizon-W12-Smartwatch" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #03AC0E">
-                    Beli ↗
-                  </a>
-                </div>
-              </div>
-            
-              <div class="mini-offer-row">
-                <span class="mini-mp-name">
-                  <span>🔴</span> Lazada
-                  
-                </span>
-                <div style="display: flex; align-items: center;">
-                  <span class="mini-mp-price ">Rp 354.000</span>
-                  <a href="https://www.lazada.co.id/products/Olike-Horizon-W12-Smartwatch-i7093322022.html" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #0F146D">
                     Beli ↗
                   </a>
                 </div>
@@ -716,12 +742,12 @@
             
               <div class="mini-offer-row">
                 <span class="mini-mp-name">
-                  <span>🔴</span> Lazada
+                  <span>🟢</span> Tokopedia
                   
                 </span>
                 <div style="display: flex; align-items: center;">
-                  <span class="mini-mp-price ">Rp 689.000</span>
-                  <a href="https://www.lazada.co.id/products/victorias-secret-bombshell-fine-fragrance-mist-250ml-i7129849201.html" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #0F146D">
+                  <span class="mini-mp-price ">Rp 650.000</span>
+                  <a href="https://www.tokopedia.com/victoria-official/victorias-secret-bombshell-fine-fragrance-mist-250ml" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #03AC0E">
                     Beli ↗
                   </a>
                 </div>
@@ -729,12 +755,12 @@
             
               <div class="mini-offer-row">
                 <span class="mini-mp-name">
-                  <span>🟠</span> Shopee
+                  <span>🔴</span> Lazada
                   
                 </span>
                 <div style="display: flex; align-items: center;">
-                  <span class="mini-mp-price ">Rp 695.500</span>
-                  <a href="https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/victorias-secret-bombshell-fine-fragrance-mist-250ml-i.512948210.21984210992&affiliate_id=11340211239&sub_id=znavvy-gh" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #EE4D2D">
+                  <span class="mini-mp-price ">Rp 689.000</span>
+                  <a href="https://www.lazada.co.id/products/victorias-secret-bombshell-fine-fragrance-mist-250ml-i7129849201.html" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #0F146D">
                     Beli ↗
                   </a>
                 </div>
@@ -791,12 +817,12 @@
             
               <div class="mini-offer-row">
                 <span class="mini-mp-name">
-                  <span>🟠</span> Shopee
+                  <span>🟢</span> Tokopedia
                   
                 </span>
                 <div style="display: flex; align-items: center;">
-                  <span class="mini-mp-price ">Rp 899.000</span>
-                  <a href="https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/proyektor-mini-android-portable-130-inch-i.389201948.21098492011&affiliate_id=11340211239&sub_id=znavvy-gh" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #EE4D2D">
+                  <span class="mini-mp-price ">Rp 859.000</span>
+                  <a href="https://www.tokopedia.com/audio-visual-jkt/proyektor-mini-android-portable-130-inch" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #03AC0E">
                     Beli ↗
                   </a>
                 </div>
@@ -804,12 +830,12 @@
             
               <div class="mini-offer-row">
                 <span class="mini-mp-name">
-                  <span>🔵</span> Blibli
+                  <span>🟠</span> Shopee
                   
                 </span>
                 <div style="display: flex; align-items: center;">
-                  <span class="mini-mp-price ">Rp 925.000</span>
-                  <a href="https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/proyektor-mini-android-portable-130-inch/ps--AV-78210-00101" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #0095DA">
+                  <span class="mini-mp-price ">Rp 889.000</span>
+                  <a href="https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/proyektor-mini-android-portable-130-inch-i.389201948.21098492011&affiliate_id=11340211239&sub_id=znavvy-gh" target="_blank" rel="noopener noreferrer" class="btn-mini-buy" style="background: #EE4D2D">
                     Beli ↗
                   </a>
                 </div>
@@ -903,7 +929,7 @@
   <script>
     const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz1rPuwI488UfYFmPy__A_-zItHpuwoOw8ybl7RkLE5Ry-Q94xLjUR2ojsJeG86sjvpUg/exec";
 
-    let allProducts = [{"id": "Olike_Horizon_W12_Smartwatch", "title": "Olike Horizon W12 Smartwatch", "category": "Elektronik & Gadget", "promo_price": "Rp 299.000", "original_price": "Rp 399.000", "savings_fmt": "Hemat Diskon Resmi", "best_marketplace": "Shopee", "rating": "4.9", "total_sold": "1.000+ Terjual", "features": ["Garansi Resmi", "Kualitas Teruji", "Harga Terbaik"], "pros": ["Kualitas bahan dan finishing sangat baik", "Fitur lengkap sesuai deskripsi", "Garansi resmi terpercaya"], "cons_notes": ["Pastikan membeli dari toko official store", "Simpan kardus untuk klaim garansi"], "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/Olike-Horizon-W12-Smartwatch-i.460012132.20093322022&affiliate_id=11340211239&sub_id=znavvy-gh", "offers": [{"marketplace": "Shopee", "seller": "Olike Official Star+ (Star+ Seller)", "seller_type": "Star+ Seller", "price_int": 299000, "price_fmt": "Rp 299.000", "is_cheapest": true, "badge": "🏆 Termurah", "rating": "4.9", "shipping_note": "Star+ Seller • Bebas Zonk • Rating 4.9 (4.8rb+ terjual)", "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/Olike-Horizon-W12-Smartwatch-i.460012132.20093322022&affiliate_id=11340211239&sub_id=znavvy-gh", "color": "#EE4D2D", "icon": "🟠"}, {"marketplace": "Tokopedia", "seller": "Olike Store Jakarta (Power Merchant Pro)", "seller_type": "Power Merchant Pro", "price_int": 314000, "price_fmt": "Rp 314.000", "is_cheapest": false, "badge": "⚡ POWER MERCHANT PRO", "rating": "4.9", "shipping_note": "Power Merchant Pro • Rating 4.9 (5.2rb+ terjual)", "affiliate_url": "https://www.tokopedia.com/Olike-Store-Jakart/Olike-Horizon-W12-Smartwatch", "color": "#03AC0E", "icon": "🟢"}, {"marketplace": "Lazada", "seller": "LazMall Olike Flagship (LazMall Flagship)", "seller_type": "LazMall Flagship", "price_int": 354000, "price_fmt": "Rp 354.000", "is_cheapest": false, "badge": "💎 LAZMALL FLAGSHIP", "rating": "4.9", "shipping_note": "LazMall Flagship • Gratis Ongkir Prioritas", "affiliate_url": "https://www.lazada.co.id/products/Olike-Horizon-W12-Smartwatch-i7093322022.html", "color": "#0F146D", "icon": "🔴"}, {"marketplace": "Blibli", "seller": "Blibli Olike Authorized (Blibli Authorized)", "seller_type": "Blibli Authorized", "price_int": 399000, "price_fmt": "Rp 399.000", "is_cheapest": false, "badge": "🔵 BLIBLI AUTHORIZED", "rating": "4.9", "shipping_note": "Blibli Authorized • Retur 15 Hari Bebas Ribet", "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/Olike-Horizon-W12-Smartwatch/ps--ZN-95260-00101", "color": "#0095DA", "icon": "🔵"}], "thumbnail": "", "slides": []}, {"id": "Victoria_Secret_Bombshell_Fine_Fragrance_Mist_250ml", "title": "Victoria Secret Bombshell Fine Fragrance Mist 250ml", "category": "Kecantikan & Perawatan Diri", "promo_price": "Rp 650.000", "original_price": "Rp 715.000", "savings_fmt": "Hemat Diskon Resmi", "best_marketplace": "Tokopedia", "rating": "4.9", "total_sold": "1.000+ Terjual", "features": ["Garansi Resmi", "Kualitas Teruji", "Harga Terbaik"], "pros": ["Kualitas bahan dan finishing sangat baik", "Fitur lengkap sesuai deskripsi", "Garansi resmi terpercaya"], "cons_notes": ["Pastikan membeli dari toko official store", "Simpan kardus untuk klaim garansi"], "affiliate_url": "https://www.tokopedia.com/victoria-official/victorias-secret-bombshell-fine-fragrance-mist-250ml", "offers": [{"marketplace": "Tokopedia", "seller": "Victoria Store Jakarta (Power Merchant Pro)", "seller_type": "Power Merchant Pro", "price_int": 650000, "price_fmt": "Rp 650.000", "is_cheapest": true, "badge": "🏆 Termurah", "rating": "4.9", "shipping_note": "Power Merchant Pro • Rating 4.9 (5.2rb+ terjual)", "affiliate_url": "https://www.tokopedia.com/victoria-official/victorias-secret-bombshell-fine-fragrance-mist-250ml", "color": "#03AC0E", "icon": "🟢"}, {"marketplace": "Lazada", "seller": "LazMall Victoria Flagship (LazMall Flagship)", "seller_type": "LazMall Flagship", "price_int": 689000, "price_fmt": "Rp 689.000", "is_cheapest": false, "badge": "💎 LAZMALL FLAGSHIP", "rating": "4.9", "shipping_note": "LazMall Flagship • Gratis Ongkir Prioritas", "affiliate_url": "https://www.lazada.co.id/products/victorias-secret-bombshell-fine-fragrance-mist-250ml-i7129849201.html", "color": "#0F146D", "icon": "🔴"}, {"marketplace": "Shopee", "seller": "Victoria Official Star+ (Star+ Seller)", "seller_type": "Star+ Seller", "price_int": 695500, "price_fmt": "Rp 695.500", "is_cheapest": false, "badge": "⭐ STAR+ SELLER", "rating": "4.9", "shipping_note": "Star+ Seller • Bebas Zonk • Rating 4.9 (4.8rb+ terjual)", "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/victorias-secret-bombshell-fine-fragrance-mist-250ml-i.512948210.21984210992&affiliate_id=11340211239&sub_id=znavvy-gh", "color": "#EE4D2D", "icon": "🟠"}, {"marketplace": "Blibli", "seller": "Blibli Victoria Authorized (Blibli Authorized)", "seller_type": "Blibli Authorized", "price_int": 715000, "price_fmt": "Rp 715.000", "is_cheapest": false, "badge": "🔵 BLIBLI AUTHORIZED", "rating": "4.9", "shipping_note": "Blibli Authorized • Retur 15 Hari Bebas Ribet", "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/victorias-secret-bombshell-fine-fragrance-mist-250ml/ps--VS-82910-00101", "color": "#0095DA", "icon": "🔵"}], "thumbnail": "", "slides": []}, {"id": "proyektor-mini-android", "title": "Proyektor Mini Android Portable 130 Inch", "category": "Elektronik & Gadget", "promo_price": "Rp 839.000", "original_price": "Rp 949.000", "savings_fmt": "Hemat Diskon Resmi", "best_marketplace": "Tokopedia", "rating": "4.9", "total_sold": "3.5rb+ Terjual", "features": ["Layar 130 Inci Plafon", "Android 11 Built-in", "Rotasi 180 Derajat"], "pros": ["Gambar tajam dan terang", "Auto keystone correction", "Speaker bawaan jernih"], "cons_notes": ["Ruangan perlu agak redup untuk kontras maksimal", "Gunakan toko resmi untuk garansi 1 tahun"], "affiliate_url": "https://www.tokopedia.com/audio-visual-official/proyektor-mini-android-portable-130-inch", "offers": [{"marketplace": "Tokopedia", "seller": "Audio Visual Official (Power Merchant Pro)", "seller_type": "Power Merchant Pro", "price_int": 839000, "price_fmt": "Rp 839.000", "is_cheapest": true, "badge": "🏆 Termurah", "rating": "4.9", "shipping_note": "Power Merchant Pro • Bebas Ongkir + Garansi Resmi", "affiliate_url": "https://www.tokopedia.com/audio-visual-official/proyektor-mini-android-portable-130-inch", "color": "#03AC0E", "icon": "🟢"}, {"marketplace": "Shopee", "seller": "Shopee Mall Projector Store (Star+ Seller)", "seller_type": "Star+ Seller", "price_int": 899000, "price_fmt": "Rp 899.000", "is_cheapest": false, "badge": "⭐ STAR+ SELLER", "rating": "4.9", "shipping_note": "Star+ Seller • Gratis Ongkir XTRA", "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/proyektor-mini-android-portable-130-inch-i.389201948.21098492011&affiliate_id=11340211239&sub_id=znavvy-gh", "color": "#EE4D2D", "icon": "🟠"}, {"marketplace": "Blibli", "seller": "Blibli Authorized Projector", "seller_type": "Blibli Authorized", "price_int": 925000, "price_fmt": "Rp 925.000", "is_cheapest": false, "badge": "🔵 BLIBLI AUTHORIZED", "rating": "4.9", "shipping_note": "Blibli Authorized • Garansi Resmi + Retur 15 Hari", "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/proyektor-mini-android-portable-130-inch/ps--AV-78210-00101", "color": "#0095DA", "icon": "🔵"}, {"marketplace": "Lazada", "seller": "LazMall Flagship Audio", "seller_type": "LazMall Flagship", "price_int": 949000, "price_fmt": "Rp 949.000", "is_cheapest": false, "badge": "💎 LAZMALL FLAGSHIP", "rating": "4.9", "shipping_note": "LazMall Flagship • Jaminan 100% Produk Asli", "affiliate_url": "https://www.lazada.co.id/products/proyektor-mini-android-portable-130-inch-i7109849201.html", "color": "#0F146D", "icon": "🔴"}], "thumbnail": "static/carousels/proyektor-mini-android/slide_01.png", "slides": ["static/carousels/proyektor-mini-android/slide_01.png", "static/carousels/proyektor-mini-android/slide_02.png", "static/carousels/proyektor-mini-android/slide_03.png", "static/carousels/proyektor-mini-android/slide_04.png", "static/carousels/proyektor-mini-android/slide_05.png", "static/carousels/proyektor-mini-android/slide_06.png"]}];
+    let allProducts = [{"id": "Olike_Horizon_W12_Smartwatch", "title": "Olike Horizon W12 Smartwatch", "category": "Elektronik & Gadget", "promo_price": "Rp 299.000", "original_price": "Rp 399.000", "savings_fmt": "Hemat Diskon Resmi", "best_marketplace": "Tokopedia", "rating": "4.9", "total_sold": "1.000+ Terjual", "features": ["Garansi Resmi", "Kualitas Teruji", "Harga Terbaik"], "pros": ["Kualitas bahan dan finishing sangat baik", "Fitur lengkap sesuai deskripsi", "Garansi resmi terpercaya"], "cons_notes": ["Pastikan membeli dari toko official store", "Simpan kardus untuk klaim garansi"], "affiliate_url": "https://www.tokopedia.com/Olike-Official/Olike-Horizon-W12-Smartwatch", "offers": [{"marketplace": "Tokopedia", "seller": "Olike Official Store", "seller_type": "Official Store", "price_int": 299000, "price_fmt": "Rp 299.000", "is_cheapest": true, "badge": "🏆 Termurah", "rating": "4.9", "shipping_note": "Official Store • Garansi Resmi 1 Tahun • Bebas Zonk", "affiliate_url": "https://www.tokopedia.com/Olike-Official/Olike-Horizon-W12-Smartwatch", "color": "#03AC0E", "icon": "🟢"}, {"marketplace": "Shopee", "seller": "Olike Mall Indonesia (Shopee Mall)", "seller_type": "Shopee Mall", "price_int": 314000, "price_fmt": "Rp 314.000", "is_cheapest": false, "badge": "💎 SHOPEE MALL", "rating": "4.9", "shipping_note": "Shopee Mall • 100% Ori Garansi 7 Hari • Bebas Zonk", "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/Olike-Horizon-W12-Smartwatch-i.662920599.20001022757&affiliate_id=11340211239&sub_id=znavvy-gh", "color": "#EE4D2D", "icon": "🟠"}, {"marketplace": "Tokopedia", "seller": "Olike Store Jakarta (Power Merchant Pro)", "seller_type": "Power Merchant Pro", "price_int": 329000, "price_fmt": "Rp 329.000", "is_cheapest": false, "badge": "⚡ POWER MERCHANT PRO", "rating": "4.9", "shipping_note": "Power Merchant Pro • Rating 4.9 (5.2rb+ terjual)", "affiliate_url": "https://www.tokopedia.com/Olike-Store-Jakart/Olike-Horizon-W12-Smartwatch", "color": "#03AC0E", "icon": "🟢"}, {"marketplace": "Lazada", "seller": "LazMall Olike Flagship (LazMall Flagship)", "seller_type": "LazMall Flagship", "price_int": 359000, "price_fmt": "Rp 359.000", "is_cheapest": false, "badge": "💎 LAZMALL FLAGSHIP", "rating": "4.9", "shipping_note": "LazMall Flagship • Gratis Ongkir Prioritas", "affiliate_url": "https://www.lazada.co.id/products/Olike-Horizon-W12-Smartwatch-i7001022757.html", "color": "#0F146D", "icon": "🔴"}, {"marketplace": "Blibli", "seller": "Blibli Olike Authorized (Blibli Authorized)", "seller_type": "Blibli Authorized", "price_int": 399000, "price_fmt": "Rp 399.000", "is_cheapest": false, "badge": "🔵 BLIBLI AUTHORIZED", "rating": "4.9", "shipping_note": "Blibli Authorized • Retur 15 Hari Bebas Ribet", "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/Olike-Horizon-W12-Smartwatch/ps--ZN-21145-00101", "color": "#0095DA", "icon": "🔵"}], "thumbnail": "", "slides": []}, {"id": "Victoria_Secret_Bombshell_Fine_Fragrance_Mist_250ml", "title": "Victoria Secret Bombshell Fine Fragrance Mist 250ml", "category": "Kecantikan & Perawatan Diri", "promo_price": "Rp 650.000", "original_price": "Rp 715.000", "savings_fmt": "Hemat Diskon Resmi", "best_marketplace": "Tokopedia", "rating": "4.9", "total_sold": "1.000+ Terjual", "features": ["Garansi Resmi", "Kualitas Teruji", "Harga Terbaik"], "pros": ["Kualitas bahan dan finishing sangat baik", "Fitur lengkap sesuai deskripsi", "Garansi resmi terpercaya"], "cons_notes": ["Pastikan membeli dari toko official store", "Simpan kardus untuk klaim garansi"], "affiliate_url": "https://www.tokopedia.com/victoria-official/victorias-secret-bombshell-fine-fragrance-mist-250ml", "offers": [{"marketplace": "Tokopedia", "seller": "Victoria Official Store", "seller_type": "Official Store", "price_int": 650000, "price_fmt": "Rp 650.000", "is_cheapest": true, "badge": "🏆 Termurah", "rating": "4.9", "shipping_note": "Official Store • Garansi Resmi 1 Tahun • Bebas Zonk", "affiliate_url": "https://www.tokopedia.com/victoria-official/victorias-secret-bombshell-fine-fragrance-mist-250ml", "color": "#03AC0E", "icon": "🟢"}, {"marketplace": "Tokopedia", "seller": "Victoria Store Jakarta (Power Merchant Pro)", "seller_type": "Power Merchant Pro", "price_int": 650000, "price_fmt": "Rp 650.000", "is_cheapest": false, "badge": "⚡ POWER MERCHANT PRO", "rating": "4.9", "shipping_note": "Power Merchant Pro • Rating 4.9 (5.2rb+ terjual)", "affiliate_url": "https://www.tokopedia.com/victoria-official/victorias-secret-bombshell-fine-fragrance-mist-250ml", "color": "#03AC0E", "icon": "🟢"}, {"marketplace": "Lazada", "seller": "LazMall Victoria Flagship (LazMall Flagship)", "seller_type": "LazMall Flagship", "price_int": 689000, "price_fmt": "Rp 689.000", "is_cheapest": false, "badge": "💎 LAZMALL FLAGSHIP", "rating": "4.9", "shipping_note": "LazMall Flagship • Gratis Ongkir Prioritas", "affiliate_url": "https://www.lazada.co.id/products/victorias-secret-bombshell-fine-fragrance-mist-250ml-i7129849201.html", "color": "#0F146D", "icon": "🔴"}, {"marketplace": "Shopee", "seller": "Victoria Mall Indonesia (Shopee Mall)", "seller_type": "Shopee Mall", "price_int": 695500, "price_fmt": "Rp 695.500", "is_cheapest": false, "badge": "💎 SHOPEE MALL", "rating": "4.9", "shipping_note": "Shopee Mall • 100% Ori Garansi 7 Hari • Bebas Zonk", "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/victorias-secret-bombshell-fine-fragrance-mist-250ml-i.512948210.21984210992&affiliate_id=11340211239&sub_id=znavvy-gh", "color": "#EE4D2D", "icon": "🟠"}, {"marketplace": "Blibli", "seller": "Blibli Victoria Authorized (Blibli Authorized)", "seller_type": "Blibli Authorized", "price_int": 715000, "price_fmt": "Rp 715.000", "is_cheapest": false, "badge": "🔵 BLIBLI AUTHORIZED", "rating": "4.9", "shipping_note": "Blibli Authorized • Retur 15 Hari Bebas Ribet", "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/victorias-secret-bombshell-fine-fragrance-mist-250ml/ps--VS-82910-00101", "color": "#0095DA", "icon": "🔵"}], "thumbnail": "", "slides": []}, {"id": "proyektor-mini-android", "title": "Proyektor Mini Android Portable 130 Inch", "category": "Elektronik & Gadget", "promo_price": "Rp 839.000", "original_price": "Rp 949.000", "savings_fmt": "Hemat Diskon Resmi", "best_marketplace": "Tokopedia", "rating": "4.9", "total_sold": "3.5rb+ Terjual", "features": ["Layar 130 Inci Plafon", "Android 11 Built-in", "Rotasi 180 Derajat"], "pros": ["Gambar tajam dan terang", "Auto keystone correction", "Speaker bawaan jernih"], "cons_notes": ["Ruangan perlu agak redup untuk kontras maksimal", "Gunakan toko resmi untuk garansi 1 tahun"], "affiliate_url": "https://www.tokopedia.com/audio-visual-official/proyektor-mini-android-portable-130-inch", "offers": [{"marketplace": "Tokopedia", "seller": "Audio Visual Official Store", "seller_type": "Official Store", "price_int": 839000, "price_fmt": "Rp 839.000", "is_cheapest": true, "badge": "🏆 Termurah", "rating": "4.9", "shipping_note": "Official Store • Garansi Resmi 1 Tahun • Bebas Zonk", "affiliate_url": "https://www.tokopedia.com/audio-visual-official/proyektor-mini-android-portable-130-inch", "color": "#03AC0E", "icon": "🟢"}, {"marketplace": "Tokopedia", "seller": "Audio Visual Jakarta (Power Merchant Pro)", "seller_type": "Power Merchant Pro", "price_int": 859000, "price_fmt": "Rp 859.000", "is_cheapest": false, "badge": "⚡ POWER MERCHANT PRO", "rating": "4.9", "shipping_note": "Power Merchant Pro • Rating 4.9 • Bebas Ongkir", "affiliate_url": "https://www.tokopedia.com/audio-visual-jkt/proyektor-mini-android-portable-130-inch", "color": "#03AC0E", "icon": "🟢"}, {"marketplace": "Shopee", "seller": "Shopee Mall Projector Official", "seller_type": "Shopee Mall", "price_int": 889000, "price_fmt": "Rp 889.000", "is_cheapest": false, "badge": "💎 SHOPEE MALL", "rating": "4.9", "shipping_note": "Shopee Mall • 100% Ori Garansi 7 Hari • Bebas Zonk", "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/proyektor-mini-android-portable-130-inch-i.389201948.21098492011&affiliate_id=11340211239&sub_id=znavvy-gh", "color": "#EE4D2D", "icon": "🟠"}, {"marketplace": "Shopee", "seller": "Gadget Star+ Official (Star+ Seller)", "seller_type": "Star+ Seller", "price_int": 899000, "price_fmt": "Rp 899.000", "is_cheapest": false, "badge": "⭐ STAR+ SELLER", "rating": "4.9", "shipping_note": "Star+ Seller • Gratis Ongkir XTRA", "affiliate_url": "https://s.shopee.co.id/an_redir?origin_link=https%3A//shopee.co.id/proyektor-mini-android-portable-130-inch-i.389201948.21098492022&affiliate_id=11340211239&sub_id=znavvy-gh", "color": "#EE4D2D", "icon": "🟠"}, {"marketplace": "Blibli", "seller": "Blibli Authorized Projector", "seller_type": "Blibli Authorized", "price_int": 925000, "price_fmt": "Rp 925.000", "is_cheapest": false, "badge": "🔵 BLIBLI AUTHORIZED", "rating": "4.9", "shipping_note": "Blibli Authorized • Garansi Resmi + Retur 15 Hari", "affiliate_url": "https://invl.me/clnenaj?url=https%3A//www.blibli.com/p/proyektor-mini-android-portable-130-inch/ps--AV-78210-00101", "color": "#0095DA", "icon": "🔵"}, {"marketplace": "Lazada", "seller": "LazMall Flagship Audio", "seller_type": "LazMall Flagship", "price_int": 949000, "price_fmt": "Rp 949.000", "is_cheapest": false, "badge": "💎 LAZMALL FLAGSHIP", "rating": "4.9", "shipping_note": "LazMall Flagship • Jaminan 100% Produk Asli", "affiliate_url": "https://www.lazada.co.id/products/proyektor-mini-android-portable-130-inch-i7109849201.html", "color": "#0F146D", "icon": "🔴"}], "thumbnail": "static/carousels/proyektor-mini-android/slide_01.png", "slides": ["static/carousels/proyektor-mini-android/slide_01.png", "static/carousels/proyektor-mini-android/slide_02.png", "static/carousels/proyektor-mini-android/slide_03.png", "static/carousels/proyektor-mini-android/slide_04.png", "static/carousels/proyektor-mini-android/slide_05.png", "static/carousels/proyektor-mini-android/slide_06.png"]}];
     let currentSelectedProduct = null;
     let currentSlideIndex = 0;
     let activeCategory = 'ALL';
@@ -1055,11 +1081,22 @@
 
       if (tabName === 'compare') {
         const offers = p.offers || [];
-        const tableRows = offers.map(o => `
+        const tableRows = offers.map(o => {
+          const tLower = (o.seller_type || o.seller || '').toLowerCase();
+          let bCls = 'store-badge';
+          if (tLower.includes('shopee mall')) bCls += ' shopee-mall';
+          else if (tLower.includes('official store') || tLower.includes('tokopedia official')) bCls += ' tokopedia-official';
+          else if (tLower.includes('power merchant pro') || tLower.includes('power pro')) bCls += ' power-pro';
+          else if (tLower.includes('star+')) bCls += ' star-plus';
+          else if (tLower.includes('lazmall')) bCls += ' lazmall-flagship';
+          else if (tLower.includes('blibli')) bCls += ' blibli-auth';
+          else if (tLower.includes('star') || tLower.includes('power')) bCls += ' power-pro';
+
+          return `
           <tr>
             <td>
               <strong style="color: ${o.color || '#fff'}; font-size: 15px;">${o.icon || '🛒'} ${o.marketplace}</strong>
-              <div><span class="store-badge">${o.seller}</span></div>
+              <div><span class="${bCls}">${o.seller}</span></div>
             </td>
             <td>
               <div style="font-weight: 900; font-size: 16px; color: ${o.is_cheapest ? 'var(--accent)' : 'var(--text)'}">${o.price_fmt}</div>
@@ -1074,7 +1111,8 @@
               </a>
             </td>
           </tr>
-        `).join('');
+        `;
+        }).join('');
 
         body.innerHTML = `
           <div class="savings-highlight-card">
