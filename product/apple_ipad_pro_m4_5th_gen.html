@@ -38,6 +38,17 @@
       <img src="../static/images/hero_preview.png" alt="Apple iPad Pro M4 5th Gen" style="max-width: 280px; max-height: 280px; border-radius: 12px; object-fit: contain;">
     </div>
 
+    
+            <div style="margin: 16px 0; background: rgba(15, 23, 42, 0.6); padding: 12px 14px; border-radius: 12px; border: 1px solid #334155;">
+              <div style="font-size: 12px; font-weight: 800; color: #38bdf8; margin-bottom: 8px;">
+                ✨ Filter Pilihan Varian (AI Saring):
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                <button class="permalink-var-btn active" onclick="filterPermalinkVariant('ALL', this)" style="background: #2563eb; color: #fff; border: 1px solid #3b82f6; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer;">Semua Varian (2)</button> <button class="permalink-var-btn" onclick="filterPermalinkVariant('256GB Wi-Fi', this)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #334155; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;"><strong>256GB Wi-Fi</strong> <span style="color: #38bdf8; font-size: 11px;">Mulai Rp 20.990.000</span></button> <button class="permalink-var-btn" onclick="filterPermalinkVariant('Standard Resmi', this)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #334155; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;"><strong>Standard Resmi</strong> <span style="color: #38bdf8; font-size: 11px;">Mulai Rp 16.750.000</span></button>
+              </div>
+            </div>
+            
+
     <h2 style="font-size: 16px; color: #cbd5e1; border-bottom: 1px solid #334155; padding-bottom: 8px; margin-top: 24px;">Tabel Komparasi Toko Resmi Bebas Zonk</h2>
     <table style="width: 100%; border-collapse: collapse; text-align: left; margin-top: 12px; font-size: 14px;">
       <thead>
@@ -49,13 +60,13 @@
       </thead>
       <tbody>
         
-            <tr style="border-bottom: 1px solid #334155;">
+            <tr class="permalink-offer-row" data-variant="Resmi" style="border-bottom: 1px solid #334155;">
               <td style="padding: 12px; font-weight: 600;">Tokopedia<br><small style="color: #94a3b8;">Chocoapple Official</small></td>
               <td style="padding: 12px; color: #4ade80; font-weight: 700;">Rp 16.750.000</td>
               <td style="padding: 12px;"><a href="https://www.tokopedia.com/chocoapple/apple-ipad-pro-5th-gen-5-2021-12-9-inch-1tb-wifi-only-m1-chip-mini-led?extParam=ivf%3Dfalse%26keyword%3Dapple+ipad+pro+m4+5th+gen%26search_id%3D20261020202302577BCC914F9E552132MO%26src%3Dsearch" target="_blank" rel="noopener noreferrer" style="background: #2563eb; color: #fff; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600;">Beli Sekarang ↗</a></td>
             </tr>
             
-            <tr style="border-bottom: 1px solid #334155;">
+            <tr class="permalink-offer-row" data-variant="WiFi 256GB / 11" Space Black INTER" style="border-bottom: 1px solid #334155;">
               <td style="padding: 12px; font-weight: 600;">Tokopedia<br><small style="color: #94a3b8;">Appleinternational Official</small><br><span style='color: #38bdf8; font-size: 11px; font-weight: 600;'>Varian: WiFi 256GB / 11" Space Black INTER</span></td>
               <td style="padding: 12px; color: #4ade80; font-weight: 700;">Rp 20.990.000</td>
               <td style="padding: 12px;"><a href="https://www.tokopedia.com/appleinternational/ipad-pro-m4-2024-11-13-256gb-512gb-1tb-2tb-space-black-silver-1731168776606745777?extParam=ivf%3Dfalse%26keyword%3Dapple+ipad+pro+m4+5th+gen%26search_id%3D20261020202302577BCC914F9E552132MO%26src%3Dsearch" target="_blank" rel="noopener noreferrer" style="background: #2563eb; color: #fff; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600;">Beli Sekarang ↗</a></td>
@@ -63,6 +74,29 @@
             
       </tbody>
     </table>
+
+    <script>
+      function filterPermalinkVariant(vName, btn) {
+        document.querySelectorAll('.permalink-var-btn').forEach(b => {
+          b.style.background = '#1e293b';
+          b.style.color = '#cbd5e1';
+          b.style.borderColor = '#334155';
+        });
+        btn.style.background = '#2563eb';
+        btn.style.color = '#fff';
+        btn.style.borderColor = '#3b82f6';
+        const rows = document.querySelectorAll('.permalink-offer-row');
+        rows.forEach(r => {
+          const v = (r.getAttribute('data-variant') || '').toLowerCase();
+          const target = vName.toLowerCase();
+          if (vName === 'ALL' || v.includes(target) || target.includes(v)) {
+            r.style.display = '';
+          } else {
+            r.style.display = 'none';
+          }
+        });
+      }
+    </script>
 
     <div style="text-align: center; margin-top: 28px;">
       <a href="../#apple_ipad_pro_m4_5th_gen" style="display: inline-block; background: linear-gradient(135deg, #10b981, #059669); color: #fff; font-weight: 700; padding: 12px 28px; border-radius: 10px; text-decoration: none; font-size: 15px;">

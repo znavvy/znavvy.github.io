@@ -38,6 +38,8 @@
       <img src="../static/images/hero_preview.png" alt="TECNO CAMON 50 PRO 5G" style="max-width: 280px; max-height: 280px; border-radius: 12px; object-fit: contain;">
     </div>
 
+    
+
     <h2 style="font-size: 16px; color: #cbd5e1; border-bottom: 1px solid #334155; padding-bottom: 8px; margin-top: 24px;">Tabel Komparasi Toko Resmi Bebas Zonk</h2>
     <table style="width: 100%; border-collapse: collapse; text-align: left; margin-top: 12px; font-size: 14px;">
       <thead>
@@ -49,25 +51,25 @@
       </thead>
       <tbody>
         
-            <tr style="border-bottom: 1px solid #334155;">
+            <tr class="permalink-offer-row" data-variant="Camon 50 Pro 5G 8/256GB / Black" style="border-bottom: 1px solid #334155;">
               <td style="padding: 12px; font-weight: 600;">Tokopedia<br><small style="color: #94a3b8;">Digitalisme</small><br><span style='color: #38bdf8; font-size: 11px; font-weight: 600;'>Varian: Camon 50 Pro 5G 8/256GB / Black</span></td>
               <td style="padding: 12px; color: #4ade80; font-weight: 700;">Rp 5.686.000</td>
               <td style="padding: 12px;"><a href="https://www.tokopedia.com/digitalisme/tecno-spark-40-6gb-128gb-garansi-resmi-indonesia-hp-tecno-original-garansi-1731040547626517713-1735976310293234897?extParam=ivf%3Dfalse%26keyword%3Dtecno+camon+50+pro+5g%26search_id%3D20261020180423FE73F687E5BC522536UG%26src%3Dsearch" target="_blank" rel="noopener noreferrer" style="background: #2563eb; color: #fff; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600;">Beli Sekarang ↗</a></td>
             </tr>
             
-            <tr style="border-bottom: 1px solid #334155;">
+            <tr class="permalink-offer-row" data-variant="Camon 50 Pro 5G 8/256GB / Green" style="border-bottom: 1px solid #334155;">
               <td style="padding: 12px; font-weight: 600;">Tokopedia<br><small style="color: #94a3b8;">Digitalisme</small><br><span style='color: #38bdf8; font-size: 11px; font-weight: 600;'>Varian: Camon 50 Pro 5G 8/256GB / Green</span></td>
               <td style="padding: 12px; color: #4ade80; font-weight: 700;">Rp 5.691.000</td>
               <td style="padding: 12px;"><a href="https://www.tokopedia.com/digitalisme/tecno-spark-40-6gb-128gb-garansi-resmi-indonesia-hp-tecno-original-garansi-1731040547626517713-1735976310293234897?extParam=ivf%3Dfalse%26keyword%3Dtecno+camon+50+pro+5g%26search_id%3D20261020180423FE73F687E5BC522536UG%26src%3Dsearch" target="_blank" rel="noopener noreferrer" style="background: #2563eb; color: #fff; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600;">Beli Sekarang ↗</a></td>
             </tr>
             
-            <tr style="border-bottom: 1px solid #334155;">
+            <tr class="permalink-offer-row" data-variant="Titanium / 8/256" style="border-bottom: 1px solid #334155;">
               <td style="padding: 12px; font-weight: 600;">Blibli<br><small style="color: #94a3b8;">HPR Authorized Store</small><br><span style='color: #38bdf8; font-size: 11px; font-weight: 600;'>Varian: Titanium / 8/256</span></td>
               <td style="padding: 12px; color: #4ade80; font-weight: 700;">Rp 5.799.000</td>
               <td style="padding: 12px;"><a href="https://www.blibli.com/p/tecno-camon-50-pro-5g-8-256-gb-12-256-gb-garansi-resmi/ps--HPR-70002-00749?ds=HPR-70002-00749-00002" target="_blank" rel="noopener noreferrer" style="background: #2563eb; color: #fff; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600;">Beli Sekarang ↗</a></td>
             </tr>
             
-            <tr style="border-bottom: 1px solid #334155;">
+            <tr class="permalink-offer-row" data-variant="Nebula / 8/256GB" style="border-bottom: 1px solid #334155;">
               <td style="padding: 12px; font-weight: 600;">Blibli<br><small style="color: #94a3b8;">CEY Authorized Store</small><br><span style='color: #38bdf8; font-size: 11px; font-weight: 600;'>Varian: Nebula / 8/256GB</span></td>
               <td style="padding: 12px; color: #4ade80; font-weight: 700;">Rp 5.973.000</td>
               <td style="padding: 12px;"><a href="https://www.blibli.com/p/tecno-camon-50-pro-5g-8-256gb-12-256gb-12-512gb-garansi-resmi-tecno/ps--CEY-60021-01916?ds=CEY-60021-01916-00002" target="_blank" rel="noopener noreferrer" style="background: #2563eb; color: #fff; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600;">Beli Sekarang ↗</a></td>
@@ -75,6 +77,29 @@
             
       </tbody>
     </table>
+
+    <script>
+      function filterPermalinkVariant(vName, btn) {
+        document.querySelectorAll('.permalink-var-btn').forEach(b => {
+          b.style.background = '#1e293b';
+          b.style.color = '#cbd5e1';
+          b.style.borderColor = '#334155';
+        });
+        btn.style.background = '#2563eb';
+        btn.style.color = '#fff';
+        btn.style.borderColor = '#3b82f6';
+        const rows = document.querySelectorAll('.permalink-offer-row');
+        rows.forEach(r => {
+          const v = (r.getAttribute('data-variant') || '').toLowerCase();
+          const target = vName.toLowerCase();
+          if (vName === 'ALL' || v.includes(target) || target.includes(v)) {
+            r.style.display = '';
+          } else {
+            r.style.display = 'none';
+          }
+        });
+      }
+    </script>
 
     <div style="text-align: center; margin-top: 28px;">
       <a href="../#tecno_camon_50_pro_5g" style="display: inline-block; background: linear-gradient(135deg, #10b981, #059669); color: #fff; font-weight: 700; padding: 12px 28px; border-radius: 10px; text-decoration: none; font-size: 15px;">
