@@ -302,8 +302,8 @@ button.button-danger,
 
 .card-body {
   padding: 18px;
-  display: grid;
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-body h3 {
