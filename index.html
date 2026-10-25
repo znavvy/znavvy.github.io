@@ -17,7 +17,7 @@
   <link rel="dns-prefetch" href="https://znavvy.github.io">
   <title>Znavvy - Showroom Rekomendasi & Pembanding Harga Bebas Zonk</title>
   <meta name="description" content="Komparasi harga asli Tokopedia vs Shopee vs Blibli vs Lazada. Cek harga termurah dari official store terverifikasi garansi resmi.">
-  <link rel="stylesheet" href="static/site.css?v=1792951724">
+  <link rel="stylesheet" href="static/site.css?v=1792952117">
     <style>
     /* LIGHT MODE (DEFAULT - 100% BRIGHT & CRISP) */
     :root, [data-theme="light"] {
@@ -762,14 +762,19 @@
     }
     .var-tag {
       font-size: 11px;
-      background: rgba(56, 189, 248, 0.1);
-      color: #38bdf8;
-      border: 1px solid rgba(56, 189, 248, 0.22);
+      background: rgba(2, 132, 199, 0.08);
+      color: #0284c7;
+      border: 1px solid rgba(2, 132, 199, 0.25);
       padding: 2px 7px;
-      border-radius: 4px;
-      font-weight: 600;
+      border-radius: 6px;
+      font-weight: 700;
       white-space: nowrap;
       flex-shrink: 0;
+    }
+    [data-theme="dark"] .var-tag {
+      background: rgba(56, 189, 248, 0.12);
+      color: #38bdf8;
+      border-color: rgba(56, 189, 248, 0.3);
     }
     .var-tag-more {
       font-size: 10px;
@@ -842,12 +847,18 @@
     }
     .mini-cheap-badge {
       font-size: 9px;
-      background: rgba(3, 172, 14, 0.2);
-      color: #03AC0E;
+      background: rgba(4, 120, 87, 0.12);
+      color: #047857;
+      border: 1px solid rgba(4, 120, 87, 0.25);
       padding: 1px 5px;
       border-radius: 4px;
       font-weight: 800;
       flex-shrink: 0;
+    }
+    [data-theme="dark"] .mini-cheap-badge {
+      background: rgba(52, 211, 153, 0.15);
+      color: #34d399;
+      border-color: rgba(52, 211, 153, 0.3);
     }
     .mini-offer-right {
       display: flex;
@@ -1303,6 +1314,84 @@
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
+    }
+
+    /* Pagination Buttons System */
+    .pagination-buttons-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin: 28px 0 36px;
+      flex-wrap: wrap;
+    }
+    .pagination-btn {
+      min-width: 40px;
+      height: 40px;
+      padding: 0 14px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: var(--panel-card);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .pagination-btn:hover:not(.disabled) {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--surface-subtle);
+    }
+    .pagination-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff !important;
+      box-shadow: 0 4px 12px var(--accent-soft);
+    }
+    [data-theme="dark"] .pagination-btn.active {
+      color: #07111f !important;
+      font-weight: 900;
+    }
+    .pagination-btn.disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      border-color: var(--line-subtle);
+    }
+
+    /* Dual-Theme Safe Contrast Overrides */
+    .mp-name {
+      color: var(--text-secondary) !important;
+    }
+    .mp-price {
+      color: var(--text) !important;
+    }
+    .trending-quick-specs span {
+      background: var(--surface-subtle) !important;
+      border: 1px solid var(--line) !important;
+      color: var(--text-secondary) !important;
+    }
+    .savings-highlight-pill {
+      background: var(--accent-soft) !important;
+      border: 1px solid var(--accent) !important;
+      color: var(--accent) !important;
+    }
+    .mp-badge-tag {
+      color: #dc2626 !important;
+    }
+    [data-theme="dark"] .mp-badge-tag {
+      color: #f87171 !important;
+    }
+    [data-theme="dark"] .cat-btn.active, [data-theme="dark"] .cat-btn:hover {
+      color: #07111f !important;
+      font-weight: 800 !important;
+    }
+    [data-theme="dark"] .step-num {
+      color: #07111f !important;
+      font-weight: 800 !important;
     }
 
     /* Demand Form Section */
