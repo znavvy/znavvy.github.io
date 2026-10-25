@@ -1323,3 +1323,102 @@ button.button-danger,
   color: var(--accent);
   margin-left: 2px;
 }
+
+
+/* Card Quick Specs Pills */
+.card-quick-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 6px 0 10px 0;
+}
+.spec-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--surface-subtle);
+  color: var(--text);
+  border: 1px solid var(--line);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+[data-theme="light"] .spec-pill {
+  background: #f1f5f9;
+  color: #1e293b;
+  border-color: #cbd5e1;
+}
+[data-theme="dark"] .spec-pill {
+  background: rgba(255, 255, 255, 0.06);
+  color: #e2e8f0;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Modal Specs Tab */
+.modal-specs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.modal-specs-summary {
+  background: var(--surface-subtle);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text);
+}
+.modal-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+.spec-highlight-card {
+  background: var(--surface-subtle);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.spec-highlight-card .spec-title {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.spec-highlight-card .spec-val {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+.modal-specs-badge-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+.specs-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(69, 230, 194, 0.1);
+  border: 1px solid rgba(69, 230, 194, 0.35);
+  color: var(--accent);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+[data-theme="light"] .specs-verified-badge {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #065f46;
+}
