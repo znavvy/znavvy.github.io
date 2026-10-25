@@ -858,8 +858,8 @@ button.button-danger,
   animation: pulseGlow 2s infinite ease-in-out;
 }
 @keyframes pulseGlow {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.88; transform: scale(0.98); }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
 }
 .trending-fps-pill {
   background: rgba(69, 230, 194, 0.12);
