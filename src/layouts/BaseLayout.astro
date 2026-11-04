@@ -1,0 +1,151 @@
+---
+/**
+ * BaseLayout.astro — shared HTML shell for all pages.
+ * Keeps <head> consistent: charset, viewport, fonts, global CSS.
+ * Includes full desktop + mobile navigation (Task I).
+ */
+interface Props {
+  title: string;
+  description?: string;
+  canonicalPath?: string;
+  ogImage?: string;
+}
+
+const BASE_URL = 'https://znavvy.web.id';
+const {
+  title,
+  description = 'Bandingkan harga dari Tokopedia, Shopee, Blibli, dan Lazada dalam satu halaman.',
+  canonicalPath = '/',
+  ogImage,
+} = Astro.props;
+const canonicalUrl = `${BASE_URL}${canonicalPath}`;
+const ogImageUrl = ogImage ? `${BASE_URL}${ogImage}` : `${BASE_URL}/og-preview.png`;
+---
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+
+  <!-- Canonical & Open Graph -->
+  <link rel="canonical" href={canonicalUrl} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImageUrl} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content={ogImageUrl} />
+
+  <!-- DNS prefetch for marketplace images (no tracking) -->
+  <link rel="dns-prefetch" href="https://down-id.img.susercontent.com" />
+  <link rel="dns-prefetch" href="https://images.tokopedia.net" />
+
+  <!-- System font stack — no external font CDN -->
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900 antialiased">
+  <!-- Site header -->
+  <header class="sticky top-0 z-40 border-b border-gray-200 bg-white/95 backdrop-blur-sm">
+    <div class="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-1.5 font-bold text-teal-600 text-lg tracking-tight flex-shrink-0">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+        </svg>
+        <span><span class="text-gray-900">Z</span>navvy</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden sm:flex items-center gap-5 text-sm text-gray-600">
+        <a href="/" class="hover:text-teal-600 transition-colors font-medium">Beranda</a>
+        <a href="/" class="hover:text-teal-600 transition-colors">Cari Produk</a>
+        <a href="/#tentang" class="hover:text-teal-600 transition-colors">Tentang</a>
+        <span class="hidden lg:inline text-xs text-gray-400 border border-gray-200 rounded-full px-2.5 py-0.5">Snapshot data · bukan harga live</span>
+      </nav>
+
+      <!-- Mobile: hamburger -->
+      <button
+        id="nav-toggle"
+        class="sm:hidden flex items-center justify-center h-9 w-9 rounded-lg border border-gray-200 text-gray-600 hover:border-teal-400 hover:text-teal-600 transition-colors"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false"
+      >
+        <svg id="icon-menu" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="icon-close" class="h-5 w-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile dropdown menu -->
+    <div id="mobile-menu" class="hidden sm:hidden border-t border-gray-100 bg-white">
+      <nav class="flex flex-col px-4 py-3 gap-0.5">
+        <a href="/" class="rounded-lg px-3 py-2.5 text-sm font-medium text-gray-900 hover:bg-teal-50 hover:text-teal-700 transition-colors">🏠 Beranda</a>
+        <a href="/" class="rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700 transition-colors">🔍 Cari Produk</a>
+        <a href="/#tentang" class="rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700 transition-colors">ℹ️ Tentang</a>
+        <div class="mt-2 pt-2 border-t border-gray-100 px-3 py-1 text-xs text-gray-400">Data snapshot · bukan harga live</div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile menu toggle script (minimal, no framework) -->
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const iconMenu = document.getElementById('icon-menu');
+    const iconClose = document.getElementById('icon-close');
+    toggle?.addEventListener('click', () => {
+      const isOpen = !menu?.classList.contains('hidden');
+      menu?.classList.toggle('hidden', isOpen);
+      iconMenu?.classList.toggle('hidden', !isOpen);
+      iconClose?.classList.toggle('hidden', isOpen);
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+  </script>
+
+  <!-- Page content -->
+  <main>
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer id="tentang" class="mt-16 border-t border-gray-200 bg-white py-10">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+        <div>
+          <p class="font-bold text-gray-900 mb-2">ZNavvy</p>
+          <p class="text-sm text-gray-500">Perbandingan harga snapshot dari marketplace publik Indonesia.</p>
+          <p class="mt-2 text-xs text-gray-400">Data dikumpulkan secara otomatis dari halaman produk publik.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-sm text-gray-700 mb-2">Marketplace</p>
+          <ul class="space-y-1 text-sm text-gray-500">
+            <li>Tokopedia</li>
+            <li>Shopee</li>
+            <li>Blibli</li>
+            <li>Lazada</li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-sm text-gray-700 mb-2">Info Penting</p>
+          <p class="text-xs text-gray-500">Harga adalah snapshot historis — bukan harga live. Selalu verifikasi di marketplace sebelum membeli.</p>
+          <p class="mt-2 text-xs text-gray-400">Bukan afiliasi resmi dari marketplace yang tercantum.</p>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-100 pt-6 text-center text-xs text-gray-400">
+        © 2026 ZNavvy · Data snapshot, bukan harga live
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+---
+/**
+ * index.astro — Catalog / Search page
+ *
+ * Architecture:
+ * - HTML shell with zero embedded catalog data
+ * - Client JS fetches paginated catalog cards (api/catalog/page_1.json etc.)
+ * - Search index (api/search_index.json) loaded lazily on first keystroke
+ * - When search results span unloaded pages, those pages are fetched in parallel
+ * - DOM is additive: Load More appends cards
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Bandingkan Harga — ZNavvy"
+  description="Temukan dan bandingkan harga produk dari Tokopedia, Shopee, Blibli, dan Lazada."
+>
+  <div class="mx-auto max-w-6xl w-full px-4 pb-16 overflow-x-hidden">
+    <!-- Search section -->
+    <section class="py-8">
+      <div class="mb-2 text-center">
+        <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">
+          Cari produk, bandingkan harga
+        </h1>
+        <p class="mt-1 text-sm text-gray-500">
+          Data snapshot dari Tokopedia, Shopee, Blibli &amp; Lazada
+        </p>
+      </div>
+      <div class="mt-5 flex flex-col items-center gap-3">
+        <div class="relative w-full max-w-2xl">
+          <span class="pointer-events-none absolute inset-y-0 left-3.5 flex items-center text-gray-400">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 111 11a6 6 0 0116 0z" />
+            </svg>
+          </span>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Cari produk, misalnya: Samsung Galaxy S25..."
+            class="search-input pl-11"
+            autocomplete="off"
+            autocorrect="off"
+            spellcheck="false"
+          />
+        </div>
+
+        <!-- Category filter — matches actual categories in products.json -->
+        <div id="category-filter" class="flex flex-wrap justify-center gap-2">
+          <button data-cat="" class="cat-btn active rounded-full border border-teal-500 bg-teal-50 px-3 py-1 text-sm font-medium text-teal-700 transition-colors">
+            Semua
+          </button>
+          <button data-cat="Smartphone &amp; Gadget" class="cat-btn rounded-full border border-gray-200 px-3 py-1 text-sm font-medium text-gray-600 hover:border-teal-400 hover:text-teal-700 transition-colors">
+            Gadget
+          </button>
+          <button data-cat="Elektronik &amp; Rumah" class="cat-btn rounded-full border border-gray-200 px-3 py-1 text-sm font-medium text-gray-600 hover:border-teal-400 hover:text-teal-700 transition-colors">
+            Elektronik
+          </button>
+          <button data-cat="Komputer &amp; Laptop" class="cat-btn rounded-full border border-gray-200 px-3 py-1 text-sm font-medium text-gray-600 hover:border-teal-400 hover:text-teal-700 transition-colors">
+            Laptop &amp; PC
+          </button>
+          <button data-cat="Kecantikan &amp; Lifestyle" class="cat-btn rounded-full border border-gray-200 px-3 py-1 text-sm font-medium text-gray-600 hover:border-teal-400 hover:text-teal-700 transition-colors">
+            Kecantikan
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results meta -->
+    <div class="mb-4 flex items-center justify-between flex-wrap gap-2">
+      <p id="results-count" class="text-sm text-gray-500">Memuat katalog…</p>
+      <p id="data-notice" class="hidden text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded-full px-3 py-1">
+        Mode pencarian/filter aktif
+      </p>
+    </div>
+
+    <!-- Product card grid — responsive, no horizontal overflow -->
+    <div
+      id="card-grid"
+      class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+      aria-live="polite"
+      aria-label="Daftar produk"
+    >
+      <!-- Skeleton placeholders while loading -->
+      {Array.from({ length: 8 }).map(() => (
+        <div data-skeleton class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+          <div class="skeleton mb-3 h-40 w-full rounded-lg"></div>
+          <div class="skeleton mb-2 h-4 w-3/4 rounded"></div>
+          <div class="skeleton mb-4 h-3 w-1/2 rounded"></div>
+          <div class="flex gap-1 mb-3">
+            <div class="skeleton h-6 w-16 rounded-full"></div>
+            <div class="skeleton h-6 w-20 rounded-full"></div>
+          </div>
+          <div class="skeleton h-5 w-1/3 rounded"></div>
+          <div class="skeleton mt-2 h-4 w-2/3 rounded"></div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Load more -->
+    <div id="load-more-section" class="mt-8 hidden text-center">
+      <button
+        id="load-more-btn"
+        class="rounded-xl border border-gray-300 bg-white px-6 py-2.5 text-sm font-medium text-gray-700 shadow-sm
+               hover:border-teal-400 hover:text-teal-700 transition-colors focus-visible:ring-2 focus-visible:ring-teal-500"
+      >
+        Muat lebih banyak
+      </button>
+    </div>
+
+    <!-- Empty state -->
+    <div id="empty-state" class="hidden py-16 text-center">
+      <svg class="mx-auto mb-3 h-12 w-12 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <p class="text-gray-500">Produk tidak ditemukan</p>
+      <p class="mt-1 text-sm text-gray-500">Coba hapus filter, atau minta kami mencarikan barang yang Anda inginkan.</p>
+      <form id="product-request-form" data-endpoint={import.meta.env.PUBLIC_PRODUCT_REQUEST_ENDPOINT || ''}
+        data-interpret-endpoint={import.meta.env.PUBLIC_PRODUCT_INTERPRET_ENDPOINT || ''}
+        class="mx-auto mt-6 max-w-lg rounded-2xl border border-gray-200 bg-white p-6 text-left space-y-4">
+        <h2 class="text-lg font-semibold">Minta carikan produk</h2>
+        <label class="block text-sm">Nama produk dan varian
+          <input id="request-keyword" name="keyword" required maxlength="200" class="mt-1 w-full rounded-lg border border-gray-300 p-2" />
+        </label>
+        <label class="block text-sm">Detail tambahan (opsional)
+          <textarea name="notes" maxlength="1000" class="mt-1 w-full rounded-lg border border-gray-300 p-2" placeholder="Merek, kapasitas, ukuran, atau kebutuhan Anda"></textarea>
+        </label>
+        <div class="flex flex-wrap gap-2">
+          <button id="interpret-product" type="button" class="rounded-lg bg-teal-700 px-4 py-2 text-white">Bantu pastikan produk dengan AI</button>
+          <button id="manual-product" type="button" class="rounded-lg border border-gray-300 px-4 py-2">Konfirmasi manual</button>
+        </div>
+        <p id="interpret-status" role="status" class="text-sm text-gray-600"></p>
+        <div id="product-proposal" hidden class="rounded-lg bg-teal-50 p-4">
+          <p class="font-medium">Apakah ini produk yang Anda maksud?</p>
+          <p id="product-proposal-text" class="mt-2 text-sm"></p>
+          <button id="accept-product" type="button" class="mt-3 rounded-lg bg-teal-700 px-3 py-2 text-white">Ya, lanjutkan</button>
+          <button id="revise-product" type="button" class="ml-2 underline">Bukan, saya lengkapi</button>
+        </div>
+        <fieldset id="request-contact-step" hidden class="space-y-4">
+        <label class="block text-sm">Email pemberitahuan
+          <input name="email" type="email" required maxlength="254" autocomplete="email" class="mt-1 w-full rounded-lg border border-gray-300 p-2" />
+        </label>
+        <label class="flex gap-2 text-sm"><input name="consent" type="checkbox" required />
+          <span>Saya memastikan produk di atas sesuai dan setuju email saya digunakan untuk pemberitahuan permintaan ini.</span>
+        </label>
+        <button type="submit" class="rounded-lg bg-teal-700 px-4 py-2 text-white disabled:opacity-50">Kirim permintaan</button>
+        </fieldset>
+        <p id="request-status" role="status" aria-live="polite" class="text-sm text-gray-600"></p>
+      </form>
+    </div>
+
+    <!-- Error state -->
+    <div id="error-state" class="hidden rounded-xl border border-red-200 bg-red-50 p-6 text-center">
+      <p class="font-medium text-red-700">Gagal memuat katalog</p>
+      <p id="error-message" class="mt-1 text-sm text-red-600"></p>
+      <button onclick="window.location.reload()" class="mt-3 text-sm text-teal-600 underline hover:text-teal-700">
+        Muat ulang
+      </button>
+    </div>
+
+    <!-- About section anchor -->
+    <section id="tentang" class="mt-20 rounded-2xl bg-white border border-gray-200 p-8">
+      <h2 class="text-xl font-bold text-gray-900 mb-3">Tentang ZNavvy</h2>
+      <p class="text-sm text-gray-600 leading-relaxed">
+        ZNavvy mengumpulkan data harga dari halaman produk publik di Tokopedia, Shopee, Blibli, dan Lazada —
+        lalu menyajikannya dalam satu tampilan untuk memudahkan perbandingan.
+      </p>
+      <p class="mt-3 text-sm text-gray-500">
+        Data yang ditampilkan adalah <strong>snapshot historis</strong>, bukan harga live.
+        Selalu verifikasi harga terbaru langsung di marketplace sebelum membeli.
+      </p>
+      <p class="mt-3 text-xs text-gray-400">
+        ZNavvy bukan afiliasi resmi dari marketplace yang tercantum.
+        Tautan produk dapat mengandung parameter referral.
+      </p>
+    </section>
+  </div>
+
+  <!-- Catalog client script -->
+  <script>
+    import '../scripts/catalog.ts';
+    import '../scripts/product-request.ts';
+  </script>
+</BaseLayout>

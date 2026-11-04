@@ -1,0 +1,2 @@
+# Redirect root product query to SPA loader if accessed directly without trailing slash
+/product  /product/  301

@@ -1,0 +1,80 @@
+/* ZNavvy V2 — Global Styles (Tailwind CSS v4) */
+@import "tailwindcss";
+
+/* Custom color tokens */
+@theme {
+  --color-teal-500: #14b8a6;
+  --color-teal-600: #0d9488;
+  --color-teal-100: #ccfbf1;
+  --color-teal-50: #f0fdfa;
+  --color-gray-950: #0a0a0a;
+}
+
+/* Focus ring — accessible, visible */
+:focus-visible {
+  outline: 2px solid var(--color-teal-500);
+  outline-offset: 2px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Image placeholder background */
+.img-placeholder {
+  background-color: #f3f4f6;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 8px,
+    #e5e7eb 8px,
+    #e5e7eb 9px
+  );
+}
+
+/* Variant chip base */
+.variant-chip {
+  @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium border transition-colors;
+  @apply border-gray-200 text-gray-600 bg-white hover:border-teal-500 hover:text-teal-700 cursor-pointer;
+}
+
+.variant-chip.active {
+  @apply border-teal-500 bg-teal-50 text-teal-700;
+}
+
+/* Marketplace color pill */
+.mp-pill {
+  @apply inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded;
+}
+
+/* Card hover lift */
+.product-card {
+  @apply transition-all duration-200;
+}
+.product-card:hover {
+  @apply -translate-y-0.5 shadow-md;
+}
+
+/* Search input */
+.search-input {
+  @apply w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-base
+         shadow-sm placeholder:text-gray-400 focus:outline-none
+         focus:ring-2 focus:ring-teal-500 focus:border-transparent;
+}
+
+/* Skeleton loader */
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+.skeleton {
+  @apply bg-gray-200 rounded;
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+/* Offer row */
+.offer-row {
+  @apply flex items-center justify-between gap-3 rounded-lg border border-gray-100
+         bg-white px-4 py-3 hover:border-teal-200 hover:bg-teal-50/40 transition-colors;
+}
