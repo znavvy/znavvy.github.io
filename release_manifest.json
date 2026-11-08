@@ -1,6 +1,6 @@
 {
-  "release_id": "znavvy-release_astro_worktree-20261108012038",
-  "created_at": "2026-11-08T01:20:38.062067+00:00",
+  "release_id": "znavvy-release_astro_worktree-20261108033330",
+  "created_at": "2026-11-08T03:33:30.758159+00:00",
   "target_platform": "Cloudflare Pages",
   "build_contract": {
     "framework": "Astro",
@@ -12,20 +12,20 @@
   },
   "source_package_metrics": {
     "path": "runtime/release_astro_worktree",
-    "total_files": 193,
-    "total_bytes": 14116473,
-    "total_megabytes": 13.46,
+    "total_files": 185,
+    "total_bytes": 13461232,
+    "total_megabytes": 12.84,
     "largest_files": [
       {
-        "bytes": 1105989,
-        "file": "public/api/catalog/page_1.json"
-      },
-      {
-        "bytes": 896771,
+        "bytes": 1013116,
         "file": "public/api/catalog/page_2.json"
       },
       {
-        "bytes": 787658,
+        "bytes": 1000296,
+        "file": "public/api/catalog/page_1.json"
+      },
+      {
+        "bytes": 777750,
         "file": "public/api/catalog/page_3.json"
       },
       {
@@ -40,22 +40,22 @@
   },
   "dist_metrics": {
     "path": "runtime/release_astro_worktree/dist",
-    "total_files": 319,
-    "total_bytes": 15501275,
-    "total_megabytes": 14.78,
-    "static_html_routes": 73,
-    "backward_compatible_permalinks": 73,
+    "total_files": 295,
+    "total_bytes": 14671758,
+    "total_megabytes": 13.99,
+    "static_html_routes": 65,
+    "backward_compatible_permalinks": 65,
     "synthetic_fixtures": 0
   },
   "catalog_integrity": {
-    "total_products": 72,
-    "total_offers": 4663,
-    "variant_groups_checked": 4008,
-    "price_source": "pdp_variant (98.4%), breakdown: {'pdp_variant': 4590, 'pdp_product': 73}",
+    "total_products": 64,
+    "total_offers": 4227,
+    "variant_groups_checked": 3572,
+    "price_source": "pdp_variant (98.6%), breakdown: {'pdp_variant': 4169, 'pdp_product': 58}",
     "external_thumbnail_urls": 0,
     "capture_dates": {
-      "2026-11-01": 3047,
-      "2026-11-02": 1324,
+      "2026-11-01": 2650,
+      "2026-11-02": 1285,
       "2026-11-07": 292
     },
     "fixed_thumbnails": {
@@ -80,19 +80,19 @@
     },
     "search_index_json": {
       "path": "public/api/search_index.json",
-      "sha256": "1e0bcfc3a84d4864fdcc361ec6aece6a298cb6454706d612356111fd3b10ef16"
+      "sha256": "34009ce9d6b73d4e05afab5a6abafb023f46062c96be39fa5cff87996f2e4ec0"
     },
     "catalog_page_1": {
       "path": "public/api/catalog/page_1.json",
-      "sha256": "744d473b6efbd7e14beced8705cb303648c9644e84277b4e55de24bcb82024af"
+      "sha256": "079a7f4476ff6cedfa9d5fb806adaf4003cef4cdc1df307e7cd67822babc5654"
     },
     "catalog_page_2": {
       "path": "public/api/catalog/page_2.json",
-      "sha256": "c5de59140eaf7eb927f6d80e2c739ab2f47476147f5e9eba379c301432387270"
+      "sha256": "c8acf712a1eac0fc42e93d790520099a430553869fdea0d8db3dce2da2afc341"
     },
     "catalog_page_3": {
       "path": "public/api/catalog/page_3.json",
-      "sha256": "83b7b24fb1d92b93e6109df3d41d6384684ee2ebcb1b506c9600935af815640c"
+      "sha256": "c7e40e824b7f16ffde6dc9bc7617b25ba6dac97bbb945a3344213b5739d29d92"
     },
     "dist_index_html": {
       "path": "dist/index.html",
@@ -120,15 +120,11 @@
     },
     "prod_public_apple_iphone_15": {
       "path": "public/api/products/Apple_iPhone_15.json",
-      "sha256": "c60375d3fcb84c579244efcdae3944fd7b32fb05770cff49f3f7f7495cc7ef69"
+      "sha256": "f6bf30d6dc1d1ce304e02610feb24c37605c7ef8eecefb0d084b5e250f1739c0"
     },
     "prod_public_apple_iphone_17": {
       "path": "public/api/products/apple_iphone_17.json",
-      "sha256": "632b632f38e25aaa97b5bda1b89f1ff7c5a37cf028562ffa611c52eed3b93652"
-    },
-    "prod_public_apple_watch_se_3rd_gen": {
-      "path": "public/api/products/apple_watch_se_3rd_gen.json",
-      "sha256": "9150970162efe2570416f3b10dc4acb7b453f9150d50f786aadc86d53718298f"
+      "sha256": "e3b45f4ab3db6af7779205c5853fd59c8172811ba90aa5b7504fbb2e600a49bf"
     },
     "prod_public_epson_workforce_ds_410": {
       "path": "public/api/products/epson_workforce_ds_410.json",
@@ -172,7 +168,7 @@
     },
     "prod_public_iphone_13": {
       "path": "public/api/products/iphone_13.json",
-      "sha256": "6bbdbb89def24b4b5e515bccd4347e9646d137e486a032977fff38881a52bc3f"
+      "sha256": "033f232e8be843c96ba6fd59fde1989475d4aabc16c26ac2e1b60ba004e65adb"
     },
     "prod_public_iphone_16": {
       "path": "public/api/products/iphone_16.json",
@@ -180,15 +176,7 @@
     },
     "prod_public_iphone_17e": {
       "path": "public/api/products/iphone_17e.json",
-      "sha256": "5ec71b11e09f1aeccff9c49e34fa80fe61f009239ccb7bd6250de201f6f9e0f8"
-    },
-    "prod_public_laptop_hp_envy_x360_14": {
-      "path": "public/api/products/laptop_hp_envy_x360_14.json",
-      "sha256": "5e39d9a78f6b8bd8b41f244a9408458515cbb623adda6f026fc4c7e32793a0f2"
-    },
-    "prod_public_lenovo_legion_monitor_27_10": {
-      "path": "public/api/products/lenovo_legion_monitor_27_10.json",
-      "sha256": "af6557075963dea2bddc2358ec58daf33ee1c795e5bf62f8ed4d6b1b775c86b7"
+      "sha256": "6d22b1238e5eee92a5d7cc54bf10e7ac992d104fb2914d4363f61d69e708425f"
     },
     "prod_public_lenovo_legion_tab_snapdragon_8_gen_3": {
       "path": "public/api/products/lenovo_legion_tab_snapdragon_8_gen_3.json",
@@ -222,10 +210,6 @@
       "path": "public/api/products/nubia_a76_5g.json",
       "sha256": "13540a328a0aebe7485455c7df91eff803310f215bee5c6783ff18a737791839"
     },
-    "prod_public_olike_p301_magsafe_wireless_powerbank_fast_charging": {
-      "path": "public/api/products/olike_p301_magsafe_wireless_powerbank_fast_charging.json",
-      "sha256": "5b661f195cfba3b16f707b6598f89476cc6e0bf29d0154368a261b63fd12f68b"
-    },
     "prod_public_oppo_a5i": {
       "path": "public/api/products/oppo_a5i.json",
       "sha256": "e930c13e88c29ef86e28ddd1fa12b24b3b92a2d1c6514c0cb4b7b6f1c100750b"
@@ -242,13 +226,9 @@
       "path": "public/api/products/oppo_reno15_5g.json",
       "sha256": "540b96792419d3320a69d8e1db4de4627759a0d8ec44b12b0a428cacbcd796ef"
     },
-    "prod_public_pc_rakitan_intel_core_i3_8100": {
-      "path": "public/api/products/pc_rakitan_intel_core_i3_8100.json",
-      "sha256": "489d4a0eb3e0b1002128000198902dacb10d752f79e2efd6c595b97d363d1b68"
-    },
     "prod_public_poco_x7_pro": {
       "path": "public/api/products/poco_x7_pro.json",
-      "sha256": "180a09477e8d8cfd9379fcd9b3f0bdddf30c663e54576c99428064c460da73ab"
+      "sha256": "4b88ff771491229b3dca63129990639c7ab2c03d6d23d9b53dfc0b431bd875d9"
     },
     "prod_public_proyektor_mini_android_portable_130_inch": {
       "path": "public/api/products/Proyektor_Mini_Android_Portable_130_Inch.json",
@@ -318,13 +298,9 @@
       "path": "public/api/products/sandisk_portable_ssd_e30.json",
       "sha256": "4a36cbccffe42b1458d4175b81842f57fe0de619528509365111679e6d486469"
     },
-    "prod_public_skintific_5x_ceramide_barrier_moisture_gel": {
-      "path": "public/api/products/skintific_5x_ceramide_barrier_moisture_gel.json",
-      "sha256": "03ac26d8963ac1979c88b25b58452f235e60dd13d04b4ebff322b588f78bb250"
-    },
     "prod_public_sony_ps5": {
       "path": "public/api/products/sony_ps5.json",
-      "sha256": "e71ab5ad90b1337d5201afdc0630f4c5cc57ca86a0ab866fdbb3eae5db210481"
+      "sha256": "a964ddd6b6c7d9b139ce7cb35db36ad610d8f0718cc98b4a0eb64c8065dd97fb"
     },
     "prod_public_tecno_camon_50": {
       "path": "public/api/products/tecno_camon_50.json",
@@ -337,10 +313,6 @@
     "prod_public_tecno_pova_7_5g": {
       "path": "public/api/products/tecno_pova_7_5g.json",
       "sha256": "b0023d3cf5a104f57346bfea530d292d0ee9b6e05b9e4771ea09ea42aef0cb53"
-    },
-    "prod_public_victoria_s_secret_bombshell_fragrance_mist": {
-      "path": "public/api/products/victoria_s_secret_bombshell_fragrance_mist.json",
-      "sha256": "bce89aeabe80d4752b02570ec640cf481761a5a591b3421b66be0226a7088eac"
     },
     "prod_public_vivo_v29e_5g": {
       "path": "public/api/products/vivo_v29e_5g.json",
@@ -361,10 +333,6 @@
     "prod_public_xiaomi_17t": {
       "path": "public/api/products/xiaomi_17t.json",
       "sha256": "c2fb309691df5bc28a84939df5ee23bc992f80ba7d2bea170063f6f5b6a4b624"
-    },
-    "prod_public_xiaomi_pad_7": {
-      "path": "public/api/products/xiaomi_pad_7.json",
-      "sha256": "0a1fa7e556fb624eb27ae48fc7877f1c81b94814a527c736d7946f8dc42d1288"
     },
     "prod_public_xiaomi_redmi_15": {
       "path": "public/api/products/xiaomi_redmi_15.json",
@@ -428,15 +396,15 @@
     },
     "dist::dist/api/catalog/page_1.json": {
       "path": "dist/api/catalog/page_1.json",
-      "sha256": "744d473b6efbd7e14beced8705cb303648c9644e84277b4e55de24bcb82024af"
+      "sha256": "079a7f4476ff6cedfa9d5fb806adaf4003cef4cdc1df307e7cd67822babc5654"
     },
     "dist::dist/api/catalog/page_2.json": {
       "path": "dist/api/catalog/page_2.json",
-      "sha256": "c5de59140eaf7eb927f6d80e2c739ab2f47476147f5e9eba379c301432387270"
+      "sha256": "c8acf712a1eac0fc42e93d790520099a430553869fdea0d8db3dce2da2afc341"
     },
     "dist::dist/api/catalog/page_3.json": {
       "path": "dist/api/catalog/page_3.json",
-      "sha256": "83b7b24fb1d92b93e6109df3d41d6384684ee2ebcb1b506c9600935af815640c"
+      "sha256": "c7e40e824b7f16ffde6dc9bc7617b25ba6dac97bbb945a3344213b5739d29d92"
     },
     "dist::dist/api/og-preview.png": {
       "path": "dist/api/og-preview.png",
@@ -444,7 +412,7 @@
     },
     "prod_dist_apple_iphone_15": {
       "path": "dist/api/products/Apple_iPhone_15.json",
-      "sha256": "c60375d3fcb84c579244efcdae3944fd7b32fb05770cff49f3f7f7495cc7ef69"
+      "sha256": "f6bf30d6dc1d1ce304e02610feb24c37605c7ef8eecefb0d084b5e250f1739c0"
     },
     "prod_dist_lenovo_motorola_moto_pad_60_neo": {
       "path": "dist/api/products/Lenovo_Motorola_Moto_Pad_60_Neo.json",
@@ -484,11 +452,7 @@
     },
     "prod_dist_apple_iphone_17": {
       "path": "dist/api/products/apple_iphone_17.json",
-      "sha256": "632b632f38e25aaa97b5bda1b89f1ff7c5a37cf028562ffa611c52eed3b93652"
-    },
-    "prod_dist_apple_watch_se_3rd_gen": {
-      "path": "dist/api/products/apple_watch_se_3rd_gen.json",
-      "sha256": "9150970162efe2570416f3b10dc4acb7b453f9150d50f786aadc86d53718298f"
+      "sha256": "e3b45f4ab3db6af7779205c5853fd59c8172811ba90aa5b7504fbb2e600a49bf"
     },
     "prod_dist_epson_workforce_ds_410": {
       "path": "dist/api/products/epson_workforce_ds_410.json",
@@ -532,7 +496,7 @@
     },
     "prod_dist_iphone_13": {
       "path": "dist/api/products/iphone_13.json",
-      "sha256": "6bbdbb89def24b4b5e515bccd4347e9646d137e486a032977fff38881a52bc3f"
+      "sha256": "033f232e8be843c96ba6fd59fde1989475d4aabc16c26ac2e1b60ba004e65adb"
     },
     "prod_dist_iphone_16": {
       "path": "dist/api/products/iphone_16.json",
@@ -540,15 +504,7 @@
     },
     "prod_dist_iphone_17e": {
       "path": "dist/api/products/iphone_17e.json",
-      "sha256": "5ec71b11e09f1aeccff9c49e34fa80fe61f009239ccb7bd6250de201f6f9e0f8"
-    },
-    "prod_dist_laptop_hp_envy_x360_14": {
-      "path": "dist/api/products/laptop_hp_envy_x360_14.json",
-      "sha256": "5e39d9a78f6b8bd8b41f244a9408458515cbb623adda6f026fc4c7e32793a0f2"
-    },
-    "prod_dist_lenovo_legion_monitor_27_10": {
-      "path": "dist/api/products/lenovo_legion_monitor_27_10.json",
-      "sha256": "af6557075963dea2bddc2358ec58daf33ee1c795e5bf62f8ed4d6b1b775c86b7"
+      "sha256": "6d22b1238e5eee92a5d7cc54bf10e7ac992d104fb2914d4363f61d69e708425f"
     },
     "prod_dist_lenovo_legion_tab_snapdragon_8_gen_3": {
       "path": "dist/api/products/lenovo_legion_tab_snapdragon_8_gen_3.json",
@@ -574,10 +530,6 @@
       "path": "dist/api/products/nubia_a76_5g.json",
       "sha256": "13540a328a0aebe7485455c7df91eff803310f215bee5c6783ff18a737791839"
     },
-    "prod_dist_olike_p301_magsafe_wireless_powerbank_fast_charging": {
-      "path": "dist/api/products/olike_p301_magsafe_wireless_powerbank_fast_charging.json",
-      "sha256": "5b661f195cfba3b16f707b6598f89476cc6e0bf29d0154368a261b63fd12f68b"
-    },
     "prod_dist_oppo_a5i": {
       "path": "dist/api/products/oppo_a5i.json",
       "sha256": "e930c13e88c29ef86e28ddd1fa12b24b3b92a2d1c6514c0cb4b7b6f1c100750b"
@@ -594,13 +546,9 @@
       "path": "dist/api/products/oppo_reno15_5g.json",
       "sha256": "540b96792419d3320a69d8e1db4de4627759a0d8ec44b12b0a428cacbcd796ef"
     },
-    "prod_dist_pc_rakitan_intel_core_i3_8100": {
-      "path": "dist/api/products/pc_rakitan_intel_core_i3_8100.json",
-      "sha256": "489d4a0eb3e0b1002128000198902dacb10d752f79e2efd6c595b97d363d1b68"
-    },
     "prod_dist_poco_x7_pro": {
       "path": "dist/api/products/poco_x7_pro.json",
-      "sha256": "180a09477e8d8cfd9379fcd9b3f0bdddf30c663e54576c99428064c460da73ab"
+      "sha256": "4b88ff771491229b3dca63129990639c7ab2c03d6d23d9b53dfc0b431bd875d9"
     },
     "prod_dist_realme_14t_5g": {
       "path": "dist/api/products/realme_14t_5g.json",
@@ -662,13 +610,9 @@
       "path": "dist/api/products/sandisk_portable_ssd_e30.json",
       "sha256": "4a36cbccffe42b1458d4175b81842f57fe0de619528509365111679e6d486469"
     },
-    "prod_dist_skintific_5x_ceramide_barrier_moisture_gel": {
-      "path": "dist/api/products/skintific_5x_ceramide_barrier_moisture_gel.json",
-      "sha256": "03ac26d8963ac1979c88b25b58452f235e60dd13d04b4ebff322b588f78bb250"
-    },
     "prod_dist_sony_ps5": {
       "path": "dist/api/products/sony_ps5.json",
-      "sha256": "e71ab5ad90b1337d5201afdc0630f4c5cc57ca86a0ab866fdbb3eae5db210481"
+      "sha256": "a964ddd6b6c7d9b139ce7cb35db36ad610d8f0718cc98b4a0eb64c8065dd97fb"
     },
     "prod_dist_tecno_camon_50": {
       "path": "dist/api/products/tecno_camon_50.json",
@@ -681,10 +625,6 @@
     "prod_dist_tecno_pova_7_5g": {
       "path": "dist/api/products/tecno_pova_7_5g.json",
       "sha256": "b0023d3cf5a104f57346bfea530d292d0ee9b6e05b9e4771ea09ea42aef0cb53"
-    },
-    "prod_dist_victoria_s_secret_bombshell_fragrance_mist": {
-      "path": "dist/api/products/victoria_s_secret_bombshell_fragrance_mist.json",
-      "sha256": "bce89aeabe80d4752b02570ec640cf481761a5a591b3421b66be0226a7088eac"
     },
     "prod_dist_vivo_v29e_5g": {
       "path": "dist/api/products/vivo_v29e_5g.json",
@@ -705,10 +645,6 @@
     "prod_dist_xiaomi_17t": {
       "path": "dist/api/products/xiaomi_17t.json",
       "sha256": "c2fb309691df5bc28a84939df5ee23bc992f80ba7d2bea170063f6f5b6a4b624"
-    },
-    "prod_dist_xiaomi_pad_7": {
-      "path": "dist/api/products/xiaomi_pad_7.json",
-      "sha256": "0a1fa7e556fb624eb27ae48fc7877f1c81b94814a527c736d7946f8dc42d1288"
     },
     "prod_dist_xiaomi_redmi_15": {
       "path": "dist/api/products/xiaomi_redmi_15.json",
@@ -732,7 +668,7 @@
     },
     "dist::dist/api/search_index.json": {
       "path": "dist/api/search_index.json",
-      "sha256": "1e0bcfc3a84d4864fdcc361ec6aece6a298cb6454706d612356111fd3b10ef16"
+      "sha256": "34009ce9d6b73d4e05afab5a6abafb023f46062c96be39fa5cff87996f2e4ec0"
     },
     "dist::dist/og-preview.png": {
       "path": "dist/og-preview.png",
@@ -825,14 +761,6 @@
     "dist::dist/product/apple_iphone_17/index.html": {
       "path": "dist/product/apple_iphone_17/index.html",
       "sha256": "a386cda9d0700a29dceb1fdd5d1816c4a2773d736fb9160bb3b5db9c8906a39a"
-    },
-    "dist::dist/product/apple_watch_se_3rd_gen.html": {
-      "path": "dist/product/apple_watch_se_3rd_gen.html",
-      "sha256": "e02311718f592a62fab505ed8f3483114846eebad0a242a979582839c95538da"
-    },
-    "dist::dist/product/apple_watch_se_3rd_gen/index.html": {
-      "path": "dist/product/apple_watch_se_3rd_gen/index.html",
-      "sha256": "e02311718f592a62fab505ed8f3483114846eebad0a242a979582839c95538da"
     },
     "dist::dist/product/epson_workforce_ds_410.html": {
       "path": "dist/product/epson_workforce_ds_410.html",
@@ -942,22 +870,6 @@
       "path": "dist/product/iphone_17e/index.html",
       "sha256": "a9e335a8eae834d84719e4cb28c3d65a730807f7695302af12a4ec0e5d95b7ae"
     },
-    "dist::dist/product/laptop_hp_envy_x360_14.html": {
-      "path": "dist/product/laptop_hp_envy_x360_14.html",
-      "sha256": "5a94a6587ecd5e5c4f191387ab4ff58e96e4ef716997b6796e00f9c1196f342a"
-    },
-    "dist::dist/product/laptop_hp_envy_x360_14/index.html": {
-      "path": "dist/product/laptop_hp_envy_x360_14/index.html",
-      "sha256": "5a94a6587ecd5e5c4f191387ab4ff58e96e4ef716997b6796e00f9c1196f342a"
-    },
-    "dist::dist/product/lenovo_legion_monitor_27_10.html": {
-      "path": "dist/product/lenovo_legion_monitor_27_10.html",
-      "sha256": "1af866ddc414c40811821c38b0c2761259816ea7273d71453d1ecb432b89f259"
-    },
-    "dist::dist/product/lenovo_legion_monitor_27_10/index.html": {
-      "path": "dist/product/lenovo_legion_monitor_27_10/index.html",
-      "sha256": "1af866ddc414c40811821c38b0c2761259816ea7273d71453d1ecb432b89f259"
-    },
     "dist::dist/product/lenovo_legion_tab_snapdragon_8_gen_3.html": {
       "path": "dist/product/lenovo_legion_tab_snapdragon_8_gen_3.html",
       "sha256": "02968958b81038c37aca2b6787bed5eb2991a86ac2623d8c1a85f432b715693a"
@@ -1006,14 +918,6 @@
       "path": "dist/product/nubia_a76_5g/index.html",
       "sha256": "0ad031d258f98d3faadd4959f27598d62b61576a356d653677ac58e052a02a5d"
     },
-    "dist::dist/product/olike_p301_magsafe_wireless_powerbank_fast_charging.html": {
-      "path": "dist/product/olike_p301_magsafe_wireless_powerbank_fast_charging.html",
-      "sha256": "f8ab1794419eb37b46d7a82a607d3fafa58abecc2fe7e0dc4352a0864fc91f44"
-    },
-    "dist::dist/product/olike_p301_magsafe_wireless_powerbank_fast_charging/index.html": {
-      "path": "dist/product/olike_p301_magsafe_wireless_powerbank_fast_charging/index.html",
-      "sha256": "f8ab1794419eb37b46d7a82a607d3fafa58abecc2fe7e0dc4352a0864fc91f44"
-    },
     "dist::dist/product/oppo_a5i.html": {
       "path": "dist/product/oppo_a5i.html",
       "sha256": "d54fc9ddba018b3ee424477ec7d8faa756c43fb2b920e8b880dd70d1f8b8ad34"
@@ -1045,14 +949,6 @@
     "dist::dist/product/oppo_reno15_5g/index.html": {
       "path": "dist/product/oppo_reno15_5g/index.html",
       "sha256": "e92c24b07052f400c8cf4119571b6b6e7804578b2be20e05db33590ff799bf29"
-    },
-    "dist::dist/product/pc_rakitan_intel_core_i3_8100.html": {
-      "path": "dist/product/pc_rakitan_intel_core_i3_8100.html",
-      "sha256": "a30ee1c65f77c28663ab47549b3f6eb0162e6f1f83f7c5d0066423047273e0f2"
-    },
-    "dist::dist/product/pc_rakitan_intel_core_i3_8100/index.html": {
-      "path": "dist/product/pc_rakitan_intel_core_i3_8100/index.html",
-      "sha256": "a30ee1c65f77c28663ab47549b3f6eb0162e6f1f83f7c5d0066423047273e0f2"
     },
     "dist::dist/product/poco_x7_pro.html": {
       "path": "dist/product/poco_x7_pro.html",
@@ -1182,14 +1078,6 @@
       "path": "dist/product/sandisk_portable_ssd_e30/index.html",
       "sha256": "04db600a08633f9ab63d368fca48ba6011f071f35dc07c2ef6f593c2bf61f8ef"
     },
-    "dist::dist/product/skintific_5x_ceramide_barrier_moisture_gel.html": {
-      "path": "dist/product/skintific_5x_ceramide_barrier_moisture_gel.html",
-      "sha256": "82b7c4aeea7c121be6297432e933151368eeed751208aa6fddb3df383678abac"
-    },
-    "dist::dist/product/skintific_5x_ceramide_barrier_moisture_gel/index.html": {
-      "path": "dist/product/skintific_5x_ceramide_barrier_moisture_gel/index.html",
-      "sha256": "82b7c4aeea7c121be6297432e933151368eeed751208aa6fddb3df383678abac"
-    },
     "dist::dist/product/sony_ps5.html": {
       "path": "dist/product/sony_ps5.html",
       "sha256": "b863a9edca77748312f897e02f28d1ef4b586bd34174560e3544800c0f35c71e"
@@ -1221,14 +1109,6 @@
     "dist::dist/product/tecno_pova_7_5g/index.html": {
       "path": "dist/product/tecno_pova_7_5g/index.html",
       "sha256": "0fab0fcd0434f79b867159375d88a2e110d802db7169c407fb2b2e4c0afe6465"
-    },
-    "dist::dist/product/victoria_s_secret_bombshell_fragrance_mist.html": {
-      "path": "dist/product/victoria_s_secret_bombshell_fragrance_mist.html",
-      "sha256": "7f6d69e99269d8d5619659b3fa45277f88c32b7096f1c0da8ae032de129e8218"
-    },
-    "dist::dist/product/victoria_s_secret_bombshell_fragrance_mist/index.html": {
-      "path": "dist/product/victoria_s_secret_bombshell_fragrance_mist/index.html",
-      "sha256": "7f6d69e99269d8d5619659b3fa45277f88c32b7096f1c0da8ae032de129e8218"
     },
     "dist::dist/product/vivo_v29e_5g.html": {
       "path": "dist/product/vivo_v29e_5g.html",
@@ -1269,14 +1149,6 @@
     "dist::dist/product/xiaomi_17t/index.html": {
       "path": "dist/product/xiaomi_17t/index.html",
       "sha256": "42219e5b6710bea2268c3a70d27fb83f14deac15e97cb3dc3f9d535470c5769d"
-    },
-    "dist::dist/product/xiaomi_pad_7.html": {
-      "path": "dist/product/xiaomi_pad_7.html",
-      "sha256": "76918feaeea201168802c21ddbe1917653236e5037aa42e2e2cf3d7ba2ff0332"
-    },
-    "dist::dist/product/xiaomi_pad_7/index.html": {
-      "path": "dist/product/xiaomi_pad_7/index.html",
-      "sha256": "76918feaeea201168802c21ddbe1917653236e5037aa42e2e2cf3d7ba2ff0332"
     },
     "dist::dist/product/xiaomi_redmi_15.html": {
       "path": "dist/product/xiaomi_redmi_15.html",
