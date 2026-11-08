@@ -1,6 +1,6 @@
 {
-  "release_id": "znavvy-release_astro_worktree-20261108033330",
-  "created_at": "2026-11-08T03:33:30.758159+00:00",
+  "release_id": "znavvy-release_astro_worktree-20261108234522",
+  "created_at": "2026-11-08T23:45:22.017599+00:00",
   "target_platform": "Cloudflare Pages",
   "build_contract": {
     "framework": "Astro",
@@ -12,51 +12,52 @@
   },
   "source_package_metrics": {
     "path": "runtime/release_astro_worktree",
-    "total_files": 185,
-    "total_bytes": 13461232,
-    "total_megabytes": 12.84,
+    "total_files": 190,
+    "total_bytes": 12959464,
+    "total_megabytes": 12.36,
     "largest_files": [
       {
-        "bytes": 1013116,
+        "bytes": 911088,
         "file": "public/api/catalog/page_2.json"
       },
       {
-        "bytes": 1000296,
+        "bytes": 799722,
         "file": "public/api/catalog/page_1.json"
       },
       {
-        "bytes": 777750,
+        "bytes": 711540,
         "file": "public/api/catalog/page_3.json"
       },
       {
-        "bytes": 429643,
+        "bytes": 372874,
         "file": "public/api/products/infinix_hot_70.json"
       },
       {
-        "bytes": 369914,
-        "file": "public/api/products/samsung_galaxy_a57_5g.json"
+        "bytes": 316076,
+        "file": "public/api/products/tecno_camon_50_pro_5g.json"
       }
     ]
   },
   "dist_metrics": {
     "path": "runtime/release_astro_worktree/dist",
-    "total_files": 295,
-    "total_bytes": 14671758,
-    "total_megabytes": 13.99,
-    "static_html_routes": 65,
-    "backward_compatible_permalinks": 65,
+    "total_files": 308,
+    "total_bytes": 14262619,
+    "total_megabytes": 13.6,
+    "static_html_routes": 69,
+    "backward_compatible_permalinks": 69,
     "synthetic_fixtures": 0
   },
   "catalog_integrity": {
-    "total_products": 64,
-    "total_offers": 4227,
-    "variant_groups_checked": 3572,
-    "price_source": "pdp_variant (98.6%), breakdown: {'pdp_variant': 4169, 'pdp_product': 58}",
+    "total_products": 68,
+    "total_offers": 4457,
+    "variant_groups_checked": 3015,
+    "price_source": "pdp_variant (98.6%), breakdown: {'pdp_variant': 4393, 'pdp_product': 64}",
     "external_thumbnail_urls": 0,
     "capture_dates": {
-      "2026-11-01": 2650,
-      "2026-11-02": 1285,
-      "2026-11-07": 292
+      "2026-11-01": 2867,
+      "2026-11-02": 1293,
+      "2026-11-07": 292,
+      "2026-11-08": 5
     },
     "fixed_thumbnails": {
       "lenovo_legion_monitor_27_10": "/static/images/Lenovo_Legion_Monitor_27-10.webp",
@@ -80,19 +81,19 @@
     },
     "search_index_json": {
       "path": "public/api/search_index.json",
-      "sha256": "34009ce9d6b73d4e05afab5a6abafb023f46062c96be39fa5cff87996f2e4ec0"
+      "sha256": "5900926b42e31715224b7dcde158dfc78fde7e9a94e086cf149b60963b660d1b"
     },
     "catalog_page_1": {
       "path": "public/api/catalog/page_1.json",
-      "sha256": "079a7f4476ff6cedfa9d5fb806adaf4003cef4cdc1df307e7cd67822babc5654"
+      "sha256": "6c137b2c55b05d2c5782df3d177986f258169f703394f20e53e2e5f13b7867c7"
     },
     "catalog_page_2": {
       "path": "public/api/catalog/page_2.json",
-      "sha256": "c8acf712a1eac0fc42e93d790520099a430553869fdea0d8db3dce2da2afc341"
+      "sha256": "8ebfb35e0e8353f7273d4435b1f29ee8e595c7bb5f466f16bc46d029b2121adc"
     },
     "catalog_page_3": {
       "path": "public/api/catalog/page_3.json",
-      "sha256": "c7e40e824b7f16ffde6dc9bc7617b25ba6dac97bbb945a3344213b5739d29d92"
+      "sha256": "4958be800a5dd51efa905b426f8064f8faa669dc9cf1e34456729c19893fb4f2"
     },
     "dist_index_html": {
       "path": "dist/index.html",
@@ -108,23 +109,23 @@
     },
     "prod_public_advan_tablet_sketsa_5": {
       "path": "public/api/products/advan_tablet_sketsa_5.json",
-      "sha256": "21f63eccd99d115d73b56a48dd88c6d462671a6141812609279a698613535a26"
+      "sha256": "ea90ab037474be6bbd5c552e3416de815e4f9ff78dbd5153385b86fb9c4aa3ad"
     },
     "prod_public_apple_ipad_pro_m1_11_wifi_only": {
       "path": "public/api/products/apple_ipad_pro_m1_11_wifi_only.json",
-      "sha256": "0bb417ed2b6819a1281433c017bb687c54fc9df349cb362a44faec0085eae168"
+      "sha256": "defd29175e0f10c509ee97af9213ace4bbbee46c01b2c20f58eab1eb0242dbed"
     },
     "prod_public_apple_ipad_pro_m4_5th_gen": {
       "path": "public/api/products/apple_ipad_pro_m4_5th_gen.json",
-      "sha256": "8f1de0d3b848ec0e9843be0afc0312e067093566814dc1a688fb7fba9011b8a3"
+      "sha256": "c05e0ede98b83d82d1ccfe8b2aefa648e5c34e1add46eb52ca8e2d3dbf040d42"
     },
     "prod_public_apple_iphone_15": {
       "path": "public/api/products/Apple_iPhone_15.json",
-      "sha256": "f6bf30d6dc1d1ce304e02610feb24c37605c7ef8eecefb0d084b5e250f1739c0"
+      "sha256": "33ff44125255f998473d7b20f3bb2193a584db6e86b945251a580c9f4049d90e"
     },
     "prod_public_apple_iphone_17": {
       "path": "public/api/products/apple_iphone_17.json",
-      "sha256": "e3b45f4ab3db6af7779205c5853fd59c8172811ba90aa5b7504fbb2e600a49bf"
+      "sha256": "c3b00c2271a7c0faf950676c5dfcf1eba55ee654c2a70e5133dba8ba55676935"
     },
     "prod_public_epson_workforce_ds_410": {
       "path": "public/api/products/epson_workforce_ds_410.json",
@@ -132,75 +133,79 @@
     },
     "prod_public_huawei_matepad_se": {
       "path": "public/api/products/huawei_matepad_se.json",
-      "sha256": "301314b82aabf8e6122c9a9f4dc5cc78389805a2bdc0fc5b1e93569b0386494f"
+      "sha256": "fb223b52cb46af1c0a531867b81d06c6ba4b604a82367f8cfdd34a8847ca6f92"
     },
     "prod_public_infinix_gt_50_pro": {
       "path": "public/api/products/infinix_gt_50_pro.json",
-      "sha256": "d0a1831e169bd0cb3138a90ce18b8508f9518e2bc8a7355950c879d5f827ff42"
+      "sha256": "efd7bd86e607ecdae52c668bed5c74765a35605f415bad3d955c0ea19a503c07"
     },
     "prod_public_infinix_hot_60i": {
       "path": "public/api/products/infinix_hot_60i.json",
-      "sha256": "99207a3f722477c775731b7a8126296a86afb03985f39c66e1d8fbbf976d3cca"
+      "sha256": "267551cfc5963ad77308eb9800b05b2682b01708d8dd580c65fdcbc79cb685c7"
     },
     "prod_public_infinix_hot_70": {
       "path": "public/api/products/infinix_hot_70.json",
-      "sha256": "45e86207ad88fc4d01afd98e8b955a9a29cfaafadf3ce62ea983ac7e04e917ed"
+      "sha256": "43393b07bed6a5dcacdaa7444f324eabd6148af145b17277672ff465b5b8073a"
     },
     "prod_public_infinix_note_30": {
       "path": "public/api/products/infinix_note_30.json",
-      "sha256": "3f8a8f5941bc937d51ddf9f218e62d2da1b1f45fca6d9715ac25c6a5412c13cc"
+      "sha256": "e91aa46783d5af3368c0e5b62b611fad5e42c6b4065cfbacf641820796add083"
     },
     "prod_public_infinix_note_60_5g": {
       "path": "public/api/products/infinix_note_60_5g.json",
-      "sha256": "28f6a492764fb140d9cdf6711a6f5d2152ab21cc77f1070adeb8a58a7b1c0e43"
+      "sha256": "abf143936ac5ad7200fcfc0c3241346c16260c7acd8701fe169ea5fe0701b091"
     },
     "prod_public_infinix_smart_20": {
       "path": "public/api/products/infinix_smart_20.json",
-      "sha256": "cfaa595edfccfb5797a1c2e994a079e5f323f8af8bab1b1560c0a58785d610bc"
+      "sha256": "907c6f181379d8bd1c78f7e1a9aee4f282e4c543becc954b1cb754e155806068"
     },
     "prod_public_infinix_xpad_30e_lte": {
       "path": "public/api/products/infinix_xpad_30e_lte.json",
-      "sha256": "cac1fe34bf6e2b52f664bf74aeeda9e98f3477fad13254df86f3d79af9f92472"
+      "sha256": "8488e9687bbe891b1643246509c535d373bb9c05be7c48ee13433de3a7243295"
     },
     "prod_public_ipad_mini_7": {
       "path": "public/api/products/ipad_mini_7.json",
-      "sha256": "2498030ec93152964048e061c27f41b394d930a58a8fefdeff068c71a9195425"
+      "sha256": "94e581c8f12880f9f2bf1b824b506befac82ebeea809772588796c3f444d1449"
     },
     "prod_public_iphone_13": {
       "path": "public/api/products/iphone_13.json",
-      "sha256": "033f232e8be843c96ba6fd59fde1989475d4aabc16c26ac2e1b60ba004e65adb"
+      "sha256": "7e4632c799c0561201ed05a99adba9d0366dd254258b83eedf5fdeb3ab4b4bf2"
     },
     "prod_public_iphone_16": {
       "path": "public/api/products/iphone_16.json",
-      "sha256": "1dc662adb3a98f575d90100bf3efd601d505cffa9f5c776fa1f96ca431a53fd8"
+      "sha256": "d298f9333a733ae296ebf56d9024cb334a422034315446a19451fa133e532136"
     },
     "prod_public_iphone_17e": {
       "path": "public/api/products/iphone_17e.json",
-      "sha256": "6d22b1238e5eee92a5d7cc54bf10e7ac992d104fb2914d4363f61d69e708425f"
+      "sha256": "635b164b9de689e68fd243f7ce8ed177fc6a390954f4aa9698e131570a2bd05d"
+    },
+    "prod_public_laptop_hp_envy_x360_14": {
+      "path": "public/api/products/laptop_hp_envy_x360_14.json",
+      "sha256": "1a5f3c2ff69bebffe1c6fefbcb3192dbde34ff1226f95ec1e3e85b1e8a154b08"
     },
     "prod_public_lenovo_legion_tab_snapdragon_8_gen_3": {
       "path": "public/api/products/lenovo_legion_tab_snapdragon_8_gen_3.json",
-      "sha256": "67a1d427eb747c6efb82345771e0c38f7b92129999f7a50b800806026893bd71"
+      "sha256": "f508220084ab8787a9e8b617c39749d46d9c9be9e6774e779fb3f67a7e94c84b"
     },
     "prod_public_lenovo_motorola_moto_pad_60_neo": {
       "path": "public/api/products/Lenovo_Motorola_Moto_Pad_60_Neo.json",
-      "sha256": "8865d03d6e695131e29e0046c21164d5dba1ff570120d265ceefdcfe3205f9c0"
+      "sha256": "6cf0a39aefb2df8cba900eb0202ce4d3c8d70e2b3ff56f7c924a9b5978f24dc5"
     },
     "prod_public_motorola_edge_60_fusion_5g": {
       "path": "public/api/products/motorola_edge_60_fusion_5g.json",
-      "sha256": "addfa28dd0680f9ac9e4003cbff751cddb16471dc030573da324eb1433a2048e"
+      "sha256": "5ee87396ea2f5906758847c613bb007fa12686042318564cceca252bd7af5162"
     },
     "prod_public_motorola_edge_60_pro_5g": {
       "path": "public/api/products/motorola_edge_60_pro_5g.json",
-      "sha256": "e074b7758c47986a03584d1726f1b902a8e2b61980fee7a555f3ee2e210250f5"
+      "sha256": "fef3714a3263363919717500e73a5ea87fa989986cac18771ba573de2b010bd3"
     },
     "prod_public_motorola_g57_power_5g": {
       "path": "public/api/products/motorola_g57_power_5g.json",
-      "sha256": "cda252b6632a107db6a96859dfe82591a9db46973f020348909f45b853939dfb"
+      "sha256": "5766b3b0c0bcfd1b3c25f2944c4cbd4a0ec0167d646af7a7189e8d6405bc4792"
     },
     "prod_public_motorola_g67_power_5g": {
       "path": "public/api/products/motorola_g67_power_5g.json",
-      "sha256": "16eaef0af4d39b55e895903d1054fbdb46e2a3f26b295e2c4a10df6d35cdba4a"
+      "sha256": "72356dc7b3d8dbfaebc0d90d3adf1a4082397af7101884ea02bd0d6d5be385d3"
     },
     "prod_public_motorola_moto_g06_power": {
       "path": "public/api/products/Motorola_Moto_G06_Power.json",
@@ -212,7 +217,7 @@
     },
     "prod_public_oppo_a5i": {
       "path": "public/api/products/oppo_a5i.json",
-      "sha256": "e930c13e88c29ef86e28ddd1fa12b24b3b92a2d1c6514c0cb4b7b6f1c100750b"
+      "sha256": "cac76ca32f9fc6672d4edb32e726c1a11ad49d0f8289f9a399788378d1a76d44"
     },
     "prod_public_oppo_find_x9": {
       "path": "public/api/products/oppo_find_x9.json",
@@ -220,15 +225,19 @@
     },
     "prod_public_oppo_pad_se": {
       "path": "public/api/products/oppo_pad_se.json",
-      "sha256": "84cedcadc1f8f38fa8b16a136e66315c6690c5a4f8da5266f581ed54adf00944"
+      "sha256": "eb5d3bdc17e71c7629bf9275f60e79fbfba3fdf5eb8b1791ea02b40a1ce7d131"
     },
     "prod_public_oppo_reno15_5g": {
       "path": "public/api/products/oppo_reno15_5g.json",
-      "sha256": "540b96792419d3320a69d8e1db4de4627759a0d8ec44b12b0a428cacbcd796ef"
+      "sha256": "53c8c266a979fe3b7397d8bebae3cc46369e9e2185e85612427a03790ca4a563"
+    },
+    "prod_public_pc_rakitan_intel_core_i3_8100": {
+      "path": "public/api/products/pc_rakitan_intel_core_i3_8100.json",
+      "sha256": "1c32715dc5f5a395aec213fb4e8a329c295834091834c66849f290880e61eff0"
     },
     "prod_public_poco_x7_pro": {
       "path": "public/api/products/poco_x7_pro.json",
-      "sha256": "4b88ff771491229b3dca63129990639c7ab2c03d6d23d9b53dfc0b431bd875d9"
+      "sha256": "180a09477e8d8cfd9379fcd9b3f0bdddf30c663e54576c99428064c460da73ab"
     },
     "prod_public_proyektor_mini_android_portable_130_inch": {
       "path": "public/api/products/Proyektor_Mini_Android_Portable_130_Inch.json",
@@ -236,51 +245,55 @@
     },
     "prod_public_realme_14t_5g": {
       "path": "public/api/products/realme_14t_5g.json",
-      "sha256": "4f537a2a6e8a3a756b54df5610456a73c34f61746fda8d745170c6dec81658d5"
+      "sha256": "bc2792d1e24866733461213a3484a24a36042a4e529d84cfbb52c2712075ac19"
     },
     "prod_public_realme_note_80": {
       "path": "public/api/products/realme_note_80.json",
-      "sha256": "664d69fb9b6e1525ead5939fc8c05fdb81b1f97b3f650a92659be83917d581a5"
+      "sha256": "aac4df6ea23a415f195ed8f5c7eb1f455baea6cb9607db804863998804605a3b"
+    },
+    "prod_public_redmi_note_14_5g": {
+      "path": "public/api/products/redmi_note_14_5g.json",
+      "sha256": "1b69fd01368968f84cb14165275f4109478b3c38957fbf6f506813052a0ef7eb"
     },
     "prod_public_samsung_a05s": {
       "path": "public/api/products/samsung_a05s.json",
-      "sha256": "a90a8b3ef2a88d15f26270f2d3c86f0ec74bff22b8f611c3965e94442aadef5e"
+      "sha256": "9dbc04e6f51f9a3bc88d4f251d251ede8bbabfce95ce13f37619ef2a7a395237"
     },
     "prod_public_samsung_galaxy_a07_lte": {
       "path": "public/api/products/samsung_galaxy_a07_lte.json",
-      "sha256": "6ded40a0fee003cdb67432460d1f128b7a3bdc08e836de69c1ede66cb77257c5"
+      "sha256": "c4ce42e00a29afcc321e3f710a2b80783028a2f44d5bcf2d15cd8c8536445787"
     },
     "prod_public_samsung_galaxy_a17_5g": {
       "path": "public/api/products/samsung_galaxy_a17_5g.json",
-      "sha256": "bc150c6a44d197bf8b0e9290acb836db8f2a09482bb12106d1652d11062efbd9"
+      "sha256": "9e0fc7d0a230b874c03fd4711add3026b0b5676b5b82a9ae13805ca66694d12d"
     },
     "prod_public_samsung_galaxy_a36": {
       "path": "public/api/products/samsung_galaxy_a36.json",
-      "sha256": "3090ab551dc6f8fa9b9376aafb4636100c86a624c07761caa2a343f85bcd3036"
+      "sha256": "9c1f277418a1af41d877c2e8a14daf9f600b0e8428d24631ccd86b2474a2dc06"
     },
     "prod_public_samsung_galaxy_a37_5g": {
       "path": "public/api/products/samsung_galaxy_a37_5g.json",
-      "sha256": "6c26e3c300d803d721abc639cb3135c8864da1494779f592035faf4366f1e539"
+      "sha256": "94c36b4e8be6804af3bd376afc226e9f64ad8544a4490ccdc6d4bca1d0cc1aec"
     },
     "prod_public_samsung_galaxy_a57_5g": {
       "path": "public/api/products/samsung_galaxy_a57_5g.json",
-      "sha256": "db76361de210ac9def352485e694a8e789eaa81b4aea315207d002fcef88b175"
+      "sha256": "eeedd38ee6a4edaad894a4c912c118d4b4bcaa630ac69ba1609916d68ef4e3d4"
     },
     "prod_public_samsung_galaxy_s23_plus": {
       "path": "public/api/products/samsung_galaxy_s23_plus.json",
-      "sha256": "eae40a1697e4a65a9e919b7b37a3f5000f3f8ba3d851cd678b6d57b284bbed4e"
+      "sha256": "6edb80a321a461e72a0a8f0e14489c442e87a7d1fb4102124a5c51df0e8f65d8"
     },
     "prod_public_samsung_galaxy_s25": {
       "path": "public/api/products/samsung_galaxy_s25.json",
-      "sha256": "2a911901fc609fd869adcc5df6884eab6d71c0ce986caa1d079da7eeca8e7ff2"
+      "sha256": "5951dbc62a0e4f849751e5d228af17795e3ee0f2349881339a8760a088081b5f"
     },
     "prod_public_samsung_galaxy_tab_s10_fe": {
       "path": "public/api/products/samsung_galaxy_tab_s10_fe.json",
-      "sha256": "9441a50630988a099488a75e9a224372910a1f683467f97f35fc1ffafd724d5d"
+      "sha256": "3e695b3e2ffd79077fc52444bdac5a302cb4b0d78b35d1af48a3c5724ae1e2b0"
     },
     "prod_public_samsung_galaxy_tab_s10_lite": {
       "path": "public/api/products/samsung_galaxy_tab_s10_lite.json",
-      "sha256": "ee75c48842137f31dfd6f3e2cb12cb0a41732ca80691bf04bbf3fe2b5a319b07"
+      "sha256": "074cef81b426a081d8e4cd85b864d6ca4fc509e34097a2651d8fb739a8ec3442"
     },
     "prod_public_samsung_galaxy_tab_s9_fe": {
       "path": "public/api/products/samsung_galaxy_tab_s9_fe.json",
@@ -292,55 +305,59 @@
     },
     "prod_public_samsung_s23_ultra": {
       "path": "public/api/products/samsung_s23_ultra.json",
-      "sha256": "347588455c8ff2df00ed95ca685707e983c1648cf539449f4dbd0cba4394b061"
+      "sha256": "1f02da67068c564d02973312c58d9b955b5ead6edfb38b7e83ef61f534e4f143"
     },
     "prod_public_sandisk_portable_ssd_e30": {
       "path": "public/api/products/sandisk_portable_ssd_e30.json",
-      "sha256": "4a36cbccffe42b1458d4175b81842f57fe0de619528509365111679e6d486469"
+      "sha256": "a45caa945e147aae41dfc58b82ed47a7887dcad4bb04768ac61daf168bbc0846"
+    },
+    "prod_public_skintific_5x_ceramide_barrier_moisture_gel": {
+      "path": "public/api/products/skintific_5x_ceramide_barrier_moisture_gel.json",
+      "sha256": "b3ed35f8f11dd2ecce81550ad15f2870d0ab584bf44f33c25b7dc14ec9e4d64a"
     },
     "prod_public_sony_ps5": {
       "path": "public/api/products/sony_ps5.json",
-      "sha256": "a964ddd6b6c7d9b139ce7cb35db36ad610d8f0718cc98b4a0eb64c8065dd97fb"
+      "sha256": "747040c7ac68c4242ae176fb85c3edd2d10898b95eb13c3d949309d96cfaff4e"
     },
     "prod_public_tecno_camon_50": {
       "path": "public/api/products/tecno_camon_50.json",
-      "sha256": "27d02a1ee4d9bb68194579abf4528e5d4bef9474eac1a6306bcc4ddf707eabe7"
+      "sha256": "249d57c02f249e71c37420b9aa3c17c87f0f2c2e4220f541b54056661790b3ab"
     },
     "prod_public_tecno_camon_50_pro_5g": {
       "path": "public/api/products/tecno_camon_50_pro_5g.json",
-      "sha256": "362aceaa1d8f9a8f6a0d1db09b2061d9937999a049d073f128085cd8d77c457a"
+      "sha256": "a2449224b2680177035e6611bf33b1e99967f71858cec80147bf5545de2294cf"
     },
     "prod_public_tecno_pova_7_5g": {
       "path": "public/api/products/tecno_pova_7_5g.json",
-      "sha256": "b0023d3cf5a104f57346bfea530d292d0ee9b6e05b9e4771ea09ea42aef0cb53"
+      "sha256": "15c8b25b70bb1b968ff2033e21722389b321407e1c87958eff53d6969dc58768"
     },
     "prod_public_vivo_v29e_5g": {
       "path": "public/api/products/vivo_v29e_5g.json",
-      "sha256": "5d45c9775433ab2cabf1b0aa8e1113bba48a3fd24d2367c3dc65467deb13a75c"
+      "sha256": "d9e3aa1ef2c6411309a5a78b4935b4541df50b5cd7f93af5d2ef6fa573a6f5ee"
     },
     "prod_public_vivo_y19s_pro": {
       "path": "public/api/products/vivo_y19s_pro.json",
-      "sha256": "fda2eb9aba82ba09c02300432a22beee9a4266c7ab85b43d21796966b91a9f93"
+      "sha256": "e625037779c726d6ad97d2d570d63675af3026f74d10b1259853781abb401492"
     },
     "prod_public_vivo_y400": {
       "path": "public/api/products/vivo_y400.json",
-      "sha256": "57b4ee33181c5fae04b0d1c34d281ef3ed6abf4ba98b2a83783327223ceb0538"
+      "sha256": "b8e026fb8fb8356ddbf7daa08f3b419891a80fef1f6ca3c21d8edeef29469a07"
     },
     "prod_public_xiaomi_15t": {
       "path": "public/api/products/xiaomi_15t.json",
-      "sha256": "9335340d34dc13e2ff04187f263dcd167dea0ace4c0eb8bb8bdb53c27cab81cb"
+      "sha256": "a78ddd76b89af798bfa1f5b9773ad3457f6b61c64da98755f236544b52ecb3ca"
     },
     "prod_public_xiaomi_17t": {
       "path": "public/api/products/xiaomi_17t.json",
-      "sha256": "c2fb309691df5bc28a84939df5ee23bc992f80ba7d2bea170063f6f5b6a4b624"
+      "sha256": "940bee409835426446b7234c835d099a6f215a47e54d497ef26dfc32f8b247bd"
     },
     "prod_public_xiaomi_redmi_15": {
       "path": "public/api/products/xiaomi_redmi_15.json",
-      "sha256": "6e434538b4b52e92b5d3a93663862987c58127e1883b422a3548aff2e2c4e98e"
+      "sha256": "ef7ebb60c36e1c8c768afae1606d0a13752d7536f09fcb3064f6696fbdbbb701"
     },
     "prod_public_xiaomi_redmi_a7_pro": {
       "path": "public/api/products/xiaomi_redmi_a7_pro.json",
-      "sha256": "a1b349abfe92cc4cbdfa24c9e444f287bd81e0497d505743f268d2058eb51959"
+      "sha256": "e0b2d8e9f920ffd5fc32b6db794559d1994d150ce68e5c36bc261520f1c40a55"
     },
     "prod_public_xiaomi_redmi_note_13": {
       "path": "public/api/products/Xiaomi_Redmi_Note_13.json",
@@ -348,11 +365,11 @@
     },
     "prod_public_xiaomi_redmi_note_13_5g": {
       "path": "public/api/products/xiaomi_redmi_note_13_5g.json",
-      "sha256": "8fcaf3dbf574f48933c01c8926ac640b5edb424f3faded1bfda46945e0be1779"
+      "sha256": "163b67a1c49f7b5ebcd9fc17843be42ab35b7907f0810dcc83128044d6865880"
     },
     "prod_public_xiaomi_redmi_note_15": {
       "path": "public/api/products/Xiaomi_Redmi_Note_15.json",
-      "sha256": "2aa12acfd8497a8cb8a28955825849271f60421d7d6a1881939129a8a69811b4"
+      "sha256": "66b9466a2aa60cb1abd4604c338392e891b7656472bf4e14db6d141b7661b8bb"
     },
     "prod_public_xiaomi_redmi_pad_2": {
       "path": "public/api/products/xiaomi_redmi_pad_2.json",
@@ -360,7 +377,7 @@
     },
     "prod_public_zte_nubia_v80_max": {
       "path": "public/api/products/zte_nubia_v80_max.json",
-      "sha256": "930bac50e87f43f26ccd10c54a1bb23636666e35afe8d5dfa5ef9a2d1fd08937"
+      "sha256": "93792b2d137b6d2d850a02aac43490a7025e4045793cff0b56b7f9a6481c52ea"
     },
     "dist::dist/.nojekyll": {
       "path": "dist/.nojekyll",
@@ -396,15 +413,15 @@
     },
     "dist::dist/api/catalog/page_1.json": {
       "path": "dist/api/catalog/page_1.json",
-      "sha256": "079a7f4476ff6cedfa9d5fb806adaf4003cef4cdc1df307e7cd67822babc5654"
+      "sha256": "6c137b2c55b05d2c5782df3d177986f258169f703394f20e53e2e5f13b7867c7"
     },
     "dist::dist/api/catalog/page_2.json": {
       "path": "dist/api/catalog/page_2.json",
-      "sha256": "c8acf712a1eac0fc42e93d790520099a430553869fdea0d8db3dce2da2afc341"
+      "sha256": "8ebfb35e0e8353f7273d4435b1f29ee8e595c7bb5f466f16bc46d029b2121adc"
     },
     "dist::dist/api/catalog/page_3.json": {
       "path": "dist/api/catalog/page_3.json",
-      "sha256": "c7e40e824b7f16ffde6dc9bc7617b25ba6dac97bbb945a3344213b5739d29d92"
+      "sha256": "4958be800a5dd51efa905b426f8064f8faa669dc9cf1e34456729c19893fb4f2"
     },
     "dist::dist/api/og-preview.png": {
       "path": "dist/api/og-preview.png",
@@ -412,11 +429,11 @@
     },
     "prod_dist_apple_iphone_15": {
       "path": "dist/api/products/Apple_iPhone_15.json",
-      "sha256": "f6bf30d6dc1d1ce304e02610feb24c37605c7ef8eecefb0d084b5e250f1739c0"
+      "sha256": "33ff44125255f998473d7b20f3bb2193a584db6e86b945251a580c9f4049d90e"
     },
     "prod_dist_lenovo_motorola_moto_pad_60_neo": {
       "path": "dist/api/products/Lenovo_Motorola_Moto_Pad_60_Neo.json",
-      "sha256": "8865d03d6e695131e29e0046c21164d5dba1ff570120d265ceefdcfe3205f9c0"
+      "sha256": "6cf0a39aefb2df8cba900eb0202ce4d3c8d70e2b3ff56f7c924a9b5978f24dc5"
     },
     "prod_dist_motorola_moto_g06_power": {
       "path": "dist/api/products/Motorola_Moto_G06_Power.json",
@@ -436,23 +453,23 @@
     },
     "prod_dist_xiaomi_redmi_note_15": {
       "path": "dist/api/products/Xiaomi_Redmi_Note_15.json",
-      "sha256": "2aa12acfd8497a8cb8a28955825849271f60421d7d6a1881939129a8a69811b4"
+      "sha256": "66b9466a2aa60cb1abd4604c338392e891b7656472bf4e14db6d141b7661b8bb"
     },
     "prod_dist_advan_tablet_sketsa_5": {
       "path": "dist/api/products/advan_tablet_sketsa_5.json",
-      "sha256": "21f63eccd99d115d73b56a48dd88c6d462671a6141812609279a698613535a26"
+      "sha256": "ea90ab037474be6bbd5c552e3416de815e4f9ff78dbd5153385b86fb9c4aa3ad"
     },
     "prod_dist_apple_ipad_pro_m1_11_wifi_only": {
       "path": "dist/api/products/apple_ipad_pro_m1_11_wifi_only.json",
-      "sha256": "0bb417ed2b6819a1281433c017bb687c54fc9df349cb362a44faec0085eae168"
+      "sha256": "defd29175e0f10c509ee97af9213ace4bbbee46c01b2c20f58eab1eb0242dbed"
     },
     "prod_dist_apple_ipad_pro_m4_5th_gen": {
       "path": "dist/api/products/apple_ipad_pro_m4_5th_gen.json",
-      "sha256": "8f1de0d3b848ec0e9843be0afc0312e067093566814dc1a688fb7fba9011b8a3"
+      "sha256": "c05e0ede98b83d82d1ccfe8b2aefa648e5c34e1add46eb52ca8e2d3dbf040d42"
     },
     "prod_dist_apple_iphone_17": {
       "path": "dist/api/products/apple_iphone_17.json",
-      "sha256": "e3b45f4ab3db6af7779205c5853fd59c8172811ba90aa5b7504fbb2e600a49bf"
+      "sha256": "c3b00c2271a7c0faf950676c5dfcf1eba55ee654c2a70e5133dba8ba55676935"
     },
     "prod_dist_epson_workforce_ds_410": {
       "path": "dist/api/products/epson_workforce_ds_410.json",
@@ -460,71 +477,75 @@
     },
     "prod_dist_huawei_matepad_se": {
       "path": "dist/api/products/huawei_matepad_se.json",
-      "sha256": "301314b82aabf8e6122c9a9f4dc5cc78389805a2bdc0fc5b1e93569b0386494f"
+      "sha256": "fb223b52cb46af1c0a531867b81d06c6ba4b604a82367f8cfdd34a8847ca6f92"
     },
     "prod_dist_infinix_gt_50_pro": {
       "path": "dist/api/products/infinix_gt_50_pro.json",
-      "sha256": "d0a1831e169bd0cb3138a90ce18b8508f9518e2bc8a7355950c879d5f827ff42"
+      "sha256": "efd7bd86e607ecdae52c668bed5c74765a35605f415bad3d955c0ea19a503c07"
     },
     "prod_dist_infinix_hot_60i": {
       "path": "dist/api/products/infinix_hot_60i.json",
-      "sha256": "99207a3f722477c775731b7a8126296a86afb03985f39c66e1d8fbbf976d3cca"
+      "sha256": "267551cfc5963ad77308eb9800b05b2682b01708d8dd580c65fdcbc79cb685c7"
     },
     "prod_dist_infinix_hot_70": {
       "path": "dist/api/products/infinix_hot_70.json",
-      "sha256": "45e86207ad88fc4d01afd98e8b955a9a29cfaafadf3ce62ea983ac7e04e917ed"
+      "sha256": "43393b07bed6a5dcacdaa7444f324eabd6148af145b17277672ff465b5b8073a"
     },
     "prod_dist_infinix_note_30": {
       "path": "dist/api/products/infinix_note_30.json",
-      "sha256": "3f8a8f5941bc937d51ddf9f218e62d2da1b1f45fca6d9715ac25c6a5412c13cc"
+      "sha256": "e91aa46783d5af3368c0e5b62b611fad5e42c6b4065cfbacf641820796add083"
     },
     "prod_dist_infinix_note_60_5g": {
       "path": "dist/api/products/infinix_note_60_5g.json",
-      "sha256": "28f6a492764fb140d9cdf6711a6f5d2152ab21cc77f1070adeb8a58a7b1c0e43"
+      "sha256": "abf143936ac5ad7200fcfc0c3241346c16260c7acd8701fe169ea5fe0701b091"
     },
     "prod_dist_infinix_smart_20": {
       "path": "dist/api/products/infinix_smart_20.json",
-      "sha256": "cfaa595edfccfb5797a1c2e994a079e5f323f8af8bab1b1560c0a58785d610bc"
+      "sha256": "907c6f181379d8bd1c78f7e1a9aee4f282e4c543becc954b1cb754e155806068"
     },
     "prod_dist_infinix_xpad_30e_lte": {
       "path": "dist/api/products/infinix_xpad_30e_lte.json",
-      "sha256": "cac1fe34bf6e2b52f664bf74aeeda9e98f3477fad13254df86f3d79af9f92472"
+      "sha256": "8488e9687bbe891b1643246509c535d373bb9c05be7c48ee13433de3a7243295"
     },
     "prod_dist_ipad_mini_7": {
       "path": "dist/api/products/ipad_mini_7.json",
-      "sha256": "2498030ec93152964048e061c27f41b394d930a58a8fefdeff068c71a9195425"
+      "sha256": "94e581c8f12880f9f2bf1b824b506befac82ebeea809772588796c3f444d1449"
     },
     "prod_dist_iphone_13": {
       "path": "dist/api/products/iphone_13.json",
-      "sha256": "033f232e8be843c96ba6fd59fde1989475d4aabc16c26ac2e1b60ba004e65adb"
+      "sha256": "7e4632c799c0561201ed05a99adba9d0366dd254258b83eedf5fdeb3ab4b4bf2"
     },
     "prod_dist_iphone_16": {
       "path": "dist/api/products/iphone_16.json",
-      "sha256": "1dc662adb3a98f575d90100bf3efd601d505cffa9f5c776fa1f96ca431a53fd8"
+      "sha256": "d298f9333a733ae296ebf56d9024cb334a422034315446a19451fa133e532136"
     },
     "prod_dist_iphone_17e": {
       "path": "dist/api/products/iphone_17e.json",
-      "sha256": "6d22b1238e5eee92a5d7cc54bf10e7ac992d104fb2914d4363f61d69e708425f"
+      "sha256": "635b164b9de689e68fd243f7ce8ed177fc6a390954f4aa9698e131570a2bd05d"
+    },
+    "prod_dist_laptop_hp_envy_x360_14": {
+      "path": "dist/api/products/laptop_hp_envy_x360_14.json",
+      "sha256": "1a5f3c2ff69bebffe1c6fefbcb3192dbde34ff1226f95ec1e3e85b1e8a154b08"
     },
     "prod_dist_lenovo_legion_tab_snapdragon_8_gen_3": {
       "path": "dist/api/products/lenovo_legion_tab_snapdragon_8_gen_3.json",
-      "sha256": "67a1d427eb747c6efb82345771e0c38f7b92129999f7a50b800806026893bd71"
+      "sha256": "f508220084ab8787a9e8b617c39749d46d9c9be9e6774e779fb3f67a7e94c84b"
     },
     "prod_dist_motorola_edge_60_fusion_5g": {
       "path": "dist/api/products/motorola_edge_60_fusion_5g.json",
-      "sha256": "addfa28dd0680f9ac9e4003cbff751cddb16471dc030573da324eb1433a2048e"
+      "sha256": "5ee87396ea2f5906758847c613bb007fa12686042318564cceca252bd7af5162"
     },
     "prod_dist_motorola_edge_60_pro_5g": {
       "path": "dist/api/products/motorola_edge_60_pro_5g.json",
-      "sha256": "e074b7758c47986a03584d1726f1b902a8e2b61980fee7a555f3ee2e210250f5"
+      "sha256": "fef3714a3263363919717500e73a5ea87fa989986cac18771ba573de2b010bd3"
     },
     "prod_dist_motorola_g57_power_5g": {
       "path": "dist/api/products/motorola_g57_power_5g.json",
-      "sha256": "cda252b6632a107db6a96859dfe82591a9db46973f020348909f45b853939dfb"
+      "sha256": "5766b3b0c0bcfd1b3c25f2944c4cbd4a0ec0167d646af7a7189e8d6405bc4792"
     },
     "prod_dist_motorola_g67_power_5g": {
       "path": "dist/api/products/motorola_g67_power_5g.json",
-      "sha256": "16eaef0af4d39b55e895903d1054fbdb46e2a3f26b295e2c4a10df6d35cdba4a"
+      "sha256": "72356dc7b3d8dbfaebc0d90d3adf1a4082397af7101884ea02bd0d6d5be385d3"
     },
     "prod_dist_nubia_a76_5g": {
       "path": "dist/api/products/nubia_a76_5g.json",
@@ -532,7 +553,7 @@
     },
     "prod_dist_oppo_a5i": {
       "path": "dist/api/products/oppo_a5i.json",
-      "sha256": "e930c13e88c29ef86e28ddd1fa12b24b3b92a2d1c6514c0cb4b7b6f1c100750b"
+      "sha256": "cac76ca32f9fc6672d4edb32e726c1a11ad49d0f8289f9a399788378d1a76d44"
     },
     "prod_dist_oppo_find_x9": {
       "path": "dist/api/products/oppo_find_x9.json",
@@ -540,63 +561,71 @@
     },
     "prod_dist_oppo_pad_se": {
       "path": "dist/api/products/oppo_pad_se.json",
-      "sha256": "84cedcadc1f8f38fa8b16a136e66315c6690c5a4f8da5266f581ed54adf00944"
+      "sha256": "eb5d3bdc17e71c7629bf9275f60e79fbfba3fdf5eb8b1791ea02b40a1ce7d131"
     },
     "prod_dist_oppo_reno15_5g": {
       "path": "dist/api/products/oppo_reno15_5g.json",
-      "sha256": "540b96792419d3320a69d8e1db4de4627759a0d8ec44b12b0a428cacbcd796ef"
+      "sha256": "53c8c266a979fe3b7397d8bebae3cc46369e9e2185e85612427a03790ca4a563"
+    },
+    "prod_dist_pc_rakitan_intel_core_i3_8100": {
+      "path": "dist/api/products/pc_rakitan_intel_core_i3_8100.json",
+      "sha256": "1c32715dc5f5a395aec213fb4e8a329c295834091834c66849f290880e61eff0"
     },
     "prod_dist_poco_x7_pro": {
       "path": "dist/api/products/poco_x7_pro.json",
-      "sha256": "4b88ff771491229b3dca63129990639c7ab2c03d6d23d9b53dfc0b431bd875d9"
+      "sha256": "180a09477e8d8cfd9379fcd9b3f0bdddf30c663e54576c99428064c460da73ab"
     },
     "prod_dist_realme_14t_5g": {
       "path": "dist/api/products/realme_14t_5g.json",
-      "sha256": "4f537a2a6e8a3a756b54df5610456a73c34f61746fda8d745170c6dec81658d5"
+      "sha256": "bc2792d1e24866733461213a3484a24a36042a4e529d84cfbb52c2712075ac19"
     },
     "prod_dist_realme_note_80": {
       "path": "dist/api/products/realme_note_80.json",
-      "sha256": "664d69fb9b6e1525ead5939fc8c05fdb81b1f97b3f650a92659be83917d581a5"
+      "sha256": "aac4df6ea23a415f195ed8f5c7eb1f455baea6cb9607db804863998804605a3b"
+    },
+    "prod_dist_redmi_note_14_5g": {
+      "path": "dist/api/products/redmi_note_14_5g.json",
+      "sha256": "1b69fd01368968f84cb14165275f4109478b3c38957fbf6f506813052a0ef7eb"
     },
     "prod_dist_samsung_a05s": {
       "path": "dist/api/products/samsung_a05s.json",
-      "sha256": "a90a8b3ef2a88d15f26270f2d3c86f0ec74bff22b8f611c3965e94442aadef5e"
+      "sha256": "9dbc04e6f51f9a3bc88d4f251d251ede8bbabfce95ce13f37619ef2a7a395237"
     },
     "prod_dist_samsung_galaxy_a07_lte": {
       "path": "dist/api/products/samsung_galaxy_a07_lte.json",
-      "sha256": "6ded40a0fee003cdb67432460d1f128b7a3bdc08e836de69c1ede66cb77257c5"
+      "sha256": "c4ce42e00a29afcc321e3f710a2b80783028a2f44d5bcf2d15cd8c8536445787"
     },
     "prod_dist_samsung_galaxy_a17_5g": {
       "path": "dist/api/products/samsung_galaxy_a17_5g.json",
-      "sha256": "bc150c6a44d197bf8b0e9290acb836db8f2a09482bb12106d1652d11062efbd9"
+      "sha256": "9e0fc7d0a230b874c03fd4711add3026b0b5676b5b82a9ae13805ca66694d12d"
     },
     "prod_dist_samsung_galaxy_a36": {
       "path": "dist/api/products/samsung_galaxy_a36.json",
-      "sha256": "3090ab551dc6f8fa9b9376aafb4636100c86a624c07761caa2a343f85bcd3036"
+      "sha256": "9c1f277418a1af41d877c2e8a14daf9f600b0e8428d24631ccd86b2474a2dc06"
     },
     "prod_dist_samsung_galaxy_a37_5g": {
       "path": "dist/api/products/samsung_galaxy_a37_5g.json",
-      "sha256": "6c26e3c300d803d721abc639cb3135c8864da1494779f592035faf4366f1e539"
+      "sha256": "94c36b4e8be6804af3bd376afc226e9f64ad8544a4490ccdc6d4bca1d0cc1aec"
     },
     "prod_dist_samsung_galaxy_a57_5g": {
       "path": "dist/api/products/samsung_galaxy_a57_5g.json",
-      "sha256": "db76361de210ac9def352485e694a8e789eaa81b4aea315207d002fcef88b175"
+      "sha256": "eeedd38ee6a4edaad894a4c912c118d4b4bcaa630ac69ba1609916d68ef4e3d4"
     },
     "prod_dist_samsung_galaxy_s23_plus": {
       "path": "dist/api/products/samsung_galaxy_s23_plus.json",
-      "sha256": "eae40a1697e4a65a9e919b7b37a3f5000f3f8ba3d851cd678b6d57b284bbed4e"
+      "sha256": "6edb80a321a461e72a0a8f0e14489c442e87a7d1fb4102124a5c51df0e8f65d8"
     },
     "prod_dist_samsung_galaxy_s25": {
       "path": "dist/api/products/samsung_galaxy_s25.json",
-      "sha256": "2a911901fc609fd869adcc5df6884eab6d71c0ce986caa1d079da7eeca8e7ff2"
+      "sha256": "5951dbc62a0e4f849751e5d228af17795e3ee0f2349881339a8760a088081b5f"
     },
     "prod_dist_samsung_galaxy_tab_s10_fe": {
       "path": "dist/api/products/samsung_galaxy_tab_s10_fe.json",
-      "sha256": "9441a50630988a099488a75e9a224372910a1f683467f97f35fc1ffafd724d5d"
+      "sha256": "3e695b3e2ffd79077fc52444bdac5a302cb4b0d78b35d1af48a3c5724ae1e2b0"
     },
     "prod_dist_samsung_galaxy_tab_s10_lite": {
       "path": "dist/api/products/samsung_galaxy_tab_s10_lite.json",
-      "sha256": "ee75c48842137f31dfd6f3e2cb12cb0a41732ca80691bf04bbf3fe2b5a319b07"
+      "sha256": "074cef81b426a081d8e4cd85b864d6ca4fc509e34097a2651d8fb739a8ec3442"
     },
     "prod_dist_samsung_galaxy_tab_s9_fe": {
       "path": "dist/api/products/samsung_galaxy_tab_s9_fe.json",
@@ -604,59 +633,63 @@
     },
     "prod_dist_samsung_s23_ultra": {
       "path": "dist/api/products/samsung_s23_ultra.json",
-      "sha256": "347588455c8ff2df00ed95ca685707e983c1648cf539449f4dbd0cba4394b061"
+      "sha256": "1f02da67068c564d02973312c58d9b955b5ead6edfb38b7e83ef61f534e4f143"
     },
     "prod_dist_sandisk_portable_ssd_e30": {
       "path": "dist/api/products/sandisk_portable_ssd_e30.json",
-      "sha256": "4a36cbccffe42b1458d4175b81842f57fe0de619528509365111679e6d486469"
+      "sha256": "a45caa945e147aae41dfc58b82ed47a7887dcad4bb04768ac61daf168bbc0846"
+    },
+    "prod_dist_skintific_5x_ceramide_barrier_moisture_gel": {
+      "path": "dist/api/products/skintific_5x_ceramide_barrier_moisture_gel.json",
+      "sha256": "b3ed35f8f11dd2ecce81550ad15f2870d0ab584bf44f33c25b7dc14ec9e4d64a"
     },
     "prod_dist_sony_ps5": {
       "path": "dist/api/products/sony_ps5.json",
-      "sha256": "a964ddd6b6c7d9b139ce7cb35db36ad610d8f0718cc98b4a0eb64c8065dd97fb"
+      "sha256": "747040c7ac68c4242ae176fb85c3edd2d10898b95eb13c3d949309d96cfaff4e"
     },
     "prod_dist_tecno_camon_50": {
       "path": "dist/api/products/tecno_camon_50.json",
-      "sha256": "27d02a1ee4d9bb68194579abf4528e5d4bef9474eac1a6306bcc4ddf707eabe7"
+      "sha256": "249d57c02f249e71c37420b9aa3c17c87f0f2c2e4220f541b54056661790b3ab"
     },
     "prod_dist_tecno_camon_50_pro_5g": {
       "path": "dist/api/products/tecno_camon_50_pro_5g.json",
-      "sha256": "362aceaa1d8f9a8f6a0d1db09b2061d9937999a049d073f128085cd8d77c457a"
+      "sha256": "a2449224b2680177035e6611bf33b1e99967f71858cec80147bf5545de2294cf"
     },
     "prod_dist_tecno_pova_7_5g": {
       "path": "dist/api/products/tecno_pova_7_5g.json",
-      "sha256": "b0023d3cf5a104f57346bfea530d292d0ee9b6e05b9e4771ea09ea42aef0cb53"
+      "sha256": "15c8b25b70bb1b968ff2033e21722389b321407e1c87958eff53d6969dc58768"
     },
     "prod_dist_vivo_v29e_5g": {
       "path": "dist/api/products/vivo_v29e_5g.json",
-      "sha256": "5d45c9775433ab2cabf1b0aa8e1113bba48a3fd24d2367c3dc65467deb13a75c"
+      "sha256": "d9e3aa1ef2c6411309a5a78b4935b4541df50b5cd7f93af5d2ef6fa573a6f5ee"
     },
     "prod_dist_vivo_y19s_pro": {
       "path": "dist/api/products/vivo_y19s_pro.json",
-      "sha256": "fda2eb9aba82ba09c02300432a22beee9a4266c7ab85b43d21796966b91a9f93"
+      "sha256": "e625037779c726d6ad97d2d570d63675af3026f74d10b1259853781abb401492"
     },
     "prod_dist_vivo_y400": {
       "path": "dist/api/products/vivo_y400.json",
-      "sha256": "57b4ee33181c5fae04b0d1c34d281ef3ed6abf4ba98b2a83783327223ceb0538"
+      "sha256": "b8e026fb8fb8356ddbf7daa08f3b419891a80fef1f6ca3c21d8edeef29469a07"
     },
     "prod_dist_xiaomi_15t": {
       "path": "dist/api/products/xiaomi_15t.json",
-      "sha256": "9335340d34dc13e2ff04187f263dcd167dea0ace4c0eb8bb8bdb53c27cab81cb"
+      "sha256": "a78ddd76b89af798bfa1f5b9773ad3457f6b61c64da98755f236544b52ecb3ca"
     },
     "prod_dist_xiaomi_17t": {
       "path": "dist/api/products/xiaomi_17t.json",
-      "sha256": "c2fb309691df5bc28a84939df5ee23bc992f80ba7d2bea170063f6f5b6a4b624"
+      "sha256": "940bee409835426446b7234c835d099a6f215a47e54d497ef26dfc32f8b247bd"
     },
     "prod_dist_xiaomi_redmi_15": {
       "path": "dist/api/products/xiaomi_redmi_15.json",
-      "sha256": "6e434538b4b52e92b5d3a93663862987c58127e1883b422a3548aff2e2c4e98e"
+      "sha256": "ef7ebb60c36e1c8c768afae1606d0a13752d7536f09fcb3064f6696fbdbbb701"
     },
     "prod_dist_xiaomi_redmi_a7_pro": {
       "path": "dist/api/products/xiaomi_redmi_a7_pro.json",
-      "sha256": "a1b349abfe92cc4cbdfa24c9e444f287bd81e0497d505743f268d2058eb51959"
+      "sha256": "e0b2d8e9f920ffd5fc32b6db794559d1994d150ce68e5c36bc261520f1c40a55"
     },
     "prod_dist_xiaomi_redmi_note_13_5g": {
       "path": "dist/api/products/xiaomi_redmi_note_13_5g.json",
-      "sha256": "8fcaf3dbf574f48933c01c8926ac640b5edb424f3faded1bfda46945e0be1779"
+      "sha256": "163b67a1c49f7b5ebcd9fc17843be42ab35b7907f0810dcc83128044d6865880"
     },
     "prod_dist_xiaomi_redmi_pad_2": {
       "path": "dist/api/products/xiaomi_redmi_pad_2.json",
@@ -664,11 +697,11 @@
     },
     "prod_dist_zte_nubia_v80_max": {
       "path": "dist/api/products/zte_nubia_v80_max.json",
-      "sha256": "930bac50e87f43f26ccd10c54a1bb23636666e35afe8d5dfa5ef9a2d1fd08937"
+      "sha256": "93792b2d137b6d2d850a02aac43490a7025e4045793cff0b56b7f9a6481c52ea"
     },
     "dist::dist/api/search_index.json": {
       "path": "dist/api/search_index.json",
-      "sha256": "34009ce9d6b73d4e05afab5a6abafb023f46062c96be39fa5cff87996f2e4ec0"
+      "sha256": "5900926b42e31715224b7dcde158dfc78fde7e9a94e086cf149b60963b660d1b"
     },
     "dist::dist/og-preview.png": {
       "path": "dist/og-preview.png",
@@ -740,11 +773,11 @@
     },
     "dist::dist/product/apple_ipad_pro_m1_11_wifi_only.html": {
       "path": "dist/product/apple_ipad_pro_m1_11_wifi_only.html",
-      "sha256": "55b6ac890711a1d9348505da887773ea368f855ac3f91a33f14b7b2e06c7c8df"
+      "sha256": "ec4c6b26ae825747cb13ed3469433c3c41ecdffe3080cbee5d829fdf5f3a7d27"
     },
     "dist::dist/product/apple_ipad_pro_m1_11_wifi_only/index.html": {
       "path": "dist/product/apple_ipad_pro_m1_11_wifi_only/index.html",
-      "sha256": "55b6ac890711a1d9348505da887773ea368f855ac3f91a33f14b7b2e06c7c8df"
+      "sha256": "ec4c6b26ae825747cb13ed3469433c3c41ecdffe3080cbee5d829fdf5f3a7d27"
     },
     "dist::dist/product/apple_ipad_pro_m4_5th_gen.html": {
       "path": "dist/product/apple_ipad_pro_m4_5th_gen.html",
@@ -800,11 +833,11 @@
     },
     "dist::dist/product/infinix_hot_70.html": {
       "path": "dist/product/infinix_hot_70.html",
-      "sha256": "b28b5ab75209d0832a4b8111a20b526557c582646f374fbd8ec47a61708b34c9"
+      "sha256": "a7bb0f08776b5d8f1a6b6755cc3f3efaa8b7b5a36c2a92de4b4d4723c1c7fdd0"
     },
     "dist::dist/product/infinix_hot_70/index.html": {
       "path": "dist/product/infinix_hot_70/index.html",
-      "sha256": "b28b5ab75209d0832a4b8111a20b526557c582646f374fbd8ec47a61708b34c9"
+      "sha256": "a7bb0f08776b5d8f1a6b6755cc3f3efaa8b7b5a36c2a92de4b4d4723c1c7fdd0"
     },
     "dist::dist/product/infinix_note_30.html": {
       "path": "dist/product/infinix_note_30.html",
@@ -848,11 +881,11 @@
     },
     "dist::dist/product/iphone_13.html": {
       "path": "dist/product/iphone_13.html",
-      "sha256": "5f4844881c16ff4f644d289278f8584872cf839e5d0a07474a41591522a85d84"
+      "sha256": "e09719a23b723b720878854213a3fee2686035c3f3919fae1e5ae552eb4a8d98"
     },
     "dist::dist/product/iphone_13/index.html": {
       "path": "dist/product/iphone_13/index.html",
-      "sha256": "5f4844881c16ff4f644d289278f8584872cf839e5d0a07474a41591522a85d84"
+      "sha256": "e09719a23b723b720878854213a3fee2686035c3f3919fae1e5ae552eb4a8d98"
     },
     "dist::dist/product/iphone_16.html": {
       "path": "dist/product/iphone_16.html",
@@ -869,6 +902,14 @@
     "dist::dist/product/iphone_17e/index.html": {
       "path": "dist/product/iphone_17e/index.html",
       "sha256": "a9e335a8eae834d84719e4cb28c3d65a730807f7695302af12a4ec0e5d95b7ae"
+    },
+    "dist::dist/product/laptop_hp_envy_x360_14.html": {
+      "path": "dist/product/laptop_hp_envy_x360_14.html",
+      "sha256": "967962c132b0a348f40376c0296ca59715953638fbe665a27607a874d2fdcb03"
+    },
+    "dist::dist/product/laptop_hp_envy_x360_14/index.html": {
+      "path": "dist/product/laptop_hp_envy_x360_14/index.html",
+      "sha256": "967962c132b0a348f40376c0296ca59715953638fbe665a27607a874d2fdcb03"
     },
     "dist::dist/product/lenovo_legion_tab_snapdragon_8_gen_3.html": {
       "path": "dist/product/lenovo_legion_tab_snapdragon_8_gen_3.html",
@@ -888,27 +929,27 @@
     },
     "dist::dist/product/motorola_edge_60_pro_5g.html": {
       "path": "dist/product/motorola_edge_60_pro_5g.html",
-      "sha256": "0bfe0f82d9bf435bc5442c3cc8df6b579f51751088b235167c627b44f8795ceb"
+      "sha256": "f02f41cf0cf029f4cdc770eb960267e0236b306eb1197649e9f0673cddd8ef95"
     },
     "dist::dist/product/motorola_edge_60_pro_5g/index.html": {
       "path": "dist/product/motorola_edge_60_pro_5g/index.html",
-      "sha256": "0bfe0f82d9bf435bc5442c3cc8df6b579f51751088b235167c627b44f8795ceb"
+      "sha256": "f02f41cf0cf029f4cdc770eb960267e0236b306eb1197649e9f0673cddd8ef95"
     },
     "dist::dist/product/motorola_g57_power_5g.html": {
       "path": "dist/product/motorola_g57_power_5g.html",
-      "sha256": "b5f93297945a5be079869f6a24a066cac16cfe14d708c5a4ad4ccddb8fa7030d"
+      "sha256": "801abb1583db8fac7e40a7227eb905c46c59c049ad407030b68341b0ad348b17"
     },
     "dist::dist/product/motorola_g57_power_5g/index.html": {
       "path": "dist/product/motorola_g57_power_5g/index.html",
-      "sha256": "b5f93297945a5be079869f6a24a066cac16cfe14d708c5a4ad4ccddb8fa7030d"
+      "sha256": "801abb1583db8fac7e40a7227eb905c46c59c049ad407030b68341b0ad348b17"
     },
     "dist::dist/product/motorola_g67_power_5g.html": {
       "path": "dist/product/motorola_g67_power_5g.html",
-      "sha256": "6717d56c48fa167b949ddacf88336a70e9a3db87e42ee74f277ca7babf242430"
+      "sha256": "4e247ddff168f7a1f97d62640072aa3cf30ace25cf579db4e9b5f53ea7d41b84"
     },
     "dist::dist/product/motorola_g67_power_5g/index.html": {
       "path": "dist/product/motorola_g67_power_5g/index.html",
-      "sha256": "6717d56c48fa167b949ddacf88336a70e9a3db87e42ee74f277ca7babf242430"
+      "sha256": "4e247ddff168f7a1f97d62640072aa3cf30ace25cf579db4e9b5f53ea7d41b84"
     },
     "dist::dist/product/nubia_a76_5g.html": {
       "path": "dist/product/nubia_a76_5g.html",
@@ -950,6 +991,14 @@
       "path": "dist/product/oppo_reno15_5g/index.html",
       "sha256": "e92c24b07052f400c8cf4119571b6b6e7804578b2be20e05db33590ff799bf29"
     },
+    "dist::dist/product/pc_rakitan_intel_core_i3_8100.html": {
+      "path": "dist/product/pc_rakitan_intel_core_i3_8100.html",
+      "sha256": "dc7840ddfd01dc7fe7023230a13e9ab0b883fcf8d745cd4699332b3e83a59e2b"
+    },
+    "dist::dist/product/pc_rakitan_intel_core_i3_8100/index.html": {
+      "path": "dist/product/pc_rakitan_intel_core_i3_8100/index.html",
+      "sha256": "dc7840ddfd01dc7fe7023230a13e9ab0b883fcf8d745cd4699332b3e83a59e2b"
+    },
     "dist::dist/product/poco_x7_pro.html": {
       "path": "dist/product/poco_x7_pro.html",
       "sha256": "8f3927c61eb0b0f79c10aa4af63b2027f7d5856f290e6e66489ceb28888f175a"
@@ -973,6 +1022,14 @@
     "dist::dist/product/realme_note_80/index.html": {
       "path": "dist/product/realme_note_80/index.html",
       "sha256": "d9c0b271045d589cf45954bf2495d2154c3f71e33f032babff226231520d683b"
+    },
+    "dist::dist/product/redmi_note_14_5g.html": {
+      "path": "dist/product/redmi_note_14_5g.html",
+      "sha256": "8372408da3fb99af0bcaedffcf44013b3f86d5421653fe6cbca4dd13112d0bea"
+    },
+    "dist::dist/product/redmi_note_14_5g/index.html": {
+      "path": "dist/product/redmi_note_14_5g/index.html",
+      "sha256": "8372408da3fb99af0bcaedffcf44013b3f86d5421653fe6cbca4dd13112d0bea"
     },
     "dist::dist/product/samsung_a05s.html": {
       "path": "dist/product/samsung_a05s.html",
@@ -1032,11 +1089,11 @@
     },
     "dist::dist/product/samsung_galaxy_s25.html": {
       "path": "dist/product/samsung_galaxy_s25.html",
-      "sha256": "52f5134b2cb30e57c960b27f2123646da1b0d96caa4134509de1d2575e348335"
+      "sha256": "5f52a39a058a00af2da1899c8b865f84a86857375f6f841df2b96c245475ae03"
     },
     "dist::dist/product/samsung_galaxy_s25/index.html": {
       "path": "dist/product/samsung_galaxy_s25/index.html",
-      "sha256": "52f5134b2cb30e57c960b27f2123646da1b0d96caa4134509de1d2575e348335"
+      "sha256": "5f52a39a058a00af2da1899c8b865f84a86857375f6f841df2b96c245475ae03"
     },
     "dist::dist/product/samsung_galaxy_tab_s10_fe.html": {
       "path": "dist/product/samsung_galaxy_tab_s10_fe.html",
@@ -1077,6 +1134,14 @@
     "dist::dist/product/sandisk_portable_ssd_e30/index.html": {
       "path": "dist/product/sandisk_portable_ssd_e30/index.html",
       "sha256": "04db600a08633f9ab63d368fca48ba6011f071f35dc07c2ef6f593c2bf61f8ef"
+    },
+    "dist::dist/product/skintific_5x_ceramide_barrier_moisture_gel.html": {
+      "path": "dist/product/skintific_5x_ceramide_barrier_moisture_gel.html",
+      "sha256": "2665dd5db18acfe1afcc10caae6cd076d13fb8c1922630b8f8bb904b167db52c"
+    },
+    "dist::dist/product/skintific_5x_ceramide_barrier_moisture_gel/index.html": {
+      "path": "dist/product/skintific_5x_ceramide_barrier_moisture_gel/index.html",
+      "sha256": "2665dd5db18acfe1afcc10caae6cd076d13fb8c1922630b8f8bb904b167db52c"
     },
     "dist::dist/product/sony_ps5.html": {
       "path": "dist/product/sony_ps5.html",
@@ -1128,11 +1193,11 @@
     },
     "dist::dist/product/vivo_y400.html": {
       "path": "dist/product/vivo_y400.html",
-      "sha256": "98fa9a0d496a33186279086261b08a71df9763aa0af460a6862f0c19ecef31d5"
+      "sha256": "6c6571785eafcaaabee6d10346ae178f1da5a8b739f2c730f73f3149e39fc03a"
     },
     "dist::dist/product/vivo_y400/index.html": {
       "path": "dist/product/vivo_y400/index.html",
-      "sha256": "98fa9a0d496a33186279086261b08a71df9763aa0af460a6862f0c19ecef31d5"
+      "sha256": "6c6571785eafcaaabee6d10346ae178f1da5a8b739f2c730f73f3149e39fc03a"
     },
     "dist::dist/product/xiaomi_15t.html": {
       "path": "dist/product/xiaomi_15t.html",
@@ -1168,11 +1233,11 @@
     },
     "dist::dist/product/xiaomi_redmi_note_13_5g.html": {
       "path": "dist/product/xiaomi_redmi_note_13_5g.html",
-      "sha256": "edbb9dd3d34d26236fe2b699e2412599bc777c4f2ef436b590c98229001c680a"
+      "sha256": "b7e7123d7ccb7d1e294a86eda05ae6c1901bdebc1e0fd443df24fa2127a72ed7"
     },
     "dist::dist/product/xiaomi_redmi_note_13_5g/index.html": {
       "path": "dist/product/xiaomi_redmi_note_13_5g/index.html",
-      "sha256": "edbb9dd3d34d26236fe2b699e2412599bc777c4f2ef436b590c98229001c680a"
+      "sha256": "b7e7123d7ccb7d1e294a86eda05ae6c1901bdebc1e0fd443df24fa2127a72ed7"
     },
     "dist::dist/product/xiaomi_redmi_pad_2.html": {
       "path": "dist/product/xiaomi_redmi_pad_2.html",
@@ -1466,6 +1531,10 @@
       "path": "dist/static/images/approved/933ce0708f9baeae6f73f4865c2cedc48510ac473b9dea13b8e3874730f0daab.webp",
       "sha256": "933ce0708f9baeae6f73f4865c2cedc48510ac473b9dea13b8e3874730f0daab"
     },
+    "dist::dist/static/images/approved/acd4680a1b446e49cd744421d8b7a45b1d876e075679d1c01f58895bc2c3af2b.webp": {
+      "path": "dist/static/images/approved/acd4680a1b446e49cd744421d8b7a45b1d876e075679d1c01f58895bc2c3af2b.webp",
+      "sha256": "acd4680a1b446e49cd744421d8b7a45b1d876e075679d1c01f58895bc2c3af2b"
+    },
     "dist::dist/static/images/approved/c2ae9c05aa7faab9c683a4425bda0993bc86255ba30717ae8b7e6c5991698b2a.webp": {
       "path": "dist/static/images/approved/c2ae9c05aa7faab9c683a4425bda0993bc86255ba30717ae8b7e6c5991698b2a.webp",
       "sha256": "c2ae9c05aa7faab9c683a4425bda0993bc86255ba30717ae8b7e6c5991698b2a"
@@ -1538,7 +1607,7 @@
     "dist_smoke_audit": "PASSED (headers, redirects, zero-leakage, zero-external-assets)"
   },
   "service_boundaries": [
-    "Data snapshot statis per 2026-11-01 s.d. 2026-11-07; bukan agregator real-time",
+    "Data snapshot statis per 2026-11-01 s.d. 2026-11-08; bukan agregator real-time",
     "Form AI consultation dan request produk diatur mode non-aktif/coming-soon (tanpa submission uncoordinated)",
     "Tidak ada auto-push, auto-deploy, scheduler background, atau perubahan DB produksi"
   ]
