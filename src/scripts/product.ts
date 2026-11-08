@@ -233,6 +233,21 @@ function renderOffersForVariant(
   variantName: string,
   _variantData?: CanonicalVariant
 ): void {
+  // If all variants are pending (no verified configurations available), enforce transparent unverified state
+  if (displayVariants.length === 0 && pendingVariants > 0) {
+    variantLabel.textContent = 'Pilihan perlu diperiksa';
+    snapshotDateEl.textContent = 'Pilihan belum jelas dan sedang diverifikasi ulang.';
+    scrapeDateNotice.classList.add('hidden');
+    renderPriceHistory('', 'Pilihan perlu diperiksa');
+    offersList.innerHTML = '';
+    priceEl.textContent = 'Belum ada harga terverifikasi';
+    const message = offersEmpty.querySelector('p');
+    if (message) message.textContent = 'Semua pilihan varian masih dalam pemeriksaan. Belum ada penawaran terverifikasi.';
+    offersCount.textContent = '0 toko';
+    offersEmpty.classList.remove('hidden');
+    return;
+  }
+
   // Filter offers for this variant (by canonical_variant)
   const filtered = variantName
     ? offers.filter(o => (_variantData?.member_keys || [variantName]).includes(o.canonical_variant))
@@ -372,7 +387,7 @@ function createOfferRow(offer: Offer): HTMLElement {
   const isBundle = /adapter|paket|bundle|charger/i.test(offer.sub_attribute || '') || /adapter|paket|bundle/i.test(offer.variant || '');
   const subAttr = offer.sub_attribute && offer.sub_attribute.toLowerCase() !== 'standar'
     ? (isBundle
-        ? `<span class="rounded bg-amber-50 border border-amber-200 px-1.5 py-0.5 text-[11px] font-medium text-amber-800">Paket: ${escHtml(offer.sub_attribute)}</span>`
+        ? `<span class="rounded bg-amber-50 border border-amber-200 px-1.5 py-0.5 text-[11px] font-medium text-amber-800">${/^paket:/i.test(offer.sub_attribute) ? '' : 'Paket: '}${escHtml(offer.sub_attribute)}</span>`
         : `<span class="text-xs text-gray-500">· ${escHtml(offer.sub_attribute)}</span>`)
     : '';
 
